@@ -12,6 +12,8 @@
 		457A6067217ABBFE00F98F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457A6065217ABBFE00F98F83 /* Main.storyboard */; };
 		457A6069217ABC0100F98F83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 457A6068217ABC0100F98F83 /* Assets.xcassets */; };
 		457A606C217ABC0100F98F83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457A606A217ABC0100F98F83 /* LaunchScreen.storyboard */; };
+		45805BEB2181192500BDA9FD /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45805BEA2181192500BDA9FD /* CircleViewController.swift */; };
+		45805BED218119B600BDA9FD /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45805BEC218119B600BDA9FD /* InstructionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		457A6068217ABC0100F98F83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		457A606B217ABC0100F98F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		457A606D217ABC0100F98F83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45805BEA2181192500BDA9FD /* CircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
+		45805BEC218119B600BDA9FD /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,9 @@
 			children = (
 				457A6061217ABBFE00F98F83 /* AppDelegate.swift */,
 				457A6063217ABBFE00F98F83 /* ViewController.swift */,
+				45805BEA2181192500BDA9FD /* CircleViewController.swift */,
 				457A6065217ABBFE00F98F83 /* Main.storyboard */,
+				45805BEC218119B600BDA9FD /* InstructionsViewController.swift */,
 				457A6068217ABC0100F98F83 /* Assets.xcassets */,
 				457A606A217ABC0100F98F83 /* LaunchScreen.storyboard */,
 				457A606D217ABC0100F98F83 /* Info.plist */,
@@ -137,6 +143,8 @@
 			files = (
 				457A6064217ABBFE00F98F83 /* ViewController.swift in Sources */,
 				457A6062217ABBFE00F98F83 /* AppDelegate.swift in Sources */,
+				45805BED218119B600BDA9FD /* InstructionsViewController.swift in Sources */,
+				45805BEB2181192500BDA9FD /* CircleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,15 +288,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZNV67NQPQG;
 				INFOPLIST_FILE = GamePortion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = eric.keefe.GamePortion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,15 +309,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZNV67NQPQG;
 				INFOPLIST_FILE = GamePortion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = eric.keefe.GamePortion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
