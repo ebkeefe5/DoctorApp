@@ -83,7 +83,10 @@ class CircleViewController: UIViewController {
     
    
     @IBAction func restartButtonPressed(_ sender: Any) {
-        if (gameRunning){return;}else{
+        if (!gameRunning){
+            self.restartGame();
+        }else{
+            self.endGame();
             self.restartGame();
         }
     }
@@ -103,9 +106,9 @@ class CircleViewController: UIViewController {
     @objc func updateCircle()
     {
         if (shrinking){
-            currentRad = currentRad - 3;
+            currentRad = currentRad - 2;
         }else{
-            currentRad = currentRad + 3;
+            currentRad = currentRad + 2;
         }
         if (currentRad >= circleRadMax){
             shrinking = true;
@@ -123,8 +126,12 @@ class CircleViewController: UIViewController {
         
         shapeLayer.path = circlePath.cgPath;
         
+        
+        
         //change the fill color
-        shapeLayer.fillColor = UIColor.green.cgColor
+        shapeLayer.fillColor = UIColor.brown.cgColor;
+            
+            //
         //you can change the stroke color
         shapeLayer.strokeColor = UIColor.black.cgColor
         //you can change the line width
