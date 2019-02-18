@@ -193,15 +193,15 @@ becomes too small, the game ends. </string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZU-H8-4Ay">
                                 <rect key="frame" x="286" y="367" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="dog1"/>
+                                <state key="normal" image="firstAid"/>
                                 <connections>
                                     <segue destination="Mw4-8a-E4x" kind="show" id="Edn-PK-YEN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sV-9h-kOS">
-                                <rect key="frame" x="118" y="439" width="50" height="50"/>
+                                <rect key="frame" x="57" y="384" width="172" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="dog12"/>
+                                <state key="normal" image="notepad"/>
                                 <connections>
                                     <segue destination="HRU-gv-ssd" kind="show" id="PdF-t2-J3V"/>
                                 </connections>
@@ -246,12 +246,12 @@ becomes too small, the game ends. </string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4K0-r8-AOb">
                                 <rect key="frame" x="117" y="522" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="dog6"/>
+                                <state key="normal" image="meditate"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZu-Vk-dIm">
                                 <rect key="frame" x="120" y="593" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="dog10"/>
+                                <state key="normal" image="info"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aP-Vo-Rkl">
                                 <rect key="frame" x="-35" y="75" width="291" height="54"/>
@@ -275,7 +275,7 @@ becomes too small, the game ends. </string>
                                     <attributedString key="attributedTitle">
                                         <fragment content="What To Expect">
                                             <attributes>
-                                                <color key="NSColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="34" name="AmericanTypewriter-Bold"/>
                                                 <font key="NSOriginalFont" size="34" name="AmericanTypewriter-Bold"/>
                                             </attributes>
@@ -307,7 +307,7 @@ becomes too small, the game ends. </string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRD-L1-hWk">
                                 <rect key="frame" x="214" y="297" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="dog13"/>
+                                <state key="normal" image="game"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="Vrx-qY-zxp"/>
                                 </connections>
@@ -1017,12 +1017,12 @@ After the tooth is filled, you and the dentist will communicate to ensure the bi
         </scene>
     </scenes>
     <resources>
-        <image name="dog1" width="50" height="50"/>
-        <image name="dog10" width="50" height="50"/>
-        <image name="dog12" width="50" height="50"/>
-        <image name="dog13" width="50" height="50"/>
         <image name="dog5" width="50" height="50"/>
-        <image name="dog6" width="50" height="50"/>
+        <image name="firstAid" width="50" height="50"/>
+        <image name="game" width="50" height="50"/>
+        <image name="info" width="50" height="50"/>
+        <image name="meditate" width="50" height="50"/>
+        <image name="notepad" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="PdF-t2-J3V"/>
