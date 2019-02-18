@@ -15,7 +15,6 @@
 		45805BEB2181192500BDA9FD /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45805BEA2181192500BDA9FD /* CircleViewController.swift */; };
 		45805BED218119B600BDA9FD /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45805BEC218119B600BDA9FD /* InstructionsViewController.swift */; };
 		45B933542204D4A4007E752E /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B933532204D4A4007E752E /* NotesViewController.swift */; };
-		45B933562204E748007E752E /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B933552204E748007E752E /* QuestionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		45805BEA2181192500BDA9FD /* CircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
 		45805BEC218119B600BDA9FD /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		45B933532204D4A4007E752E /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
-		45B933552204E748007E752E /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +65,6 @@
 				45805BEA2181192500BDA9FD /* CircleViewController.swift */,
 				457A6065217ABBFE00F98F83 /* Main.storyboard */,
 				45B933532204D4A4007E752E /* NotesViewController.swift */,
-				45B933552204E748007E752E /* QuestionsViewController.swift */,
 				45805BEC218119B600BDA9FD /* InstructionsViewController.swift */,
 				457A6068217ABC0100F98F83 /* Assets.xcassets */,
 				457A606A217ABC0100F98F83 /* LaunchScreen.storyboard */,
@@ -149,7 +146,6 @@
 			files = (
 				457A6064217ABBFE00F98F83 /* ViewController.swift in Sources */,
 				45B933542204D4A4007E752E /* NotesViewController.swift in Sources */,
-				45B933562204E748007E752E /* QuestionsViewController.swift in Sources */,
 				457A6062217ABBFE00F98F83 /* AppDelegate.swift in Sources */,
 				45805BED218119B600BDA9FD /* InstructionsViewController.swift in Sources */,
 				45805BEB2181192500BDA9FD /* CircleViewController.swift in Sources */,
