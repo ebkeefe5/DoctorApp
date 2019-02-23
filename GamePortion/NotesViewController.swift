@@ -19,8 +19,11 @@ class NotesViewController: UIViewController, UITextViewDelegate {
     
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        textView.clipsToBounds = true;
+        textView.layer.cornerRadius = 15.0;
         
     }
     
@@ -51,7 +54,7 @@ class NotesViewController: UIViewController, UITextViewDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         UserDefaults.standard.set(textView.text, forKey: "userInput");
-        textView.resignFirstResponder()
+        textView.resignFirstResponder();
         //theText = textView.text
         
     }
@@ -60,6 +63,7 @@ class NotesViewController: UIViewController, UITextViewDelegate {
         if let x = UserDefaults.standard.object(forKey: "userInput") as? String{
             textView.text = x
         }
+         print("hi");
     }
     
     
