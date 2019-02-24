@@ -59,7 +59,7 @@ class CircleViewController: UIViewController {
         if (!gameRunning){return;}
         
         score = score + 1;
-        self.currentScoreLabel.text = "Current Score: " + String(score)
+        self.currentScoreLabel.text = "Score: " + String(score)
         circleRadMax = currentRad
         if (circleRadMax <= 2 * circleRadMin){
             self.endGame()
@@ -77,7 +77,7 @@ class CircleViewController: UIViewController {
             maxScore = score
         }
         score = 0;
-        self.maxScoreLabel.text = "Max Score: " + String(maxScore);
+        self.maxScoreLabel.text = "Record: " + String(maxScore);
     }
     
     
@@ -92,7 +92,7 @@ class CircleViewController: UIViewController {
     }
     
     func restartGame(){
-        self.currentScoreLabel.text = "Current Score: 0";
+        self.currentScoreLabel.text = "Score: 0";
      
         shrinking = false;
         circleRadMax = max(centerX, centerY)*1/2;
