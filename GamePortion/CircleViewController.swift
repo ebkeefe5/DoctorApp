@@ -129,13 +129,13 @@ class CircleViewController: UIViewController {
         
         
         //change the fill color
-        shapeLayer.fillColor = UIColor.brown.cgColor;
+        shapeLayer.fillColor = UIColor.white.cgColor;
             
             //
         //you can change the stroke color
-        shapeLayer.strokeColor = UIColor.black.cgColor
+        //shapeLayer.strokeColor = UIColor.black.cgColor
         //you can change the line width
-        shapeLayer.lineWidth = 2.0
+        //shapeLayer.lineWidth = 2.0
         
         view.layer.addSublayer(shapeLayer)
         
