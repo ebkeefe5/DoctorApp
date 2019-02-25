@@ -15,6 +15,9 @@
 		45805BEB2181192500BDA9FD /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45805BEA2181192500BDA9FD /* CircleViewController.swift */; };
 		45805BED218119B600BDA9FD /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45805BEC218119B600BDA9FD /* InstructionsViewController.swift */; };
 		459BBF2022238511007AACD0 /* WhatToExpect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459BBF1F22238511007AACD0 /* WhatToExpect.swift */; };
+		45A4946422246C2500CCF229 /* Dermatologist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4946322246C2500CCF229 /* Dermatologist.swift */; };
+		45A494662224722900CCF229 /* EyeDoctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A494652224722900CCF229 /* EyeDoctor.swift */; };
+		45A494682224739E00CCF229 /* Dentist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A494672224739E00CCF229 /* Dentist.swift */; };
 		45B933542204D4A4007E752E /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B933532204D4A4007E752E /* NotesViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		45805BEA2181192500BDA9FD /* CircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
 		45805BEC218119B600BDA9FD /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
 		459BBF1F22238511007AACD0 /* WhatToExpect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatToExpect.swift; sourceTree = "<group>"; };
+		45A4946322246C2500CCF229 /* Dermatologist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dermatologist.swift; sourceTree = "<group>"; };
+		45A494652224722900CCF229 /* EyeDoctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeDoctor.swift; sourceTree = "<group>"; };
+		45A494672224739E00CCF229 /* Dentist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dentist.swift; sourceTree = "<group>"; };
 		45B933532204D4A4007E752E /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +72,9 @@
 				457A6063217ABBFE00F98F83 /* ViewController.swift */,
 				45805BEA2181192500BDA9FD /* CircleViewController.swift */,
 				457A6065217ABBFE00F98F83 /* Main.storyboard */,
+				45A494672224739E00CCF229 /* Dentist.swift */,
+				45A494652224722900CCF229 /* EyeDoctor.swift */,
+				45A4946322246C2500CCF229 /* Dermatologist.swift */,
 				459BBF1F22238511007AACD0 /* WhatToExpect.swift */,
 				45B933532204D4A4007E752E /* NotesViewController.swift */,
 				45805BEC218119B600BDA9FD /* InstructionsViewController.swift */,
@@ -147,9 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A494662224722900CCF229 /* EyeDoctor.swift in Sources */,
 				457A6064217ABBFE00F98F83 /* ViewController.swift in Sources */,
 				45B933542204D4A4007E752E /* NotesViewController.swift in Sources */,
 				457A6062217ABBFE00F98F83 /* AppDelegate.swift in Sources */,
+				45A494682224739E00CCF229 /* Dentist.swift in Sources */,
+				45A4946422246C2500CCF229 /* Dermatologist.swift in Sources */,
 				45805BED218119B600BDA9FD /* InstructionsViewController.swift in Sources */,
 				45805BEB2181192500BDA9FD /* CircleViewController.swift in Sources */,
 				459BBF2022238511007AACD0 /* WhatToExpect.swift in Sources */,

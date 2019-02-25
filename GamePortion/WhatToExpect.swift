@@ -23,17 +23,17 @@ class WhatToExpect: UIViewController {
     @IBOutlet weak var pychologistButton: UIButton!
     
     var x1: CGFloat = 10.0;
-    var y1: CGFloat = 200.0;
-    var width1: CGFloat = 170;
-    var height1: CGFloat = 140;
+    var y1: CGFloat = 245.0;
+    var width1: CGFloat = 175;
+    var height1: CGFloat = 130;
     var xspacing: CGFloat = 0;
     var yspacing: CGFloat = 0;
     var buttonBorderWidth: CGFloat = 2;
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        xspacing = width1 + 15;
-        yspacing = height1 + 15;
+        xspacing = width1 + 10;
+        yspacing = height1 + 10;
         
         
         dentistButton.clipsToBounds = true;
