@@ -984,17 +984,26 @@ Appointment</string>
                                     <outlet property="delegate" destination="HRU-gv-ssd" id="m2i-ti-FsI"/>
                                 </connections>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNA-WZ-ULe">
+                                <rect key="frame" x="0.0" y="383" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="donePressed:" destination="HRU-gv-ssd" eventType="touchUpInside" id="37L-Ew-Tj1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Iwn-hd-IuE"/>
                     </view>
                     <connections>
+                        <outlet property="doneButton" destination="ZNA-WZ-ULe" id="mQi-GA-78g"/>
                         <outlet property="textView" destination="6ql-yH-zUF" id="Vsj-9M-7wa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wrt-17-IQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2767.1999999999998" y="238.83058470764618"/>
+            <point key="canvasLocation" x="-2767.1999999999998" y="263.11844077961024"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9zz-FT-uhI">

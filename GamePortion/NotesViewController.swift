@@ -17,6 +17,8 @@ class NotesViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var textView: UITextView!
     
+    @IBOutlet weak var doneButton: UIButton!
+    
     
     
     
@@ -24,13 +26,21 @@ class NotesViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         textView.clipsToBounds = true;
         textView.layer.cornerRadius = 15.0;
+        doneButton.isEnabled = false;
         
+        
+    }
+    
+ 
+    @IBAction func donePressed(_ sender: Any) {
+        textView.resignFirstResponder();
     }
     
     
     
     func textView (_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text:String) ->Bool {
-    
+        
+        doneButton.isEnabled = true;
         if (text == "" && range.length > 0){
             
             
@@ -53,6 +63,7 @@ class NotesViewController: UIViewController, UITextViewDelegate {
    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        doneButton.setTitle("Done", for: .normal)
         UserDefaults.standard.set(textView.text, forKey: "userInput");
         textView.resignFirstResponder();
         //theText = textView.text
