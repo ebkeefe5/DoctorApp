@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wdm-f9-tpm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cVW-ED-9Kz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -113,7 +113,7 @@
         <!--View Controller-->
         <scene sceneID="mOb-Fy-np8">
             <objects>
-                <viewController id="ksl-9f-8Id" sceneMemberID="viewController">
+                <viewController id="ksl-9f-8Id" customClass="ViewController" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jyC-JN-I3c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,7 +131,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.53725490196078429" green="0.6705882352941176" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <segue destination="Mw4-8a-E4x" kind="show" id="tg4-Dc-lbR"/>
+                                    <segue destination="Mw4-8a-E4x" kind="show" id="u1e-if-9ww"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68f-AL-Z9W">
@@ -157,7 +157,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="firstAid"/>
                                 <connections>
-                                    <segue destination="Mw4-8a-E4x" kind="show" id="woR-t6-orL"/>
+                                    <segue destination="Mw4-8a-E4x" kind="show" id="fQA-Uj-RUv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sV-9h-kOS">
@@ -306,7 +306,7 @@ create this app </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GWi-Bz-fwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6476" y="567.16641679160421"/>
+            <point key="canvasLocation" x="-5828" y="446.62668665667172"/>
         </scene>
         <!--What To Expect-->
         <scene sceneID="jct-oC-mTp">
@@ -484,6 +484,7 @@ Doctor</string>
                         <color key="backgroundColor" red="0.53725490196078429" green="0.6705882352941176" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="obn-C9-tO3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="xf1-fj-Acq"/>
                     <connections>
                         <outlet property="GPButton" destination="tPc-HO-zAi" id="Tm4-o4-fMQ"/>
                         <outlet property="dentistButton" destination="gTV-Ug-Gnv" id="T4o-Ww-cyD"/>
@@ -495,7 +496,7 @@ Doctor</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DDE-kT-LRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5796" y="566.26686656671666"/>
+            <point key="canvasLocation" x="-3917.5999999999999" y="566.26686656671666"/>
         </scene>
         <!--Dermatologist-->
         <scene sceneID="UNj-W1-9oF">
@@ -592,7 +593,7 @@ Appointment</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3BU-jk-uU0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4970.3999999999996" y="575.26236881559225"/>
+            <point key="canvasLocation" x="-3092" y="575.26236881559225"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="u3D-yd-dU8">
@@ -860,7 +861,7 @@ Eye Exam</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pmB-8T-jot" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4210.3999999999996" y="575.26236881559225"/>
+            <point key="canvasLocation" x="-2332" y="575.26236881559225"/>
         </scene>
         <!--Dentist-->
         <scene sceneID="qn3-TN-ffT">
@@ -956,7 +957,7 @@ Appointment</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XlR-OG-1ZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3524" y="575.26236881559225"/>
+            <point key="canvasLocation" x="-1645.5999999999999" y="575.26236881559225"/>
         </scene>
         <!--Notes View Controller-->
         <scene sceneID="2Bn-F7-xVz">
@@ -984,26 +985,17 @@ Appointment</string>
                                     <outlet property="delegate" destination="HRU-gv-ssd" id="m2i-ti-FsI"/>
                                 </connections>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNA-WZ-ULe">
-                                <rect key="frame" x="0.0" y="383" width="44" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Done"/>
-                                <connections>
-                                    <action selector="donePressed:" destination="HRU-gv-ssd" eventType="touchUpInside" id="37L-Ew-Tj1"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Iwn-hd-IuE"/>
                     </view>
                     <connections>
-                        <outlet property="doneButton" destination="ZNA-WZ-ULe" id="mQi-GA-78g"/>
                         <outlet property="textView" destination="6ql-yH-zUF" id="Vsj-9M-7wa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wrt-17-IQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2767.1999999999998" y="263.11844077961024"/>
+            <point key="canvasLocation" x="-888.79999999999995" y="263.11844077961024"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9zz-FT-uhI">
@@ -1070,24 +1062,6 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vUM-ml-DLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3934" y="1334"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="GIt-LT-ArG">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wdm-f9-tpm" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8Qo-Wb-z2f">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ksl-9f-8Id" kind="relationship" relationship="rootViewController" id="7rt-LC-KCb"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wYY-Dx-fPD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-5895" y="-404"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bP4-4P-lyb">
@@ -1413,6 +1387,32 @@ After the tooth is filled, you and the dentist will communicate to ensure the bi
             </objects>
             <point key="canvasLocation" x="-1314" y="1334"/>
         </scene>
+        <!--Custom Nav-->
+        <scene sceneID="POk-Zy-k1C">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cVW-ED-9Kz" customClass="customNav" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" alpha="0.050000000000000003" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OdE-Ov-7v4">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ksl-9f-8Id" kind="relationship" relationship="rootViewController" id="8Fg-pY-P2T"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ga6-X0-36z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6767.1999999999998" y="446.62668665667172"/>
+        </scene>
     </scenes>
     <resources>
         <image name="dog5" width="50" height="50"/>
@@ -1425,7 +1425,7 @@ After the tooth is filled, you and the dentist will communicate to ensure the bi
     <inferredMetricsTieBreakers>
         <segue reference="4th-0b-chv"/>
         <segue reference="Roi-Kv-Fx4"/>
-        <segue reference="woR-t6-orL"/>
+        <segue reference="u1e-if-9ww"/>
         <segue reference="VIX-0F-SI1"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -24,23 +24,23 @@ class NotesViewController: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(tapDone))
+        
+        self.navigationItem.rightBarButtonItem = doneButton;
+        
         textView.clipsToBounds = true;
         textView.layer.cornerRadius = 15.0;
-        doneButton.isEnabled = false;
+        textView.frame.size = CGSize(width: textView.frame.size.width, height: 500)
         
         
     }
     
  
-    @IBAction func donePressed(_ sender: Any) {
-        textView.resignFirstResponder();
-    }
     
     
     
     func textView (_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text:String) ->Bool {
-        
-        doneButton.isEnabled = true;
+        textView.frame.size = CGSize(width: textView.frame.size.width, height: 250)
         if (text == "" && range.length > 0){
             
             
@@ -49,6 +49,7 @@ class NotesViewController: UIViewController, UITextViewDelegate {
         
             UserDefaults.standard.set((textView.text + text), forKey: "userInput");
         }
+        
         
        
         return true
@@ -63,9 +64,10 @@ class NotesViewController: UIViewController, UITextViewDelegate {
    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        doneButton.setTitle("Done", for: .normal)
-        UserDefaults.standard.set(textView.text, forKey: "userInput");
-        textView.resignFirstResponder();
+        
+        //doneButton.setTitle("Done", for: .normal)
+        //UserDefaults.standard.set(textView.text, forKey: "userInput");
+        //textView.resignFirstResponder();
         //theText = textView.text
         
     }
@@ -74,7 +76,11 @@ class NotesViewController: UIViewController, UITextViewDelegate {
         if let x = UserDefaults.standard.object(forKey: "userInput") as? String{
             textView.text = x
         }
-         print("hi");
+        
+    }
+    
+    @objc func tapDone(){
+        textView.resignFirstResponder();
     }
     
     

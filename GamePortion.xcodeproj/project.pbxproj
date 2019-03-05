@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		450AD7BE222DD97F0074C713 /* customNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450AD7BD222DD97F0074C713 /* customNav.swift */; };
 		457A6062217ABBFE00F98F83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A6061217ABBFE00F98F83 /* AppDelegate.swift */; };
 		457A6064217ABBFE00F98F83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A6063217ABBFE00F98F83 /* ViewController.swift */; };
 		457A6067217ABBFE00F98F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457A6065217ABBFE00F98F83 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		450AD7BD222DD97F0074C713 /* customNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customNav.swift; sourceTree = "<group>"; };
 		457A605E217ABBFE00F98F83 /* GamePortion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamePortion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		457A6061217ABBFE00F98F83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		457A6063217ABBFE00F98F83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			children = (
 				457A6061217ABBFE00F98F83 /* AppDelegate.swift */,
 				457A6063217ABBFE00F98F83 /* ViewController.swift */,
+				450AD7BD222DD97F0074C713 /* customNav.swift */,
 				45805BEA2181192500BDA9FD /* CircleViewController.swift */,
 				457A6065217ABBFE00F98F83 /* Main.storyboard */,
 				45A494672224739E00CCF229 /* Dentist.swift */,
@@ -160,6 +163,7 @@
 				457A6064217ABBFE00F98F83 /* ViewController.swift in Sources */,
 				45B933542204D4A4007E752E /* NotesViewController.swift in Sources */,
 				457A6062217ABBFE00F98F83 /* AppDelegate.swift in Sources */,
+				450AD7BE222DD97F0074C713 /* customNav.swift in Sources */,
 				45A494682224739E00CCF229 /* Dentist.swift in Sources */,
 				45A4946422246C2500CCF229 /* Dermatologist.swift in Sources */,
 				45805BED218119B600BDA9FD /* InstructionsViewController.swift in Sources */,

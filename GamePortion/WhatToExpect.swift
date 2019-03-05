@@ -32,6 +32,15 @@ class WhatToExpect: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let homeButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(tapHome));
+        self.navigationItem.rightBarButtonItem = homeButton;
+        
+        
+        
+        
+        
         xspacing = width1 + 10;
         yspacing = height1 + 10;
         
@@ -77,6 +86,12 @@ class WhatToExpect: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    @objc func tapHome(){
+        print("you tap!");
+    }
+    
+    
     
 
     /*

@@ -23,7 +23,7 @@ class Dermatologist: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       self.navigationItem.title = "Derm";
         
         
         button1.clipsToBounds = true;
