@@ -12,6 +12,7 @@ class Dermatologist: UIViewController {
 
     @IBOutlet weak var button1: UIButton!
     
+    @IBOutlet weak var homeButton: UIButton!
     
     @IBOutlet weak var button2: UIButton!
     
@@ -23,8 +24,8 @@ class Dermatologist: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       self.navigationItem.title = "Derm";
-        
+       
+        self.navigationItem.titleView = homeButton;
         
         button1.clipsToBounds = true;
         button1.layer.cornerRadius = 25.0;

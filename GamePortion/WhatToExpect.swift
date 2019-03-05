@@ -10,6 +10,8 @@ import UIKit
 
 class WhatToExpect: UIViewController {
 
+    @IBOutlet weak var homeButton: UIButton!
+    
     @IBOutlet weak var dentistButton: UIButton!
     
     @IBOutlet weak var eyeDoctorButton: UIButton!
@@ -34,10 +36,9 @@ class WhatToExpect: UIViewController {
         super.viewDidLoad()
         
         
-        let homeButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(tapHome));
-        self.navigationItem.rightBarButtonItem = homeButton;
         
-        
+       
+        self.navigationItem.titleView = homeButton;
         
         
         

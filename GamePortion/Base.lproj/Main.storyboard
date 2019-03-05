@@ -95,6 +95,14 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0f-lv-BuZ">
+                                <rect key="frame" x="173" y="28" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <segue destination="ksl-9f-8Id" kind="show" id="bQL-LF-ofz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="MpR-mB-Dl2"/>
@@ -102,13 +110,14 @@
                     <connections>
                         <outlet property="circleButton" destination="sLr-Xp-ufn" id="PBq-JA-vUa"/>
                         <outlet property="currentScoreLabel" destination="JbJ-Gx-8QK" id="pqP-fB-5Y3"/>
+                        <outlet property="homeButton" destination="L0f-lv-BuZ" id="SA1-Jv-GBd"/>
                         <outlet property="maxScoreLabel" destination="MZu-ih-DLm" id="Fau-4V-1Al"/>
                         <outlet property="restartButton" destination="hhW-Qe-Lee" id="6Y8-Df-wir"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4L-rM-nO4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3650.4000000000001" y="-497.00149925037488"/>
+            <point key="canvasLocation" x="-3761" y="-1122"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mOb-Fy-np8">
@@ -306,7 +315,7 @@ create this app </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GWi-Bz-fwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5828" y="446.62668665667172"/>
+            <point key="canvasLocation" x="-1842" y="1190"/>
         </scene>
         <!--What To Expect-->
         <scene sceneID="jct-oC-mTp">
@@ -320,25 +329,16 @@ create this app </string>
                                 <rect key="frame" x="198" y="522" width="166" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <segue destination="5NX-DN-4ye" kind="show" id="597-0X-zLv"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2a5-jh-vnX">
                                 <rect key="frame" x="11" y="522" width="169" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <segue destination="9V1-Ko-Iso" kind="show" id="TSh-LS-f2r"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPc-HO-zAi">
                                 <rect key="frame" x="198" y="381" width="166" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <segue destination="Vl6-lK-d4m" kind="show" id="YgO-21-PF6"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRN-xk-h2l">
                                 <rect key="frame" x="11" y="381" width="169" height="127"/>
@@ -480,6 +480,14 @@ Doctor</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2W-sG-PwL">
+                                <rect key="frame" x="178" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <segue destination="ksl-9f-8Id" kind="show" id="g3x-ot-N2H"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.53725490196078429" green="0.6705882352941176" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="obn-C9-tO3"/>
@@ -490,13 +498,14 @@ Doctor</string>
                         <outlet property="dentistButton" destination="gTV-Ug-Gnv" id="T4o-Ww-cyD"/>
                         <outlet property="dermButton" destination="PRN-xk-h2l" id="kFS-z0-puT"/>
                         <outlet property="eyeDoctorButton" destination="C49-bg-5ER" id="jcZ-id-vax"/>
+                        <outlet property="homeButton" destination="v2W-sG-PwL" id="bQj-SS-XvL"/>
                         <outlet property="pychologistButton" destination="2a5-jh-vnX" id="4L1-2S-YsW"/>
                         <outlet property="sportsDoctorButton" destination="DFe-yO-nw6" id="4Qt-au-G4B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DDE-kT-LRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3917.5999999999999" y="566.26686656671666"/>
+            <point key="canvasLocation" x="-4783" y="-83"/>
         </scene>
         <!--Dermatologist-->
         <scene sceneID="UNj-W1-9oF">
@@ -582,6 +591,14 @@ Appointment</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fox-TH-46g">
+                                <rect key="frame" x="172" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <segue destination="ksl-9f-8Id" kind="show" id="vZd-0B-w0s"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.53725490196078429" green="0.6705882352941176" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="7lG-ch-cfQ"/>
@@ -589,61 +606,17 @@ Appointment</string>
                     <connections>
                         <outlet property="button1" destination="0Aw-zW-0HJ" id="x3r-8E-Vfe"/>
                         <outlet property="button2" destination="fVg-3G-56B" id="Xly-hT-fA0"/>
+                        <outlet property="homeButton" destination="fox-TH-46g" id="s1H-7M-tio"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3BU-jk-uU0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3092" y="575.26236881559225"/>
+            <point key="canvasLocation" x="-4110" y="-97"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="u3D-yd-dU8">
-            <objects>
-                <viewController id="Vl6-lK-d4m" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="31i-94-9TP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.53725490196078429" green="0.6705882352941176" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
-                        <viewLayoutGuide key="safeArea" id="Tk5-oS-qM4"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OL0-tz-pyC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-7388" y="1323"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="3LZ-ta-Xo4">
-            <objects>
-                <viewController id="9V1-Ko-Iso" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="egG-7h-0WW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.53725490196078429" green="0.6705882352941176" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
-                        <viewLayoutGuide key="safeArea" id="8gN-te-P5h"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jCB-46-VKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-6721" y="1323"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="T5Z-Lw-wIW">
-            <objects>
-                <viewController id="5NX-DN-4ye" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JRU-2p-odv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.53725490196078429" green="0.6705882352941176" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
-                        <viewLayoutGuide key="safeArea" id="heF-1e-rQk"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bhU-MB-b3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-6049" y="1326"/>
-        </scene>
-        <!--View Controller-->
+        <!--Derm Routine-->
         <scene sceneID="iNj-UN-PJg">
             <objects>
-                <viewController id="vir-J4-XXX" sceneMemberID="viewController">
+                <viewController id="vir-J4-XXX" customClass="dermRoutine" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ga5-Q3-SSy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -688,19 +661,30 @@ recommend a biopsy of an area of skin for definitive diagnosis.</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OE-20-tOB">
+                                <rect key="frame" x="172" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <segue destination="ksl-9f-8Id" kind="show" id="zXv-A1-mrH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="j1Z-NQ-Sad"/>
                     </view>
+                    <connections>
+                        <outlet property="homeButton" destination="2OE-20-tOB" id="6QS-5E-fRA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chR-DE-ktL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5298.3999999999996" y="1333.5832083958021"/>
+            <point key="canvasLocation" x="-4759" y="2905"/>
         </scene>
-        <!--View Controller-->
+        <!--Biopsy-->
         <scene sceneID="fjo-RX-zvL">
             <objects>
-                <viewController id="Teh-By-vvS" sceneMemberID="viewController">
+                <viewController id="Teh-By-vvS" customClass="Biopsy" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bwe-HQ-UkD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -746,14 +730,25 @@ weeks.</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZI-8r-aqL">
+                                <rect key="frame" x="172" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <segue destination="ksl-9f-8Id" kind="show" id="0fr-Dy-Zdb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="kDv-n4-Wyo"/>
                     </view>
+                    <connections>
+                        <outlet property="homeButton" destination="RZI-8r-aqL" id="l06-zU-0lt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vzN-al-6iN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4612" y="1334"/>
+            <point key="canvasLocation" x="-4783" y="2094"/>
         </scene>
         <!--Eye Doctor-->
         <scene sceneID="1TS-5Z-3zM">
@@ -849,6 +844,14 @@ Eye Exam</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuO-MW-qb2">
+                                <rect key="frame" x="172" y="0.0" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <segue destination="ksl-9f-8Id" kind="show" id="sDV-Dn-OYH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.53725490196078429" green="0.6705882352941176" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Mv2-92-BaW"/>
@@ -857,11 +860,12 @@ Eye Exam</string>
                         <outlet property="button1" destination="nFi-sj-ZRA" id="FSu-G0-ubC"/>
                         <outlet property="button2" destination="XYO-E2-dHt" id="nhK-sr-Dh1"/>
                         <outlet property="button3" destination="jc3-QK-Ywb" id="tcJ-zR-vxZ"/>
+                        <outlet property="homeButton" destination="tuO-MW-qb2" id="oVO-sd-EHD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pmB-8T-jot" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2332" y="575.26236881559225"/>
+            <point key="canvasLocation" x="-4758" y="615"/>
         </scene>
         <!--Dentist-->
         <scene sceneID="qn3-TN-ffT">
@@ -946,6 +950,14 @@ Appointment</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvQ-Ub-RBY">
+                                <rect key="frame" x="172" y="16" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <segue destination="ksl-9f-8Id" kind="show" id="BLZ-cf-TRK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.53725490196078429" green="0.6705882352941176" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="PC0-LD-UWB"/>
@@ -953,11 +965,12 @@ Appointment</string>
                     <connections>
                         <outlet property="button1" destination="nHF-Lr-OLF" id="5oC-HE-mds"/>
                         <outlet property="button2" destination="Dde-JO-PEA" id="RSd-ce-MZZ"/>
+                        <outlet property="homeButton" destination="WvQ-Ub-RBY" id="zx3-Gl-U7x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XlR-OG-1ZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1645.5999999999999" y="575.26236881559225"/>
+            <point key="canvasLocation" x="-4111" y="615"/>
         </scene>
         <!--Notes View Controller-->
         <scene sceneID="2Bn-F7-xVz">
@@ -985,22 +998,31 @@ Appointment</string>
                                     <outlet property="delegate" destination="HRU-gv-ssd" id="m2i-ti-FsI"/>
                                 </connections>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrf-0s-tSY">
+                                <rect key="frame" x="172" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <segue destination="ksl-9f-8Id" kind="show" id="ix0-R9-pcr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Iwn-hd-IuE"/>
                     </view>
                     <connections>
+                        <outlet property="homeButton" destination="Jrf-0s-tSY" id="Nnt-D8-WaM"/>
                         <outlet property="textView" destination="6ql-yH-zUF" id="Vsj-9M-7wa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wrt-17-IQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-888.79999999999995" y="263.11844077961024"/>
+            <point key="canvasLocation" x="-3007" y="212"/>
         </scene>
-        <!--View Controller-->
+        <!--Eye Doctor General-->
         <scene sceneID="9zz-FT-uhI">
             <objects>
-                <viewController id="uFx-5V-K5r" sceneMemberID="viewController">
+                <viewController id="uFx-5V-K5r" customClass="EyeDoctorGeneral" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zbW-XH-pyB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1054,19 +1076,30 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFq-IT-gey">
+                                <rect key="frame" x="172" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <segue destination="ksl-9f-8Id" kind="show" id="O0G-h2-cJt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="U48-te-DHE"/>
                     </view>
+                    <connections>
+                        <outlet property="homeButton" destination="rFq-IT-gey" id="Rkj-BZ-4E2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vUM-ml-DLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3934" y="1334"/>
+            <point key="canvasLocation" x="-3780" y="1596"/>
         </scene>
-        <!--View Controller-->
+        <!--Instructions View Controller-->
         <scene sceneID="bP4-4P-lyb">
             <objects>
-                <viewController id="pgp-Sf-RpN" sceneMemberID="viewController">
+                <viewController id="pgp-Sf-RpN" customClass="InstructionsViewController" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ONg-2C-lnX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1129,19 +1162,30 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                                     <segue destination="UDm-ub-GoO" kind="show" id="VIX-0F-SI1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxu-0l-9f1">
+                                <rect key="frame" x="171" y="26" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <segue destination="ksl-9f-8Id" kind="show" id="wn4-wm-GmG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="fOH-sP-VbP"/>
                     </view>
+                    <connections>
+                        <outlet property="homeButton" destination="kxu-0l-9f1" id="vhX-wI-I6B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V1Z-Ks-TWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4639.1999999999998" y="-336.88155922038982"/>
+            <point key="canvasLocation" x="-5050" y="-1122"/>
         </scene>
-        <!--View Controller-->
+        <!--Routine Eye Doctor-->
         <scene sceneID="vS8-sJ-BQu">
             <objects>
-                <viewController id="EfD-Op-Sbn" sceneMemberID="viewController">
+                <viewController id="EfD-Op-Sbn" customClass="RoutineEyeDoctor" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XgU-uh-xCA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1177,19 +1221,30 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6E-sv-vkW">
+                                <rect key="frame" x="172" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <segue destination="ksl-9f-8Id" kind="show" id="AfR-Dc-YZB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="5Du-S8-0vt"/>
                     </view>
+                    <connections>
+                        <outlet property="homeButton" destination="J6E-sv-vkW" id="Hpz-k1-4Ss"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tuM-15-C9A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3266" y="1334"/>
+            <point key="canvasLocation" x="-2889" y="1791"/>
         </scene>
-        <!--View Controller-->
+        <!--Dilated Eye Exam-->
         <scene sceneID="iB9-WJ-6R4">
             <objects>
-                <viewController id="wIf-vV-deE" sceneMemberID="viewController">
+                <viewController id="wIf-vV-deE" customClass="DilatedEyeExam" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4YI-ze-Tx7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1250,19 +1305,30 @@ Cg
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXQ-bx-mut">
+                                <rect key="frame" x="172" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <segue destination="ksl-9f-8Id" kind="show" id="Q8U-dI-Rtb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1B1-by-4Hn"/>
                     </view>
+                    <connections>
+                        <outlet property="homeButton" destination="aXQ-bx-mut" id="8Si-jP-Ace"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLb-aB-4a6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2601" y="1334"/>
+            <point key="canvasLocation" x="-2657" y="935"/>
         </scene>
-        <!--View Controller-->
+        <!--Cleaning-->
         <scene sceneID="SlO-NT-Sif">
             <objects>
-                <viewController id="IhZ-o9-D0x" sceneMemberID="viewController">
+                <viewController id="IhZ-o9-D0x" customClass="cleaning" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jRK-lh-nj0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1315,19 +1381,30 @@ scheduled for any treatment needed.</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blz-E7-E7A">
+                                <rect key="frame" x="172" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <segue destination="ksl-9f-8Id" kind="show" id="bMc-aG-Jb3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kOI-iq-Kbg"/>
                     </view>
+                    <connections>
+                        <outlet property="homeButton" destination="blz-E7-E7A" id="d46-mP-cKJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N9H-Kb-kQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1969" y="1334"/>
+            <point key="canvasLocation" x="-2937" y="2979"/>
         </scene>
-        <!--View Controller-->
+        <!--Cavity Filling-->
         <scene sceneID="GIK-3T-SUe">
             <objects>
-                <viewController id="Pb8-YG-weI" sceneMemberID="viewController">
+                <viewController id="Pb8-YG-weI" customClass="CavityFilling" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o7F-D0-Mp7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1378,14 +1455,25 @@ After the tooth is filled, you and the dentist will communicate to ensure the bi
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpD-eq-XWP">
+                                <rect key="frame" x="172" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <segue destination="ksl-9f-8Id" kind="show" id="VM4-Fr-D7H"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bMk-zT-zmP"/>
                     </view>
+                    <connections>
+                        <outlet property="homeButton" destination="JpD-eq-XWP" id="1Dc-Zk-yUX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="19U-cO-zoH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1314" y="1334"/>
+            <point key="canvasLocation" x="-2103" y="2240"/>
         </scene>
         <!--Custom Nav-->
         <scene sceneID="POk-Zy-k1C">
@@ -1411,10 +1499,11 @@ After the tooth is filled, you and the dentist will communicate to ensure the bi
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ga6-X0-36z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6767.1999999999998" y="446.62668665667172"/>
+            <point key="canvasLocation" x="-7100" y="-730"/>
         </scene>
     </scenes>
     <resources>
+        <image name="bHouse" width="30" height="30"/>
         <image name="dog5" width="50" height="50"/>
         <image name="firstAid" width="55" height="55"/>
         <image name="game" width="50" height="50"/>
@@ -1426,6 +1515,7 @@ After the tooth is filled, you and the dentist will communicate to ensure the bi
         <segue reference="4th-0b-chv"/>
         <segue reference="Roi-Kv-Fx4"/>
         <segue reference="u1e-if-9ww"/>
+        <segue reference="Q8U-dI-Rtb"/>
         <segue reference="VIX-0F-SI1"/>
     </inferredMetricsTieBreakers>
 </document>

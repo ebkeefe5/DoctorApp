@@ -11,6 +11,7 @@ import Foundation
 
 class CircleViewController: UIViewController {
 
+    @IBOutlet weak var homeButton: UIButton!
     //is the game running
     var gameRunning = true;
     
@@ -41,11 +42,14 @@ class CircleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //homeButton.addTarget(self, action: #selector(homeButtonPressed), for: .touchUpInside);
+        self.navigationItem.titleView = homeButton;
         centerX = self.view.bounds.width/2
         centerY = self.view.bounds.height/2
         circleRadMin = min(centerX, centerY)*1/16
         
         self.restartGame();
+        
         //circleRadMax = max(centerX, centerY)*3/4
         //currentRad = circleRadMin
         

@@ -19,18 +19,19 @@ class NotesViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var doneButton: UIButton!
     
+    @IBOutlet weak var homeButton: UIButton!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.titleView = homeButton;
         let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(tapDone))
         
         self.navigationItem.rightBarButtonItem = doneButton;
         
-        textView.clipsToBounds = true;
-        textView.layer.cornerRadius = 15.0;
-        textView.frame.size = CGSize(width: textView.frame.size.width, height: 500)
+       
+        textView.frame.size = CGSize(width: textView.frame.size.width, height: 605)
         
         
     }
@@ -40,7 +41,7 @@ class NotesViewController: UIViewController, UITextViewDelegate {
     
     
     func textView (_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text:String) ->Bool {
-        textView.frame.size = CGSize(width: textView.frame.size.width, height: 250)
+        textView.frame.size = CGSize(width: textView.frame.size.width, height: 343)
         if (text == "" && range.length > 0){
             
             
@@ -80,6 +81,7 @@ class NotesViewController: UIViewController, UITextViewDelegate {
     }
     
     @objc func tapDone(){
+        textView.frame.size = CGSize(width: textView.frame.size.width, height: 605)
         textView.resignFirstResponder();
     }
     

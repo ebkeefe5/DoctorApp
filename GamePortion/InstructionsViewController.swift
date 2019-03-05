@@ -10,18 +10,34 @@ import UIKit
 
 class InstructionsViewController: UIViewController {
 
+    
+   
+    @IBOutlet weak var homeButton: UIButton!
+    
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-
+        super.viewDidLoad();
+        //let button =  UIButton(type: .custom)
+        //button.frame = CGRect(x: 0, y: 0, width: 100, height: 40)
+        //button.backgroundColor = .white
+        //button.setTitle("Home", for: .normal)
+        homeButton.addTarget(self, action: #selector(homeButtonPressed), for: .touchUpInside)
+        self.navigationItem.titleView = homeButton;
+        //let logo = UIImage(named: "gHouse.png");
+        //let imageView = UIImageView(image:logo);
+        //self.navigationItem.titleView = imageView;
+        
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    @objc func homeButtonPressed(){
+        print("hi");
+        
+    }
 
+  
+    
+    
     /*
     // MARK: - Navigation
 

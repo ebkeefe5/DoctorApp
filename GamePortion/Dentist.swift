@@ -12,6 +12,7 @@ class Dentist: UIViewController {
 
     @IBOutlet weak var button1: UIButton!
         
+    @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var button2: UIButton!
     
     var x1: CGFloat = 10.0;
@@ -22,7 +23,7 @@ class Dentist: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationItem.titleView = homeButton;
         button1.clipsToBounds = true;
         button1.layer.cornerRadius = 25.0;
         button1.frame = CGRect(x: x1, y: y1, width: width1, height: height1);
