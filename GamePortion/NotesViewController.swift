@@ -34,7 +34,15 @@ class NotesViewController: UIViewController, UITextViewDelegate, UIGestureRecogn
        
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.viewTapped(_:)));
         tap.delegate = self;
+        tap.numberOfTapsRequired = 1;
         tap.cancelsTouchesInView = false;
+        
+        let doubleTap = UITapGestureRecognizer(target: self, action:#selector(self.doubleTapAction(_:)))
+        doubleTap.numberOfTapsRequired = 2
+        view.addGestureRecognizer(doubleTap)
+        
+        tap.require(toFail: doubleTap)
+        
         textView.addGestureRecognizer(tap);
         
         self.navigationItem.titleView = homeButton;
@@ -54,10 +62,13 @@ class NotesViewController: UIViewController, UITextViewDelegate, UIGestureRecogn
         return true
     }
     
+    @objc func doubleTapAction(_ sender: UITapGestureRecognizer){
+        print("double tap");
+    }
    
     
     @objc func viewTapped(_ sender: UITapGestureRecognizer){
-        
+        print("single tap");
         if (keyBoardUp){
             print("the keyboard is already up, do nothing");
         }else{
