@@ -20,7 +20,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLr-Xp-ufn">
                                 <rect key="frame" x="0.0" y="122" width="375" height="423"/>
-                                <color key="backgroundColor" red="0.54901960780000003" green="0.72156862749999995" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="sLr-Xp-ufn" secondAttribute="height" multiplier="125:141" id="M6N-vw-32U"/>
                                     <constraint firstAttribute="height" constant="423" id="ND4-qO-542"/>
@@ -36,7 +36,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhW-Qe-Lee">
                                 <rect key="frame" x="0.0" y="569" width="375" height="98"/>
-                                <color key="backgroundColor" red="0.54901960780000003" green="0.72156862749999995" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="hhW-Qe-Lee" secondAttribute="height" multiplier="375:98" id="AF0-05-MD9"/>
                                 </constraints>
@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbJ-Gx-8QK">
-                                <rect key="frame" x="10" y="58" width="141.5" height="48.5"/>
+                                <rect key="frame" x="10" y="102" width="141.5" height="48.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="JbJ-Gx-8QK" secondAttribute="height" multiplier="35:12" id="DtL-vF-1ju"/>
                                 </constraints>
@@ -86,14 +86,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0f-lv-BuZ">
-                                <rect key="frame" x="168.5" y="28" width="38" height="38"/>
+                                <rect key="frame" x="168.5" y="72" width="38" height="38"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
-                                    <segue destination="ksl-9f-8Id" kind="show" id="bQL-LF-ofz"/>
+                                    <action selector="homePressed:" destination="UDm-ub-GoO" eventType="touchUpInside" id="ymu-Nc-bev"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZu-ih-DLm">
-                                <rect key="frame" x="211" y="53" width="147.5" height="55"/>
+                                <rect key="frame" x="211" y="97" width="147.5" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MZu-ih-DLm" secondAttribute="height" multiplier="158:59" id="LNs-ge-do6"/>
                                 </constraints>
@@ -117,7 +117,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="MZu-ih-DLm" firstAttribute="top" secondItem="MpR-mB-Dl2" secondAttribute="top" constant="33" id="1tc-Y4-ZK1"/>
                             <constraint firstItem="hhW-Qe-Lee" firstAttribute="leading" secondItem="MpR-mB-Dl2" secondAttribute="leading" id="2vO-GD-t8L"/>
@@ -145,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4L-rM-nO4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3762.4000000000001" y="-1122.1889055472266"/>
+            <point key="canvasLocation" x="-4783" y="-1358"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mOb-Fy-np8">
@@ -155,54 +155,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9B-a8-b6B">
-                                <rect key="frame" x="0.0" y="240" width="375" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9B-a8-b6B">
+                                <rect key="frame" x="0.0" y="493.5" width="375" height="87"/>
+                                <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="pgp-Sf-RpN" kind="show" id="4th-0b-chv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZC-9b-Vet">
-                                <rect key="frame" x="0.0" y="327" width="375" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.53725490196078429" green="0.6705882352941176" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZC-9b-Vet">
+                                <rect key="frame" x="0.0" y="233.5" width="375" height="86.5"/>
+                                <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="Mw4-8a-E4x" kind="show" id="u1e-if-9ww"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68f-AL-Z9W">
-                                <rect key="frame" x="0.0" y="496" width="375" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68f-AL-Z9W">
+                                <rect key="frame" x="0.0" y="407" width="375" height="86.5"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="uvi-Kh-hG0" kind="show" id="fJ6-UU-QmY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4Z-Ci-EcY">
-                                <rect key="frame" x="0.0" y="412" width="375" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4Z-Ci-EcY">
+                                <rect key="frame" x="0.0" y="320" width="375" height="87"/>
+                                <color key="backgroundColor" red="0.53725490196078429" green="0.6705882352941176" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="HRU-gv-ssd" kind="show" id="cf2-Ei-IHT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLx-g9-p75">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLx-g9-p75">
                                 <rect key="frame" x="0.0" y="580.5" width="375" height="86.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.32156862745098036" green="0.51764705882352935" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZU-H8-4Ay">
-                                <rect key="frame" x="282" y="344" width="55" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZU-H8-4Ay">
+                                <rect key="frame" x="292" y="247.5" width="55" height="55"/>
                                 <state key="normal" image="firstAid"/>
                                 <connections>
                                     <segue destination="Mw4-8a-E4x" kind="show" id="fQA-Uj-RUv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sV-9h-kOS">
-                                <rect key="frame" x="294" y="426" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sV-9h-kOS">
+                                <rect key="frame" x="297" y="337" width="50" height="50"/>
                                 <state key="normal" image="notepad"/>
                                 <connections>
                                     <segue destination="HRU-gv-ssd" kind="show" id="Roi-Kv-Fx4"/>
@@ -213,61 +206,54 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="dog5"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4K0-r8-AOb">
-                                <rect key="frame" x="287" y="510" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4K0-r8-AOb">
+                                <rect key="frame" x="297" y="423.5" width="50" height="50"/>
                                 <state key="normal" image="meditate"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZu-Vk-dIm">
-                                <rect key="frame" x="287" y="596" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZu-Vk-dIm">
+                                <rect key="frame" x="297" y="597" width="50" height="50"/>
                                 <state key="normal" image="info"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPE-XB-P2d">
-                                <rect key="frame" x="8" y="256" width="178" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPE-XB-P2d">
+                                <rect key="frame" x="12" y="511.5" width="178" height="47"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Play Games">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="34" name="ChalkboardSE-Light"/>
+                                            <font key="NSFont" size="34" name="Avenir-Book"/>
                                             <font key="NSOriginalFont" size="34" name="Avenir-Book"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRD-L1-hWk">
-                                <rect key="frame" x="287" y="256" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRD-L1-hWk">
+                                <rect key="frame" x="297" y="510" width="50" height="50"/>
                                 <state key="normal" image="game"/>
                                 <connections>
                                     <segue destination="pgp-Sf-RpN" kind="show" id="cca-tg-lkq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwm-qN-bHE">
-                                <rect key="frame" x="9" y="430" width="96" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwm-qN-bHE">
+                                <rect key="frame" x="12" y="338.5" width="91.5" height="46.5"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Q &amp; A">
+                                    <fragment content="Notes">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="34" name="ChalkboardSE-Light"/>
-                                            <font key="NSOriginalFont" size="38" name="ChalkboardSE-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <font key="NSFont" size="34" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="clipping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYx-M1-MA7">
-                                <rect key="frame" x="12" y="513" width="84.5" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYx-M1-MA7">
+                                <rect key="frame" x="12" y="425.5" width="81.5" height="46.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Relax">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="34" name="ChalkboardSE-Light"/>
+                                            <font key="NSFont" size="34" name="Avenir-Book"/>
                                             <font key="NSOriginalFont" size="38" name="ChalkboardSE-Light"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -275,14 +261,13 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UY7-gJ-8vN">
-                                <rect key="frame" x="12" y="592.5" width="89.5" height="48.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UY7-gJ-8vN">
+                                <rect key="frame" x="12" y="598.5" width="95" height="47"/>
                                 <attributedString key="attributedText">
                                     <fragment content="About">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="34" name="ChalkboardSE-Light"/>
+                                            <font key="NSFont" size="34" name="Avenir-Book"/>
                                             <font key="NSOriginalFont" size="38" name="ChalkboardSE-Light"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -290,14 +275,13 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKo-No-rWd">
-                                <rect key="frame" x="8" y="347" width="246" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKo-No-rWd">
+                                <rect key="frame" x="12" y="251.5" width="234.5" height="47"/>
                                 <attributedString key="attributedText">
                                     <fragment content="What to Expect">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="34" name="ChalkboardSE-Light"/>
+                                            <font key="NSFont" size="34" name="Avenir-Book"/>
                                             <font key="NSOriginalFont" size="34" name="Avenir-Book"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -305,32 +289,17 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNn-Aw-Num">
-                                <rect key="frame" x="49.5" y="124" width="276.5" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">Play Games • Know what to expect • 
-Record Questions • Relax •
-Learn about the doctors who helped
-create this app </string>
-                                        <attributes>
-                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="16" name="ChalkboardSE-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAY-Gu-dnH">
-                                <rect key="frame" x="92" y="54" width="191" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAY-Gu-dnH">
+                                <rect key="frame" x="78.5" y="64" width="218" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="Efs-hj-cSd"/>
+                                    <constraint firstAttribute="height" constant="77" id="Vnd-pw-IJN"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Welcome">
                                         <attributes>
-                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="48" name="Noteworthy-Bold"/>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="48" name="Avenir-Heavy"/>
                                             <font key="NSOriginalFont" size="48" name="SinhalaMN-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -338,15 +307,82 @@ create this app </string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNn-Aw-Num">
+                                <rect key="frame" x="32.5" y="121" width="310" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="310" id="lGt-bb-TgK"/>
+                                    <constraint firstAttribute="height" constant="109" id="zHD-8J-L7S"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Know what to expect • Record Notes • 
+Relax and Meditate • Play Games •
+Learn about the doctors who helped
+create this app </string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="16" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.68235294117647061" green="0.77254901960784317" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7sV-9h-kOS" firstAttribute="centerY" secondItem="Qwm-qN-bHE" secondAttribute="centerY" id="26S-db-9wF"/>
+                            <constraint firstItem="a9B-a8-b6B" firstAttribute="top" secondItem="68f-AL-Z9W" secondAttribute="bottom" id="2GP-Uv-aqU"/>
+                            <constraint firstItem="kRD-L1-hWk" firstAttribute="centerY" secondItem="wPE-XB-P2d" secondAttribute="centerY" id="2wt-8z-0to"/>
+                            <constraint firstItem="T4Z-Ci-EcY" firstAttribute="width" secondItem="68f-AL-Z9W" secondAttribute="width" id="51x-Xb-hIZ"/>
+                            <constraint firstItem="4K0-r8-AOb" firstAttribute="centerY" secondItem="lYx-M1-MA7" secondAttribute="centerY" id="5MO-dY-tmu"/>
+                            <constraint firstItem="lYx-M1-MA7" firstAttribute="leading" secondItem="BMd-Dn-dre" secondAttribute="leading" constant="12" id="6Nf-vc-mVu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VZU-H8-4Ay" secondAttribute="trailing" constant="12" id="6q8-kU-oeY"/>
+                            <constraint firstItem="aAY-Gu-dnH" firstAttribute="top" secondItem="jyC-JN-I3c" secondAttribute="topMargin" id="88j-YL-b6g"/>
+                            <constraint firstItem="xNn-Aw-Num" firstAttribute="centerX" secondItem="jyC-JN-I3c" secondAttribute="centerX" id="AI7-kB-cg5"/>
+                            <constraint firstItem="a9B-a8-b6B" firstAttribute="centerX" secondItem="jyC-JN-I3c" secondAttribute="centerX" id="AQs-SI-htu"/>
+                            <constraint firstItem="0ZC-9b-Vet" firstAttribute="top" secondItem="xKo-No-rWd" secondAttribute="bottom" constant="-65" id="Af4-VZ-0vE"/>
+                            <constraint firstItem="zZu-Vk-dIm" firstAttribute="centerY" secondItem="UY7-gJ-8vN" secondAttribute="centerY" id="Btd-mz-8gd"/>
+                            <constraint firstItem="aAY-Gu-dnH" firstAttribute="centerX" secondItem="jyC-JN-I3c" secondAttribute="centerX" id="Dbj-ro-Nw6"/>
+                            <constraint firstItem="68f-AL-Z9W" firstAttribute="centerX" secondItem="jyC-JN-I3c" secondAttribute="centerX" id="H7U-Wy-8ae"/>
+                            <constraint firstAttribute="bottom" secondItem="YLx-g9-p75" secondAttribute="bottom" id="HbV-5r-6h3"/>
+                            <constraint firstItem="0ZC-9b-Vet" firstAttribute="width" secondItem="YLx-g9-p75" secondAttribute="width" id="IwA-Hb-BEt"/>
+                            <constraint firstItem="T4Z-Ci-EcY" firstAttribute="top" secondItem="0ZC-9b-Vet" secondAttribute="bottom" id="K6D-mX-Mdk"/>
+                            <constraint firstItem="YLx-g9-p75" firstAttribute="top" secondItem="a9B-a8-b6B" secondAttribute="bottom" id="Kza-m1-OLA"/>
+                            <constraint firstItem="68f-AL-Z9W" firstAttribute="top" secondItem="T4Z-Ci-EcY" secondAttribute="bottom" id="NWP-kb-ZPd"/>
+                            <constraint firstItem="xNn-Aw-Num" firstAttribute="top" secondItem="aAY-Gu-dnH" secondAttribute="bottom" constant="-20" id="O6g-Wi-VsS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4K0-r8-AOb" secondAttribute="trailing" constant="12" id="QQu-VP-NBT"/>
+                            <constraint firstItem="YLx-g9-p75" firstAttribute="height" secondItem="jyC-JN-I3c" secondAttribute="height" multiplier="0.13" id="Qdp-x6-EbT"/>
+                            <constraint firstItem="68f-AL-Z9W" firstAttribute="top" secondItem="lYx-M1-MA7" secondAttribute="bottom" constant="-65" id="TzG-zd-XZA"/>
+                            <constraint firstItem="68f-AL-Z9W" firstAttribute="height" secondItem="a9B-a8-b6B" secondAttribute="height" id="VX5-b9-sb3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7sV-9h-kOS" secondAttribute="trailing" constant="12" id="X5f-lk-Nkk"/>
+                            <constraint firstItem="T4Z-Ci-EcY" firstAttribute="height" secondItem="68f-AL-Z9W" secondAttribute="height" id="Xhq-eS-Ivy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kRD-L1-hWk" secondAttribute="trailing" constant="12" id="XxH-06-Ej7"/>
+                            <constraint firstItem="a9B-a8-b6B" firstAttribute="height" secondItem="YLx-g9-p75" secondAttribute="height" id="cqa-fz-Axi"/>
+                            <constraint firstItem="YLx-g9-p75" firstAttribute="width" secondItem="jyC-JN-I3c" secondAttribute="width" id="ctG-pF-oTE"/>
+                            <constraint firstItem="0ZC-9b-Vet" firstAttribute="centerX" secondItem="jyC-JN-I3c" secondAttribute="centerX" id="d9c-U6-ox0"/>
+                            <constraint firstItem="YLx-g9-p75" firstAttribute="centerX" secondItem="jyC-JN-I3c" secondAttribute="centerX" id="f8e-3n-CLB"/>
+                            <constraint firstItem="a9B-a8-b6B" firstAttribute="width" secondItem="YLx-g9-p75" secondAttribute="width" id="fyU-FX-my4"/>
+                            <constraint firstItem="UY7-gJ-8vN" firstAttribute="leading" secondItem="jyC-JN-I3c" secondAttribute="leading" constant="12" id="gjC-XS-eso"/>
+                            <constraint firstItem="68f-AL-Z9W" firstAttribute="width" secondItem="a9B-a8-b6B" secondAttribute="width" id="ihg-wy-lS7"/>
+                            <constraint firstItem="T4Z-Ci-EcY" firstAttribute="top" secondItem="Qwm-qN-bHE" secondAttribute="bottom" constant="-65" id="jFA-Pd-3Wm"/>
+                            <constraint firstItem="VZU-H8-4Ay" firstAttribute="centerY" secondItem="xKo-No-rWd" secondAttribute="centerY" id="kdw-VJ-JUJ"/>
+                            <constraint firstItem="T4Z-Ci-EcY" firstAttribute="centerX" secondItem="jyC-JN-I3c" secondAttribute="centerX" id="lcb-bH-qWI"/>
+                            <constraint firstItem="wPE-XB-P2d" firstAttribute="leading" secondItem="BMd-Dn-dre" secondAttribute="leading" constant="12" id="lyB-5W-GXS"/>
+                            <constraint firstItem="a9B-a8-b6B" firstAttribute="top" secondItem="wPE-XB-P2d" secondAttribute="bottom" constant="-65" id="p2k-ut-55B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zZu-Vk-dIm" secondAttribute="trailing" constant="12" id="q3u-WS-bNX"/>
+                            <constraint firstItem="0ZC-9b-Vet" firstAttribute="height" secondItem="T4Z-Ci-EcY" secondAttribute="height" id="qX6-0O-a13"/>
+                            <constraint firstItem="YLx-g9-p75" firstAttribute="top" secondItem="UY7-gJ-8vN" secondAttribute="bottom" constant="-65" id="rfR-qu-q7P"/>
+                            <constraint firstItem="xKo-No-rWd" firstAttribute="leading" secondItem="jyC-JN-I3c" secondAttribute="leading" constant="12" id="t63-Li-ATD"/>
+                            <constraint firstItem="Qwm-qN-bHE" firstAttribute="leading" secondItem="jyC-JN-I3c" secondAttribute="leading" constant="12" id="tGf-tG-v8X"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BMd-Dn-dre"/>
                     </view>
                     <navigationItem key="navigationItem" id="icG-LY-8dY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GWi-Bz-fwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1842.4000000000001" y="1189.6551724137933"/>
+            <point key="canvasLocation" x="-6388" y="-970.16491754122944"/>
         </scene>
         <!--Meditation Controller-->
         <scene sceneID="NfV-eS-ayh">
@@ -356,12 +392,11 @@ create this app </string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBn-iP-AgM">
-                                <rect key="frame" x="172" y="20" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBn-iP-AgM">
+                                <rect key="frame" x="168.5" y="20" width="38" height="30"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
-                                    <segue destination="ksl-9f-8Id" kind="show" id="Ytc-LO-1Ex"/>
+                                    <action selector="homePressed:" destination="uvi-Kh-hG0" eventType="touchUpInside" id="L3p-nu-wed"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZT-59-sWI">
@@ -400,7 +435,10 @@ create this app </string>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gBn-iP-AgM" firstAttribute="centerX" secondItem="NvC-b3-9Zy" secondAttribute="centerX" id="30E-12-Azp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gCH-4B-PSl"/>
                     </view>
                     <connections>
@@ -409,7 +447,7 @@ create this app </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clq-zY-Y5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1114.4000000000001" y="649.92503748125944"/>
+            <point key="canvasLocation" x="-7508" y="-602"/>
         </scene>
         <!--What To Expect-->
         <scene sceneID="jct-oC-mTp">
@@ -422,22 +460,22 @@ create this app </string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFe-yO-nw6">
                                 <rect key="frame" x="198" y="522" width="166" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2a5-jh-vnX">
                                 <rect key="frame" x="11" y="522" width="169" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPc-HO-zAi">
                                 <rect key="frame" x="198" y="381" width="166" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRN-xk-h2l">
                                 <rect key="frame" x="11" y="381" width="169" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="hx0-8h-1sO" kind="show" id="lpF-tt-Gpu"/>
                                 </connections>
@@ -445,7 +483,7 @@ create this app </string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gTV-Ug-Gnv">
                                 <rect key="frame" x="11" y="247" width="169" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="u4T-0K-f5B" kind="show" id="F5L-Mt-0Zz"/>
                                 </connections>
@@ -453,7 +491,7 @@ create this app </string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C49-bg-5ER">
                                 <rect key="frame" x="198" y="247" width="166" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="mwd-GH-0Ls" kind="show" id="dNA-kU-1WC"/>
                                 </connections>
@@ -579,11 +617,11 @@ Doctor</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
-                                    <segue destination="ksl-9f-8Id" kind="show" id="g3x-ot-N2H"/>
+                                    <action selector="homePressed:" destination="Mw4-8a-E4x" eventType="touchUpInside" id="7qD-el-fwc"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.53725490196078429" green="0.6705882352941176" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="obn-C9-tO3"/>
                     </view>
                     <navigationItem key="navigationItem" id="xf1-fj-Acq"/>
@@ -599,7 +637,7 @@ Doctor</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DDE-kT-LRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4783" y="-83"/>
+            <point key="canvasLocation" x="-5124" y="-494"/>
         </scene>
         <!--Dermatologist-->
         <scene sceneID="UNj-W1-9oF">
@@ -611,7 +649,7 @@ Doctor</string>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVg-3G-56B">
                                 <rect key="frame" x="9.5" y="518.5" width="356" height="133.5"/>
-                                <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="Teh-By-vvS" kind="show" id="AhS-yE-ALX"/>
                                 </connections>
@@ -620,7 +658,7 @@ Doctor</string>
                                 <rect key="frame" x="168.5" y="0.0" width="38" height="38"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
-                                    <segue destination="ksl-9f-8Id" kind="show" id="vZd-0B-w0s"/>
+                                    <action selector="homePressed:" destination="hx0-8h-1sO" eventType="touchUpInside" id="Is4-pI-udx"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUW-Rh-OKx">
@@ -639,7 +677,7 @@ Doctor</string>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Aw-zW-0HJ">
                                 <rect key="frame" x="9.5" y="370" width="356" height="133.5"/>
-                                <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="vir-J4-XXX" kind="show" id="ef5-te-3kv"/>
                                 </connections>
@@ -660,7 +698,7 @@ Doctor</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chj-ag-LxM">
-                                <rect key="frame" x="20" y="96" width="335" height="98.5"/>
+                                <rect key="frame" x="20" y="140" width="335" height="98.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="335" id="Cvt-Z5-oyZ"/>
                                     <constraint firstAttribute="height" constant="98.5" id="dID-QT-csu"/>
@@ -677,8 +715,8 @@ Doctor</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lL6-Xb-Ky3">
-                                <rect key="frame" x="25" y="53" width="324" height="66"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lL6-Xb-Ky3">
+                                <rect key="frame" x="25.5" y="74" width="324" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="G9h-S6-vHE"/>
                                     <constraint firstAttribute="width" constant="324" id="zo6-DN-Eqj"/>
@@ -695,7 +733,7 @@ Doctor</string>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.53725490196078429" green="0.6705882352941176" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zyo-CN-V8q" firstAttribute="centerX" secondItem="eoc-q2-T4g" secondAttribute="centerX" id="35K-Vk-VKm"/>
                             <constraint firstItem="0Aw-zW-0HJ" firstAttribute="top" secondItem="zyo-CN-V8q" secondAttribute="bottom" constant="-110" id="FZB-hc-O88"/>
@@ -726,7 +764,7 @@ Doctor</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3BU-jk-uU0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4111.1999999999998" y="-97.601199400299862"/>
+            <point key="canvasLocation" x="-6570" y="263"/>
         </scene>
         <!--Derm Routine-->
         <scene sceneID="iNj-UN-PJg">
@@ -736,9 +774,8 @@ Doctor</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rRG-7t-kws">
-                                <rect key="frame" x="16" y="122" width="343" height="545"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rRG-7t-kws">
+                                <rect key="frame" x="9.5" y="125.5" width="356" height="540"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -750,10 +787,22 @@ Dermatologist will look at skin with eyes, feel with fingers, and examine with a
 
 Exam is painless.
 
-Doctor will make a recommendation based off exam, and under certain circumstances may
-recommend a biopsy of an area of skin for definitive diagnosis.</string>
+Doctor will make a recommendation based off exam, and under certain circumstances may</string>
                                         <attributes>
-                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="recommend a biopsy of an area of skin for definitive diagnosis.">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
                                             <font key="NSOriginalFont" size="18" name="Helvetica"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -761,31 +810,40 @@ recommend a biopsy of an area of skin for definitive diagnosis.</string>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSW-B0-Zxe">
-                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSW-B0-Zxe">
+                                <rect key="frame" x="0.0" y="64" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Routine Appointment">
                                         <attributes>
                                             <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="24" name="TimesNewRomanPSMT"/>
+                                            <font key="NSFont" size="24" name="Avenir-Book"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OE-20-tOB">
-                                <rect key="frame" x="172" y="20" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OE-20-tOB">
+                                <rect key="frame" x="168.5" y="20" width="38" height="30"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
-                                    <segue destination="ksl-9f-8Id" kind="show" id="zXv-A1-mrH"/>
+                                    <action selector="homePressed:" destination="vir-J4-XXX" eventType="touchUpInside" id="wq6-JX-rwE"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2OE-20-tOB" firstAttribute="centerX" secondItem="ga5-Q3-SSy" secondAttribute="centerX" id="49a-lc-T6D"/>
+                            <constraint firstItem="rRG-7t-kws" firstAttribute="width" secondItem="ga5-Q3-SSy" secondAttribute="width" multiplier="0.95" id="7qX-At-0aP"/>
+                            <constraint firstItem="rRG-7t-kws" firstAttribute="top" secondItem="wSW-B0-Zxe" secondAttribute="bottom" constant="8" id="CX1-Tb-Ffs"/>
+                            <constraint firstItem="wSW-B0-Zxe" firstAttribute="centerX" secondItem="ga5-Q3-SSy" secondAttribute="centerX" id="D7N-qL-AbG"/>
+                            <constraint firstItem="wSW-B0-Zxe" firstAttribute="width" secondItem="ga5-Q3-SSy" secondAttribute="width" id="Qkg-fq-5W6"/>
+                            <constraint firstItem="rRG-7t-kws" firstAttribute="height" secondItem="ga5-Q3-SSy" secondAttribute="height" multiplier="0.81" id="Vhe-dJ-Bb7"/>
+                            <constraint firstItem="wSW-B0-Zxe" firstAttribute="height" secondItem="ga5-Q3-SSy" secondAttribute="height" multiplier="0.08" id="fwb-zu-HKm"/>
+                            <constraint firstItem="rRG-7t-kws" firstAttribute="centerX" secondItem="ga5-Q3-SSy" secondAttribute="centerX" id="q2h-Sl-m5m"/>
+                            <constraint firstItem="wSW-B0-Zxe" firstAttribute="top" secondItem="ga5-Q3-SSy" secondAttribute="top" constant="64" id="zRX-v1-u01"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="j1Z-NQ-Sad"/>
                     </view>
                     <connections>
@@ -794,7 +852,7 @@ recommend a biopsy of an area of skin for definitive diagnosis.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chR-DE-ktL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4759" y="2905"/>
+            <point key="canvasLocation" x="-7113" y="1247"/>
         </scene>
         <!--Biopsy-->
         <scene sceneID="fjo-RX-zvL">
@@ -804,9 +862,8 @@ recommend a biopsy of an area of skin for definitive diagnosis.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zbA-Wf-hfC">
-                                <rect key="frame" x="16" y="125" width="343" height="542"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zbA-Wf-hfC">
+                                <rect key="frame" x="10" y="126" width="356" height="492.5"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -819,42 +876,72 @@ a slight burning, and then the area will go numb.
 
 The biopsy is performed leaving a cut as if you scraped your knee.
 
-The area is taken care of like any other cut, and the result will come back in approximately two
-weeks.</string>
+The area is taken care of like any other cut, and the result will come back in approximately two</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
                                         <attributes>
                                             <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="weeks.">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
                                             <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+CgoKCg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ry-uP-4OS">
-                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ry-uP-4OS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Biopsy">
                                         <attributes>
                                             <color key="NSColor" white="0.34589301215277779" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="24" name="TimesNewRomanPSMT"/>
+                                            <font key="NSFont" size="24" name="Avenir-Book"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZI-8r-aqL">
-                                <rect key="frame" x="172" y="20" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZI-8r-aqL">
+                                <rect key="frame" x="168.5" y="20" width="38" height="30"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
-                                    <segue destination="ksl-9f-8Id" kind="show" id="0fr-Dy-Zdb"/>
+                                    <action selector="homePressed:" destination="Teh-By-vvS" eventType="touchUpInside" id="ZNJ-h3-Tgq"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3ry-uP-4OS" firstAttribute="centerX" secondItem="bwe-HQ-UkD" secondAttribute="centerX" id="HuN-Cz-rBH"/>
+                            <constraint firstItem="RZI-8r-aqL" firstAttribute="centerX" secondItem="bwe-HQ-UkD" secondAttribute="centerX" id="J8G-WL-1CU"/>
+                            <constraint firstItem="zbA-Wf-hfC" firstAttribute="top" secondItem="3ry-uP-4OS" secondAttribute="bottom" constant="8" id="K1N-jB-Xh6"/>
+                            <constraint firstItem="zbA-Wf-hfC" firstAttribute="centerX" secondItem="bwe-HQ-UkD" secondAttribute="centerX" id="UVp-Nk-KGU"/>
+                            <constraint firstItem="3ry-uP-4OS" firstAttribute="width" secondItem="bwe-HQ-UkD" secondAttribute="width" id="VRA-ao-8DZ"/>
+                            <constraint firstItem="3ry-uP-4OS" firstAttribute="height" secondItem="bwe-HQ-UkD" secondAttribute="height" multiplier="0.08" id="YMx-CA-iIZ"/>
+                            <constraint firstItem="zbA-Wf-hfC" firstAttribute="height" secondItem="bwe-HQ-UkD" secondAttribute="height" multiplier="0.81" id="aqe-Cw-RSg"/>
+                            <constraint firstItem="3ry-uP-4OS" firstAttribute="top" secondItem="bwe-HQ-UkD" secondAttribute="top" constant="64" id="eJ4-c3-gMG"/>
+                            <constraint firstItem="zbA-Wf-hfC" firstAttribute="width" secondItem="bwe-HQ-UkD" secondAttribute="width" multiplier="0.95" id="emC-8N-wF0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kDv-n4-Wyo"/>
                     </view>
                     <connections>
@@ -863,7 +950,7 @@ weeks.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vzN-al-6iN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4783" y="2094"/>
+            <point key="canvasLocation" x="-7839.1999999999998" y="1247.2263868065968"/>
         </scene>
         <!--Eye Doctor-->
         <scene sceneID="1TS-5Z-3zM">
@@ -875,21 +962,21 @@ weeks.</string>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFi-sj-ZRA">
                                 <rect key="frame" x="9.5" y="222" width="356" height="133"/>
-                                <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="uFx-5V-K5r" kind="show" id="4UC-YT-jwS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYO-E2-dHt">
                                 <rect key="frame" x="9.5" y="370" width="356" height="133.5"/>
-                                <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="EfD-Op-Sbn" kind="show" id="haD-ig-oNn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jc3-QK-Ywb">
                                 <rect key="frame" x="9.5" y="518.5" width="356" height="133.5"/>
-                                <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="wIf-vV-deE" kind="show" id="hCk-gN-OP7"/>
                                 </connections>
@@ -909,8 +996,8 @@ weeks.</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4i-OB-TKw">
-                                <rect key="frame" x="50" y="30" width="259" height="77"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4i-OB-TKw">
+                                <rect key="frame" x="58" y="74" width="259" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="259" id="MiJ-rA-qR4"/>
                                     <constraint firstAttribute="height" constant="77" id="k6n-96-91Q"/>
@@ -946,7 +1033,7 @@ Eye Exam</string>
                                 <rect key="frame" x="168.5" y="0.0" width="38" height="30"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
-                                    <segue destination="ksl-9f-8Id" kind="show" id="sDV-Dn-OYH"/>
+                                    <action selector="homePressed:" destination="mwd-GH-0Ls" eventType="touchUpInside" id="aV3-Xt-2mm"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ale-0E-jfU">
@@ -965,7 +1052,7 @@ Appointment</string>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.53725490196078429" green="0.6705882352941176" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jc3-QK-Ywb" firstAttribute="height" secondItem="U9U-1B-6O9" secondAttribute="height" multiplier="0.2" id="4Z2-vn-RLS"/>
                             <constraint firstItem="XYO-E2-dHt" firstAttribute="width" secondItem="U9U-1B-6O9" secondAttribute="width" multiplier="0.95" id="8ka-gz-5TH"/>
@@ -1000,7 +1087,7 @@ Appointment</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pmB-8T-jot" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4759.1999999999998" y="614.84257871064472"/>
+            <point key="canvasLocation" x="-5810" y="262"/>
         </scene>
         <!--Dentist-->
         <scene sceneID="qn3-TN-ffT">
@@ -1012,20 +1099,20 @@ Appointment</string>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHF-Lr-OLF">
                                 <rect key="frame" x="9.5" y="370" width="356" height="133.5"/>
-                                <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="IhZ-o9-D0x" kind="show" id="JX8-Hr-Z0f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dde-JO-PEA">
                                 <rect key="frame" x="9.5" y="518.5" width="356" height="133.5"/>
-                                <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="Pb8-YG-weI" kind="show" id="9ab-tp-dLg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSj-Y0-hhh">
-                                <rect key="frame" x="94.5" y="30" width="186" height="66"/>
+                                <rect key="frame" x="94.5" y="74" width="186" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="IX9-Rb-ZCx"/>
                                     <constraint firstAttribute="width" constant="186" id="YD9-B2-Kzy"/>
@@ -1073,11 +1160,11 @@ Appointment</string>
                                 <rect key="frame" x="168.5" y="0.0" width="38" height="38"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
-                                    <segue destination="ksl-9f-8Id" kind="show" id="BLZ-cf-TRK"/>
+                                    <action selector="homePressed:" destination="u4T-0K-f5B" eventType="touchUpInside" id="2Jy-BR-wvW"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKc-3J-leJ">
-                                <rect key="frame" x="12.5" y="96" width="350" height="198"/>
+                                <rect key="frame" x="12.5" y="140" width="350" height="198"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="Mbf-NB-B7N"/>
                                     <constraint firstAttribute="height" constant="198" id="lVg-h6-VLh"/>
@@ -1088,53 +1175,14 @@ Appointment</string>
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="24" name="Avenir-Book"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.53725490196078429" green="0.6705882352941176" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="nHF-Lr-OLF" firstAttribute="width" secondItem="Dde-JO-PEA" secondAttribute="width" id="0Gb-xq-gZ9"/>
                             <constraint firstItem="nHF-Lr-OLF" firstAttribute="centerX" secondItem="8Bx-in-s2e" secondAttribute="centerX" id="1bD-rQ-pBE"/>
@@ -1165,7 +1213,7 @@ Appointment</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XlR-OG-1ZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4111.1999999999998" y="614.84257871064472"/>
+            <point key="canvasLocation" x="-4902" y="262"/>
         </scene>
         <!--Notes View Controller-->
         <scene sceneID="2Bn-F7-xVz">
@@ -1176,14 +1224,14 @@ Appointment</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ql-yH-zUF">
-                                <rect key="frame" x="0.0" y="58" width="375" height="609"/>
+                                <rect key="frame" x="0.0" y="58" width="375" height="556"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1193,16 +1241,18 @@ Appointment</string>
                                     <outlet property="delegate" destination="HRU-gv-ssd" id="m2i-ti-FsI"/>
                                 </connections>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrf-0s-tSY">
-                                <rect key="frame" x="172" y="20" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrf-0s-tSY">
+                                <rect key="frame" x="168.5" y="20" width="38" height="30"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
-                                    <segue destination="ksl-9f-8Id" kind="show" id="ix0-R9-pcr"/>
+                                    <action selector="donePressed:" destination="HRU-gv-ssd" eventType="touchUpInside" id="5Ug-6W-IyW"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="Jrf-0s-tSY" firstAttribute="centerX" secondItem="nbd-Kz-tIj" secondAttribute="centerX" id="ubG-RH-KSa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Iwn-hd-IuE"/>
                     </view>
                     <connections>
@@ -1213,7 +1263,7 @@ Appointment</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wrt-17-IQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3007.1999999999998" y="211.84407796101951"/>
+            <point key="canvasLocation" x="-3092" y="-602.24887556221893"/>
         </scene>
         <!--Eye Doctor General-->
         <scene sceneID="9zz-FT-uhI">
@@ -1223,19 +1273,48 @@ Appointment</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I3f-O8-n0V">
-                                <rect key="frame" x="16" y="124" width="343" height="543"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I3f-O8-n0V">
+                                <rect key="frame" x="9.5" y="125.5" width="356" height="540"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">There are two types of eye doctors, an optometrist, and an ophthalmologist.
 
-An optometrist went to optometry school but not medical school and cannot perform surgery.
+An optometrist went to optometry school but not medical school and cannot perform surgery.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
 However, he/she is qualified to perform all other procedures such as routine checks of the eyes.
 
-An Ophthalmologist went to medical school. As such they are more advanced and can perform
-surgery.
+An Ophthalmologist went to medical school. As such they are more advanced and can perform</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">surgery.
 
 It is possible that an optometrist is covered by a different insurance than an ophthalmologist. 
 
@@ -1249,7 +1328,7 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
 
 </string>
                                         <attributes>
-                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
                                             <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -1257,31 +1336,40 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrh-y7-t3C">
-                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrh-y7-t3C">
+                                <rect key="frame" x="0.0" y="64" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content="General Information">
                                         <attributes>
                                             <color key="NSColor" white="0.34589301215277779" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="24" name="TimesNewRomanPSMT"/>
+                                            <font key="NSFont" size="24" name="Avenir-Book"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFq-IT-gey">
-                                <rect key="frame" x="172" y="20" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFq-IT-gey">
+                                <rect key="frame" x="168.5" y="20" width="38" height="30"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
-                                    <segue destination="ksl-9f-8Id" kind="show" id="O0G-h2-cJt"/>
+                                    <action selector="homePressed:" destination="uFx-5V-K5r" eventType="touchUpInside" id="Nfj-Vw-ov7"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xrh-y7-t3C" firstAttribute="height" secondItem="zbW-XH-pyB" secondAttribute="height" multiplier="0.08" id="3oD-aL-69k"/>
+                            <constraint firstItem="I3f-O8-n0V" firstAttribute="top" secondItem="xrh-y7-t3C" secondAttribute="bottom" constant="8" id="Iwe-0A-bkH"/>
+                            <constraint firstItem="I3f-O8-n0V" firstAttribute="width" secondItem="zbW-XH-pyB" secondAttribute="width" multiplier="0.95" id="Kvc-fR-X5L"/>
+                            <constraint firstItem="xrh-y7-t3C" firstAttribute="centerX" secondItem="zbW-XH-pyB" secondAttribute="centerX" id="LSn-DJ-Q0W"/>
+                            <constraint firstItem="xrh-y7-t3C" firstAttribute="top" secondItem="zbW-XH-pyB" secondAttribute="top" constant="64" id="Tma-dx-aA1"/>
+                            <constraint firstItem="rFq-IT-gey" firstAttribute="centerX" secondItem="zbW-XH-pyB" secondAttribute="centerX" id="WLd-yG-ojI"/>
+                            <constraint firstItem="I3f-O8-n0V" firstAttribute="height" secondItem="zbW-XH-pyB" secondAttribute="height" multiplier="0.81" id="aJY-kO-kGM"/>
+                            <constraint firstItem="I3f-O8-n0V" firstAttribute="centerX" secondItem="zbW-XH-pyB" secondAttribute="centerX" id="erX-m4-A3i"/>
+                            <constraint firstItem="xrh-y7-t3C" firstAttribute="width" secondItem="zbW-XH-pyB" secondAttribute="width" id="grw-Pn-6c2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="U48-te-DHE"/>
                     </view>
                     <connections>
@@ -1290,7 +1378,7 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vUM-ml-DLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3780" y="1596"/>
+            <point key="canvasLocation" x="-6302" y="1247"/>
         </scene>
         <!--Instructions View Controller-->
         <scene sceneID="bP4-4P-lyb">
@@ -1301,7 +1389,7 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cc-mM-B8j">
-                                <rect key="frame" x="67" y="43" width="241.5" height="77"/>
+                                <rect key="frame" x="67" y="87" width="241.5" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="HCH-KS-lm2"/>
                                     <constraint firstAttribute="width" constant="241.5" id="WNy-mm-UPP"/>
@@ -1318,7 +1406,7 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nrg-kD-ZXZ">
-                                <rect key="frame" x="16" y="97" width="343" height="235"/>
+                                <rect key="frame" x="16" y="141" width="343" height="235"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="235" id="gdo-Fg-Ddv"/>
                                 </constraints>
@@ -1329,23 +1417,6 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="23" name="ChalkboardSE-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcs-la-rn2">
-                                <rect key="frame" x="13" y="598" width="209" height="49"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="22b-me-qU8"/>
-                                    <constraint firstAttribute="width" constant="209" id="VEY-hc-gYw"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Click here to play!">
-                                        <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="24" name="ChalkboardSE-Light"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -1363,29 +1434,37 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxu-0l-9f1">
-                                <rect key="frame" x="168.5" y="26" width="38" height="38"/>
+                                <rect key="frame" x="168.5" y="70" width="38" height="38"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
-                                    <segue destination="ksl-9f-8Id" kind="show" id="wn4-wm-GmG"/>
+                                    <action selector="homePressed:" destination="pgp-Sf-RpN" eventType="touchUpInside" id="Jqu-Ek-ZMy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeA-fX-fJZ">
-                                <rect key="frame" x="0.0" y="547" width="375" height="120"/>
-                                <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZeA-fX-fJZ">
+                                <rect key="frame" x="0.0" y="634" width="375" height="33"/>
+                                <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="u8D-I2-gaE"/>
                                 </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="   Click here to play!!">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="24" name="Avenir-Book"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <segue destination="UDm-ub-GoO" kind="show" id="VIX-0F-SI1"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fOH-sP-VbP" firstAttribute="trailing" secondItem="sbc-MF-jgk" secondAttribute="trailing" constant="16" id="5Vk-uP-qvL"/>
                             <constraint firstItem="kxu-0l-9f1" firstAttribute="top" secondItem="fOH-sP-VbP" secondAttribute="top" constant="6" id="7eh-uG-saB"/>
-                            <constraint firstItem="mcs-la-rn2" firstAttribute="leading" secondItem="fOH-sP-VbP" secondAttribute="leading" constant="13" id="C1a-sp-qZX"/>
-                            <constraint firstItem="fOH-sP-VbP" firstAttribute="bottom" secondItem="mcs-la-rn2" secondAttribute="bottom" constant="20" id="EKG-Gt-7Ul"/>
                             <constraint firstItem="ZeA-fX-fJZ" firstAttribute="trailing" secondItem="fOH-sP-VbP" secondAttribute="trailing" id="H5c-xz-cgN"/>
                             <constraint firstItem="9cc-mM-B8j" firstAttribute="top" secondItem="ONg-2C-lnX" secondAttribute="topMargin" constant="23" id="HbE-Uw-VB5"/>
                             <constraint firstItem="Nrg-kD-ZXZ" firstAttribute="centerX" secondItem="ONg-2C-lnX" secondAttribute="centerX" id="JNa-Eg-tiD"/>
@@ -1406,7 +1485,7 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V1Z-Ks-TWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5050.3999999999996" y="-1122.1889055472266"/>
+            <point key="canvasLocation" x="-5564" y="-1357.8710644677662"/>
         </scene>
         <!--Routine Eye Doctor-->
         <scene sceneID="vS8-sJ-BQu">
@@ -1416,15 +1495,14 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ogP-iC-J1t">
-                                <rect key="frame" x="16" y="126" width="343" height="541"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ogP-iC-J1t">
+                                <rect key="frame" x="9.5" y="125.5" width="356" height="540"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????</string>
+                                        <mutableString key="content">????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????</mutableString>
                                         <attributes>
-                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
                                             <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -1432,31 +1510,40 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlA-T6-cwd">
-                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlA-T6-cwd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Routine Appointment">
                                         <attributes>
                                             <color key="NSColor" white="0.34589301215277779" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="24" name="TimesNewRomanPSMT"/>
+                                            <font key="NSFont" size="24" name="Avenir-Book"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6E-sv-vkW">
-                                <rect key="frame" x="172" y="20" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6E-sv-vkW">
+                                <rect key="frame" x="168.5" y="20" width="38" height="30"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
-                                    <segue destination="ksl-9f-8Id" kind="show" id="AfR-Dc-YZB"/>
+                                    <action selector="homePressed:" destination="EfD-Op-Sbn" eventType="touchUpInside" id="icA-u7-Dqw"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ogP-iC-J1t" firstAttribute="top" secondItem="NlA-T6-cwd" secondAttribute="bottom" constant="8" id="5c2-gb-A5s"/>
+                            <constraint firstItem="ogP-iC-J1t" firstAttribute="height" secondItem="XgU-uh-xCA" secondAttribute="height" multiplier="0.81" id="FS1-r7-dnB"/>
+                            <constraint firstItem="J6E-sv-vkW" firstAttribute="centerX" secondItem="XgU-uh-xCA" secondAttribute="centerX" id="MCf-Ua-j7S"/>
+                            <constraint firstItem="ogP-iC-J1t" firstAttribute="centerX" secondItem="XgU-uh-xCA" secondAttribute="centerX" id="MQd-hB-Iny"/>
+                            <constraint firstItem="NlA-T6-cwd" firstAttribute="top" secondItem="XgU-uh-xCA" secondAttribute="top" constant="64" id="PTU-SR-XFQ"/>
+                            <constraint firstItem="ogP-iC-J1t" firstAttribute="width" secondItem="XgU-uh-xCA" secondAttribute="width" multiplier="0.95" id="cBt-Yt-fCy"/>
+                            <constraint firstItem="NlA-T6-cwd" firstAttribute="centerX" secondItem="XgU-uh-xCA" secondAttribute="centerX" id="jZG-HN-NVr"/>
+                            <constraint firstItem="NlA-T6-cwd" firstAttribute="width" secondItem="XgU-uh-xCA" secondAttribute="width" id="kql-NA-HbA"/>
+                            <constraint firstItem="NlA-T6-cwd" firstAttribute="height" secondItem="XgU-uh-xCA" secondAttribute="height" multiplier="0.08" id="n5F-m5-X62"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5Du-S8-0vt"/>
                     </view>
                     <connections>
@@ -1465,7 +1552,7 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tuM-15-C9A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2889" y="1791"/>
+            <point key="canvasLocation" x="-5564" y="1247"/>
         </scene>
         <!--Dilated Eye Exam-->
         <scene sceneID="iB9-WJ-6R4">
@@ -1475,33 +1562,75 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xLK-BV-w5v">
-                                <rect key="frame" x="16" y="128" width="343" height="539"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xLK-BV-w5v">
+                                <rect key="frame" x="9.5" y="125.5" width="356" height="540"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
+                                    <fragment content="Doctors recommend a dilated exam every year, especially for patients with certain medical">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                        </attributes>
+                                    </fragment>
                                     <fragment>
-                                        <string key="content">Doctors recommend a dilated exam every year, especially for patients with certain medical
-conditions such as diabetes. 
+                                        <string key="content">conditions such as diabetes. 
 
 A dilated eye exam is to check for conditions such as macular degeneration.
 
 There are three ways to check eye pressure.
 
-The most common way is to use eye drops to dilate the eyes, following which the doctor will
-examine your eyes for a few minutes.
+The most common way is to use eye drops to dilate the eyes, following which the doctor will</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">examine your eyes for a few minutes.
 
 Following the completion of examination, your eyes will remain dilated for a few hours.
 
-You will likely experience light sensitivity. Thus, it is recommended to bring sunglasses and a
-companion with you to a dilated eye exam. 
+You will likely experience light sensitivity. Thus, it is recommended to bring sunglasses and a</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">companion with you to a dilated eye exam. 
 
-However, you may drive home if you wish and the
-doctor can provide you with disposable sun glasses if you forget to bring your own.
+However, you may drive home if you wish and the</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">doctor can provide you with disposable sun glasses if you forget to bring your own.
 
 </string>
                                         <attributes>
-                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
                                             <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
                                         </attributes>
                                     </fragment>
@@ -1510,37 +1639,46 @@ doctor can provide you with disposable sun glasses if you forget to bring your o
 Cg
 </string>
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="15"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYG-uB-3zg">
-                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYG-uB-3zg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Dilated Eye Exam">
                                         <attributes>
                                             <color key="NSColor" white="0.34589301215277779" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="24" name="TimesNewRomanPSMT"/>
+                                            <font key="NSFont" size="24" name="Avenir-Book"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXQ-bx-mut">
-                                <rect key="frame" x="172" y="20" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXQ-bx-mut">
+                                <rect key="frame" x="168.5" y="20" width="38" height="30"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
-                                    <segue destination="ksl-9f-8Id" kind="show" id="Q8U-dI-Rtb"/>
+                                    <action selector="homePressed:" destination="wIf-vV-deE" eventType="touchUpInside" id="R9W-vc-EVt"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xLK-BV-w5v" firstAttribute="centerX" secondItem="4YI-ze-Tx7" secondAttribute="centerX" id="D6d-fg-ioD"/>
+                            <constraint firstItem="xLK-BV-w5v" firstAttribute="width" secondItem="4YI-ze-Tx7" secondAttribute="width" multiplier="0.95" id="EYx-T2-3Kf"/>
+                            <constraint firstItem="CYG-uB-3zg" firstAttribute="centerX" secondItem="4YI-ze-Tx7" secondAttribute="centerX" id="FVK-Os-BSW"/>
+                            <constraint firstItem="aXQ-bx-mut" firstAttribute="centerX" secondItem="4YI-ze-Tx7" secondAttribute="centerX" id="Xqc-Nv-ulx"/>
+                            <constraint firstItem="CYG-uB-3zg" firstAttribute="top" secondItem="4YI-ze-Tx7" secondAttribute="top" constant="64" id="bI8-fc-3PT"/>
+                            <constraint firstItem="CYG-uB-3zg" firstAttribute="height" secondItem="4YI-ze-Tx7" secondAttribute="height" multiplier="0.08" id="e4s-4c-3Zv"/>
+                            <constraint firstItem="xLK-BV-w5v" firstAttribute="top" secondItem="CYG-uB-3zg" secondAttribute="bottom" constant="8" id="pbY-H6-fTM"/>
+                            <constraint firstItem="xLK-BV-w5v" firstAttribute="height" secondItem="4YI-ze-Tx7" secondAttribute="height" multiplier="0.81" id="pyj-z3-Z6I"/>
+                            <constraint firstItem="CYG-uB-3zg" firstAttribute="width" secondItem="4YI-ze-Tx7" secondAttribute="width" id="yYF-nL-thj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1B1-by-4Hn"/>
                     </view>
                     <connections>
@@ -1549,7 +1687,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLb-aB-4a6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2657" y="935"/>
+            <point key="canvasLocation" x="-4783" y="1246"/>
         </scene>
         <!--Cleaning-->
         <scene sceneID="SlO-NT-Sif">
@@ -1559,32 +1697,137 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="epO-8k-bdK">
-                                <rect key="frame" x="16" y="133" width="343" height="534"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="epO-8k-bdK">
+                                <rect key="frame" x="9.5" y="125.5" width="356" height="540"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">These visits typically include several x-rays, a cleaning, and an examination by a dentist.
 
-After taking x-rays, the dentist reviews them to check for signs of cavities and gum disease. 
-For the cleaning, the hygienist or dentist will use instruments to clean plaque and tartar (hardened
-plaque) along the gum line. 
+After taking x-rays, the dentist reviews them to check for signs of cavities and gum disease. </string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+For the cleaning, the hygienist or dentist will use instruments to clean plaque and tartar (hardened</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">plaque) along the gum line. 
 
 If there is significant plaque buildup the dental professional may use a cavitron, which vibrates rapidly to remove plaque and uses lots of water to cool the instrument. 
 
 After all the plaque is removed the teeth are polished with an abrasive paste.
 
-During the examination, the dentist will check the teeth for any signs of cavities or gum disease. He/she may poke around various teeth to determine if they have any signs of cavities. To a
-dentist, cavities have a soft and sticky feel to them. During the exam, the dentist will also perform
-both a hard and soft tissue exam to check for any signs of oral cancer. This includes checking
-areas of the neck and mouth for anything out of the ordinary.
-
-After checking everything, the dentist will explain everything they found. If any treatment is
-needed, a dentist will refer you to a financial coordinator to work out the finances and get you
-scheduled for any treatment needed.</string>
+During the examination, the dentist will check the teeth for any signs of cavities or gum disease. He/she may poke around various teeth to determine if they have any signs of cavities. To a</string>
                                         <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="dentist, cavities have a soft and sticky feel to them. During the exam, the dentist will also perform">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="both a hard and soft tissue exam to check for any signs of oral cancer. This includes checking">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">areas of the neck and mouth for anything out of the ordinary.
+
+After checking everything, the dentist will explain everything they found. If any treatment is</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="needed, a dentist will refer you to a financial coordinator to work out the finances and get you">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="scheduled for any treatment needed.">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
                                             <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -1592,31 +1835,40 @@ scheduled for any treatment needed.</string>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSi-PN-IxK">
-                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSi-PN-IxK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Routine Cleaning Appointment">
                                         <attributes>
-                                            <color key="NSColor" white="0.34589301215277779" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="24" name="TimesNewRomanPSMT"/>
+                                            <color key="NSColor" white="0.34999999999999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="24" name="Avenir-Book"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blz-E7-E7A">
-                                <rect key="frame" x="172" y="20" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blz-E7-E7A">
+                                <rect key="frame" x="168.5" y="20" width="38" height="30"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
-                                    <segue destination="ksl-9f-8Id" kind="show" id="bMc-aG-Jb3"/>
+                                    <action selector="homePressed:" destination="IhZ-o9-D0x" eventType="touchUpInside" id="5Y0-bm-YV0"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="blz-E7-E7A" firstAttribute="centerX" secondItem="jRK-lh-nj0" secondAttribute="centerX" id="12Z-t1-HwA"/>
+                            <constraint firstItem="epO-8k-bdK" firstAttribute="centerX" secondItem="jRK-lh-nj0" secondAttribute="centerX" id="KHU-gI-4WA"/>
+                            <constraint firstItem="iSi-PN-IxK" firstAttribute="height" secondItem="jRK-lh-nj0" secondAttribute="height" multiplier="0.08" id="RbG-JL-u0I"/>
+                            <constraint firstItem="iSi-PN-IxK" firstAttribute="centerX" secondItem="jRK-lh-nj0" secondAttribute="centerX" id="VRj-He-0LW"/>
+                            <constraint firstItem="epO-8k-bdK" firstAttribute="top" secondItem="iSi-PN-IxK" secondAttribute="bottom" constant="8" id="VsB-DL-vrO"/>
+                            <constraint firstItem="epO-8k-bdK" firstAttribute="width" secondItem="jRK-lh-nj0" secondAttribute="width" multiplier="0.95" id="ZDO-yD-b1z"/>
+                            <constraint firstItem="epO-8k-bdK" firstAttribute="height" secondItem="jRK-lh-nj0" secondAttribute="height" multiplier="0.81" id="aEt-iD-AJF"/>
+                            <constraint firstItem="iSi-PN-IxK" firstAttribute="width" secondItem="jRK-lh-nj0" secondAttribute="width" id="qqh-VK-j7G"/>
+                            <constraint firstItem="iSi-PN-IxK" firstAttribute="top" secondItem="jRK-lh-nj0" secondAttribute="top" constant="64" id="uzW-KG-tyu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kOI-iq-Kbg"/>
                     </view>
                     <connections>
@@ -1625,7 +1877,7 @@ scheduled for any treatment needed.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N9H-Kb-kQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2937" y="2979"/>
+            <point key="canvasLocation" x="-3935" y="1247"/>
         </scene>
         <!--Cavity Filling-->
         <scene sceneID="GIK-3T-SUe">
@@ -1635,30 +1887,116 @@ scheduled for any treatment needed.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DYJ-K2-ihG">
-                                <rect key="frame" x="16" y="125" width="343" height="542"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DYJ-K2-ihG">
+                                <rect key="frame" x="9.5" y="125.5" width="356" height="540"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
+                                    <fragment content="Depending on the size and location of the filling, the dentist may or may not need to get you">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
                                     <fragment>
-                                        <string key="content">Depending on the size and location of the filling, the dentist may or may not need to get you
-numb, but it is always the patient's choice. 
+                                        <string key="content">numb, but it is always the patient's choice. 
 
 Next, a numbing gel is rubbed on to numb the surface of the area. Anesthetic is then administered with a needle, and a pinch will be felt despite the numbing gel. As the anesthesia begins working, the area gets tingly and feels fat.
 
-Once the tooth/teeth is numb, the dentist will begin removing the decay. If you feel something
-uncomfortable you may raise your hand to inform the dentist. Please be advised that some cold
-and sensitivity feelings are normal. 
+Once the tooth/teeth is numb, the dentist will begin removing the decay. If you feel something</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="uncomfortable you may raise your hand to inform the dentist. Please be advised that some cold">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">and sensitivity feelings are normal. 
 
 For removing the decay, the dentist will use a drill with lots of water to clean the tooth. Once the tooth is clean and the decay is removed, the dentist will
-begin filling the tooth. If the cavity is between the tooth, the dentist will place a band around
-the tooth to give a nice shape for the filling. The band may pinch the gums a bit and you may
-feel a bit of pressure. There are a couple of steps for the filling including several that require a
-bright blue light.
+begin filling the tooth. If the cavity is between the tooth, the dentist will place a band around</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="the tooth to give a nice shape for the filling. The band may">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="pinch the gums a bit and you may">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="feel a bit of pressure. There are a couple of steps for the filling including several that require a">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">bright blue light.
 
 After the tooth is filled, you and the dentist will communicate to ensure the bite is correct. </string>
                                         <attributes>
-                                            <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
                                             <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -1666,31 +2004,40 @@ After the tooth is filled, you and the dentist will communicate to ensure the bi
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsu-4I-zgd">
-                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsu-4I-zgd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Cavity Filling">
                                         <attributes>
                                             <color key="NSColor" white="0.34589301215277779" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="24" name="TimesNewRomanPSMT"/>
+                                            <font key="NSFont" size="24" name="Avenir-Book"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpD-eq-XWP">
-                                <rect key="frame" x="172" y="20" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpD-eq-XWP">
+                                <rect key="frame" x="168.5" y="20" width="38" height="30"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
-                                    <segue destination="ksl-9f-8Id" kind="show" id="VM4-Fr-D7H"/>
+                                    <action selector="homePressed:" destination="Pb8-YG-weI" eventType="touchUpInside" id="SoT-AZ-uNS"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xsu-4I-zgd" firstAttribute="top" secondItem="o7F-D0-Mp7" secondAttribute="top" constant="64" id="4wZ-wr-CW3"/>
+                            <constraint firstItem="xsu-4I-zgd" firstAttribute="width" secondItem="o7F-D0-Mp7" secondAttribute="width" id="6Ur-lu-Hk9"/>
+                            <constraint firstItem="DYJ-K2-ihG" firstAttribute="centerX" secondItem="o7F-D0-Mp7" secondAttribute="centerX" id="CTp-Ro-dmd"/>
+                            <constraint firstItem="DYJ-K2-ihG" firstAttribute="width" secondItem="o7F-D0-Mp7" secondAttribute="width" multiplier="0.95" id="HhB-Ff-tq1"/>
+                            <constraint firstItem="xsu-4I-zgd" firstAttribute="centerX" secondItem="o7F-D0-Mp7" secondAttribute="centerX" id="ZL2-KI-tws"/>
+                            <constraint firstItem="xsu-4I-zgd" firstAttribute="height" secondItem="o7F-D0-Mp7" secondAttribute="height" multiplier="0.08" id="bun-59-Z5s"/>
+                            <constraint firstItem="JpD-eq-XWP" firstAttribute="centerX" secondItem="o7F-D0-Mp7" secondAttribute="centerX" id="rHG-Pn-voW"/>
+                            <constraint firstItem="DYJ-K2-ihG" firstAttribute="top" secondItem="xsu-4I-zgd" secondAttribute="bottom" constant="8" id="xqm-pv-isR"/>
+                            <constraint firstItem="DYJ-K2-ihG" firstAttribute="height" secondItem="o7F-D0-Mp7" secondAttribute="height" multiplier="0.81" id="z6t-xh-13G"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bMk-zT-zmP"/>
                     </view>
                     <connections>
@@ -1699,7 +2046,7 @@ After the tooth is filled, you and the dentist will communicate to ensure the bi
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="19U-cO-zoH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2103" y="2240"/>
+            <point key="canvasLocation" x="-3143" y="1245"/>
         </scene>
         <!--Custom Nav-->
         <scene sceneID="POk-Zy-k1C">
@@ -1725,7 +2072,7 @@ After the tooth is filled, you and the dentist will communicate to ensure the bi
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ga6-X0-36z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7100" y="-730"/>
+            <point key="canvasLocation" x="-6751" y="-1865"/>
         </scene>
     </scenes>
     <resources>
@@ -1741,7 +2088,6 @@ After the tooth is filled, you and the dentist will communicate to ensure the bi
         <segue reference="4th-0b-chv"/>
         <segue reference="Roi-Kv-Fx4"/>
         <segue reference="u1e-if-9ww"/>
-        <segue reference="bQL-LF-ofz"/>
         <segue reference="VIX-0F-SI1"/>
     </inferredMetricsTieBreakers>
 </document>

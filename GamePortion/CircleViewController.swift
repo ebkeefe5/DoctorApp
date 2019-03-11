@@ -74,6 +74,11 @@ class CircleViewController: UIViewController {
         
     }
     
+    @IBAction func homePressed(_ sender: Any) {
+    self.navigationController?.popToRootViewController(animated: true);
+    }
+    
+    
     func endGame(){
         gameRunning = false
         circleTimer.invalidate()

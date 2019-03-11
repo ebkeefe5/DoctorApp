@@ -82,10 +82,10 @@ class WhatToExpect: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @objc func tapHome(){
-        print("you tap!");
-    }
     
+    @IBAction func homePressed(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true);
+    }
     
     
 

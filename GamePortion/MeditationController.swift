@@ -37,7 +37,10 @@ class MeditationController: UIViewController, AVAudioPlayerDelegate {
         audioPlayer.play();
     }
     
-
+    @IBAction func homePressed(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true);
+    }
+    
     
     @IBAction func pause(_ sender: Any) {
         if (audioPlayer.isPlaying){

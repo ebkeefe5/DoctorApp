@@ -21,7 +21,7 @@ class InstructionsViewController: UIViewController {
         //button.frame = CGRect(x: 0, y: 0, width: 100, height: 40)
         //button.backgroundColor = .white
         //button.setTitle("Home", for: .normal)
-        homeButton.addTarget(self, action: #selector(homeButtonPressed), for: .touchUpInside)
+        
         self.navigationItem.titleView = homeButton;
         //let logo = UIImage(named: "gHouse.png");
         //let imageView = UIImageView(image:logo);
@@ -30,11 +30,11 @@ class InstructionsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @objc func homeButtonPressed(){
-        print("hi");
-        
+    
+    @IBAction func homePressed(_ sender: Any) {
+    self.navigationController?.popToRootViewController(animated: true);
     }
-
+    
   
     
     

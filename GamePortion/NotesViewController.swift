@@ -21,8 +21,8 @@ class NotesViewController: UIViewController, UITextViewDelegate, UIGestureRecogn
     
     @IBOutlet weak var homeButton: UIButton!
     
-    var height1: Float = 605;
-    var height2: Float = 349;
+    var height1: CGFloat = UIScreen.main.bounds.height*0.92;
+    var height2: CGFloat = UIScreen.main.bounds.height*0.53;
     var keyBoardUp: Bool = false;
     
     
@@ -30,6 +30,9 @@ class NotesViewController: UIViewController, UITextViewDelegate, UIGestureRecogn
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let sHeight1 = String(Int(Float(height1)));
+        let sHeight2 = String(Int(Float(height2)));
+        print("height1: " +  sHeight1 + " height2: " + sHeight2 );
         //textView.delegate = self;
        
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.viewTapped(_:)));
@@ -57,6 +60,9 @@ class NotesViewController: UIViewController, UITextViewDelegate, UIGestureRecogn
         
     }
     
+    @IBAction func donePressed(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true);
+    }
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         
         return true

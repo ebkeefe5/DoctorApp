@@ -18,6 +18,9 @@ class EyeDoctorGeneral: UIViewController {
     }
     
 
+    @IBAction func homePressed(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true);
+    }
     /*
     // MARK: - Navigation
 
