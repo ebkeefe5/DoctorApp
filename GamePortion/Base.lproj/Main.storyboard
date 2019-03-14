@@ -446,14 +446,14 @@ create this app </string>
             <objects>
                 <viewController id="Mw4-8a-E4x" customClass="WhatToExpect" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XRB-4w-pka">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1307"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wsd-ct-kif">
-                                <rect key="frame" x="0.0" y="64" width="375" height="1436"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="1243"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RGb-2d-VQn" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1436"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1234"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbY-ui-pjL">
                                                 <rect key="frame" x="149" y="262" width="0.0" height="0.0"/>
@@ -494,65 +494,179 @@ each type of doctor.</string>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="134" id="2C9-cP-rgZ"/>
                                                 </constraints>
-                                                <state key="normal" image="blue6"/>
+                                                <state key="normal" image="blue4"/>
+                                                <connections>
+                                                    <segue destination="u4T-0K-f5B" kind="show" id="Ahe-lW-Mt2"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAD-BU-ldG">
                                                 <rect key="frame" x="9.5" y="340" width="356" height="134"/>
-                                                <state key="normal" image="blue6"/>
+                                                <state key="normal" image="blue4"/>
+                                                <connections>
+                                                    <segue destination="mwd-GH-0Ls" kind="show" id="5Gg-H5-eJc"/>
+                                                </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tq8-kH-DYF">
+                                                <rect key="frame" x="102.5" y="383.5" width="170" height="47"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Eye Doctor">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="34" name="Avenir-Book"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSj-8a-y4d">
                                                 <rect key="frame" x="9.5" y="638" width="356" height="134"/>
-                                                <state key="normal" image="blue6"/>
+                                                <state key="normal" image="blue4"/>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHo-jw-jLC">
+                                                <rect key="frame" x="36" y="681.5" width="303" height="47"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="General Practitioner">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="34" name="Avenir-Book"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWg-bf-Fv3">
                                                 <rect key="frame" x="9.5" y="787" width="356" height="134"/>
-                                                <state key="normal" image="blue6"/>
+                                                <state key="normal" image="blue4"/>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJ6-uM-t0y">
+                                                <rect key="frame" x="64" y="830.5" width="247" height="47"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Sports Medicine">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="34" name="Avenir-Book"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VX2-KI-bkf">
                                                 <rect key="frame" x="9.5" y="936" width="356" height="134"/>
-                                                <state key="normal" image="blue6"/>
+                                                <state key="normal" image="blue4"/>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeZ-hU-DfD">
+                                                <rect key="frame" x="110" y="979.5" width="155" height="47"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Counselor">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="34" name="Avenir-Book"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6b-Dx-kfe">
                                                 <rect key="frame" x="9.5" y="1085" width="356" height="134"/>
-                                                <state key="normal" image="blue6"/>
+                                                <state key="normal" image="blue4"/>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nN3-VB-AzH">
+                                                <rect key="frame" x="46" y="1128.5" width="283" height="47"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Gastroenterologist">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="34" name="Avenir-Book"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQw-HM-mhp">
                                                 <rect key="frame" x="9.5" y="489" width="356" height="134"/>
-                                                <state key="normal" image="blue6"/>
+                                                <state key="normal" image="blue4"/>
+                                                <connections>
+                                                    <segue destination="hx0-8h-1sO" kind="show" id="DPT-H0-tff"/>
+                                                </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjJ-9o-bQO">
+                                                <rect key="frame" x="78.5" y="532.5" width="218" height="47"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Dermatologist">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="34" name="Avenir-Book"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULC-5D-vpO">
+                                                <rect key="frame" x="133" y="234.5" width="109" height="47"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Dentist">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="34" name="Avenir-Book"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="VX2-KI-bkf" firstAttribute="height" secondItem="eXg-CH-wlA" secondAttribute="height" id="1pB-NE-Zkb"/>
                                             <constraint firstItem="gAD-BU-ldG" firstAttribute="centerX" secondItem="RGb-2d-VQn" secondAttribute="centerX" id="2FL-xv-Bgt"/>
                                             <constraint firstItem="B6b-Dx-kfe" firstAttribute="width" secondItem="eXg-CH-wlA" secondAttribute="width" id="2da-au-nxW"/>
+                                            <constraint firstItem="vJ6-uM-t0y" firstAttribute="centerX" secondItem="RGb-2d-VQn" secondAttribute="centerX" id="4IK-nl-Uhl"/>
+                                            <constraint firstItem="Tq8-kH-DYF" firstAttribute="centerY" secondItem="gAD-BU-ldG" secondAttribute="centerY" id="7DH-Cn-xcn"/>
                                             <constraint firstItem="B6b-Dx-kfe" firstAttribute="centerX" secondItem="RGb-2d-VQn" secondAttribute="centerX" id="7Qn-8Y-J7u"/>
+                                            <constraint firstItem="DHo-jw-jLC" firstAttribute="centerX" secondItem="RGb-2d-VQn" secondAttribute="centerX" id="98V-gE-YXu"/>
                                             <constraint firstItem="sSj-8a-y4d" firstAttribute="height" secondItem="eXg-CH-wlA" secondAttribute="height" id="F65-Vn-OvF"/>
+                                            <constraint firstItem="DHo-jw-jLC" firstAttribute="centerY" secondItem="sSj-8a-y4d" secondAttribute="centerY" id="F8q-kh-7Ks"/>
                                             <constraint firstItem="B6b-Dx-kfe" firstAttribute="height" secondItem="eXg-CH-wlA" secondAttribute="height" id="FP3-eS-qcu"/>
                                             <constraint firstItem="sSj-8a-y4d" firstAttribute="top" secondItem="AQw-HM-mhp" secondAttribute="bottom" constant="15" id="GGg-LI-Hdj"/>
+                                            <constraint firstItem="IjJ-9o-bQO" firstAttribute="centerX" secondItem="RGb-2d-VQn" secondAttribute="centerX" id="Gny-eQ-eQX"/>
                                             <constraint firstItem="VX2-KI-bkf" firstAttribute="top" secondItem="rWg-bf-Fv3" secondAttribute="bottom" constant="15" id="Hc2-Qn-YFr"/>
                                             <constraint firstItem="sT8-3g-jrY" firstAttribute="centerX" secondItem="RGb-2d-VQn" secondAttribute="centerX" id="HyI-KJ-VJE"/>
                                             <constraint firstItem="gAD-BU-ldG" firstAttribute="width" secondItem="eXg-CH-wlA" secondAttribute="width" id="INs-YR-HS0"/>
                                             <constraint firstItem="AQw-HM-mhp" firstAttribute="top" secondItem="gAD-BU-ldG" secondAttribute="bottom" constant="15" id="JwX-cu-3QG"/>
                                             <constraint firstItem="gAD-BU-ldG" firstAttribute="height" secondItem="eXg-CH-wlA" secondAttribute="height" id="Lg2-p2-jL0"/>
                                             <constraint firstItem="AQw-HM-mhp" firstAttribute="centerX" secondItem="RGb-2d-VQn" secondAttribute="centerX" id="PTk-NL-Kai"/>
+                                            <constraint firstItem="IjJ-9o-bQO" firstAttribute="centerY" secondItem="AQw-HM-mhp" secondAttribute="centerY" id="RAA-QA-eUR"/>
                                             <constraint firstItem="gAD-BU-ldG" firstAttribute="centerX" secondItem="RGb-2d-VQn" secondAttribute="centerX" id="Trb-0E-xQB"/>
                                             <constraint firstItem="rWg-bf-Fv3" firstAttribute="top" secondItem="sSj-8a-y4d" secondAttribute="bottom" constant="15" id="U94-4v-9sf"/>
+                                            <constraint firstItem="ULC-5D-vpO" firstAttribute="centerX" secondItem="RGb-2d-VQn" secondAttribute="centerX" id="Xd7-cI-n4p"/>
+                                            <constraint firstItem="FeZ-hU-DfD" firstAttribute="centerY" secondItem="VX2-KI-bkf" secondAttribute="centerY" id="YlN-rl-lIK"/>
                                             <constraint firstItem="7Yw-sf-G4w" firstAttribute="centerX" secondItem="RGb-2d-VQn" secondAttribute="centerX" id="aBt-dS-gvz"/>
                                             <constraint firstItem="gAD-BU-ldG" firstAttribute="top" secondItem="eXg-CH-wlA" secondAttribute="bottom" constant="15" id="chk-Sv-1Vw"/>
                                             <constraint firstItem="rWg-bf-Fv3" firstAttribute="width" secondItem="eXg-CH-wlA" secondAttribute="width" id="dLA-1J-FH5"/>
                                             <constraint firstItem="B6b-Dx-kfe" firstAttribute="top" secondItem="VX2-KI-bkf" secondAttribute="bottom" constant="15" id="dNJ-IK-Zbb"/>
                                             <constraint firstItem="VX2-KI-bkf" firstAttribute="width" secondItem="eXg-CH-wlA" secondAttribute="width" id="dNL-G5-9t4"/>
+                                            <constraint firstItem="ULC-5D-vpO" firstAttribute="centerY" secondItem="eXg-CH-wlA" secondAttribute="centerY" id="dot-Vl-KNy"/>
                                             <constraint firstItem="sSj-8a-y4d" firstAttribute="centerX" secondItem="RGb-2d-VQn" secondAttribute="centerX" id="e3o-b2-qTf"/>
                                             <constraint firstItem="AQw-HM-mhp" firstAttribute="width" secondItem="eXg-CH-wlA" secondAttribute="width" id="hdH-T1-M2v"/>
                                             <constraint firstItem="eXg-CH-wlA" firstAttribute="centerX" secondItem="RGb-2d-VQn" secondAttribute="centerX" id="kUu-w8-9KG"/>
                                             <constraint firstItem="eXg-CH-wlA" firstAttribute="top" secondItem="7Yw-sf-G4w" secondAttribute="bottom" constant="59" id="mct-JX-iEf"/>
+                                            <constraint firstItem="FeZ-hU-DfD" firstAttribute="centerX" secondItem="RGb-2d-VQn" secondAttribute="centerX" id="n3p-Lh-jxv"/>
                                             <constraint firstItem="AQw-HM-mhp" firstAttribute="height" secondItem="eXg-CH-wlA" secondAttribute="height" id="oBv-Vx-uCK"/>
                                             <constraint firstItem="7Yw-sf-G4w" firstAttribute="top" secondItem="sT8-3g-jrY" secondAttribute="bottom" id="pyC-wF-Wam"/>
                                             <constraint firstItem="rWg-bf-Fv3" firstAttribute="height" secondItem="eXg-CH-wlA" secondAttribute="height" id="qCL-f8-8Yy"/>
                                             <constraint firstItem="rWg-bf-Fv3" firstAttribute="centerX" secondItem="RGb-2d-VQn" secondAttribute="centerX" id="qhb-X2-KlG"/>
                                             <constraint firstItem="sSj-8a-y4d" firstAttribute="width" secondItem="eXg-CH-wlA" secondAttribute="width" id="rCb-8W-sBW"/>
+                                            <constraint firstItem="nN3-VB-AzH" firstAttribute="centerY" secondItem="B6b-Dx-kfe" secondAttribute="centerY" id="rSA-LL-d4O"/>
+                                            <constraint firstItem="Tq8-kH-DYF" firstAttribute="centerX" secondItem="RGb-2d-VQn" secondAttribute="centerX" id="sZu-Op-2U9"/>
+                                            <constraint firstItem="nN3-VB-AzH" firstAttribute="centerX" secondItem="RGb-2d-VQn" secondAttribute="centerX" id="tyz-bP-0qD"/>
                                             <constraint firstItem="VX2-KI-bkf" firstAttribute="centerX" secondItem="RGb-2d-VQn" secondAttribute="centerX" id="wNC-UD-K2l"/>
+                                            <constraint firstItem="vJ6-uM-t0y" firstAttribute="centerY" secondItem="rWg-bf-Fv3" secondAttribute="centerY" id="xYq-hz-s1H"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -561,12 +675,20 @@ each type of doctor.</string>
                                     <constraint firstItem="RGb-2d-VQn" firstAttribute="width" secondItem="Wsd-ct-kif" secondAttribute="width" id="7v6-6h-xJk"/>
                                     <constraint firstAttribute="bottom" secondItem="RGb-2d-VQn" secondAttribute="bottom" id="Y8y-rC-7hy"/>
                                     <constraint firstItem="RGb-2d-VQn" firstAttribute="top" secondItem="Wsd-ct-kif" secondAttribute="top" id="YOz-DX-PXP"/>
-                                    <constraint firstAttribute="bottom" secondItem="B6b-Dx-kfe" secondAttribute="bottom" constant="217" id="b6w-mC-5at"/>
+                                    <constraint firstAttribute="bottom" secondItem="B6b-Dx-kfe" secondAttribute="bottom" constant="15" id="b6w-mC-5at"/>
                                     <constraint firstItem="sT8-3g-jrY" firstAttribute="top" secondItem="Wsd-ct-kif" secondAttribute="top" id="d8v-B9-zLc"/>
                                     <constraint firstAttribute="trailing" secondItem="RGb-2d-VQn" secondAttribute="trailing" id="htF-AB-eEZ"/>
                                     <constraint firstItem="RGb-2d-VQn" firstAttribute="leading" secondItem="Wsd-ct-kif" secondAttribute="leading" id="r6s-Xx-267"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXM-bH-hyT">
+                                <rect key="frame" x="168" y="-11" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <action selector="homePressed:" destination="Mw4-8a-E4x" eventType="touchUpInside" id="o5W-5q-40e"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -579,7 +701,7 @@ each type of doctor.</string>
                         <viewLayoutGuide key="safeArea" id="obn-C9-tO3"/>
                     </view>
                     <navigationItem key="navigationItem" id="xf1-fj-Acq"/>
-                    <size key="freeformSize" width="375" height="1500"/>
+                    <size key="freeformSize" width="375" height="1307"/>
                     <connections>
                         <outlet property="button1" destination="eXg-CH-wlA" id="beP-fd-jXu"/>
                         <outlet property="button2" destination="gAD-BU-ldG" id="R0L-R6-EbS"/>
@@ -588,6 +710,7 @@ each type of doctor.</string>
                         <outlet property="button5" destination="rWg-bf-Fv3" id="k1e-0w-J77"/>
                         <outlet property="button6" destination="VX2-KI-bkf" id="VwA-df-nvh"/>
                         <outlet property="button7" destination="B6b-Dx-kfe" id="2EH-Nz-DQE"/>
+                        <outlet property="homeButton" destination="MXM-bH-hyT" id="jVf-H2-TWO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DDE-kT-LRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -655,7 +778,7 @@ each type of doctor.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chj-ag-LxM">
-                                <rect key="frame" x="20" y="96" width="335" height="98.5"/>
+                                <rect key="frame" x="20" y="140" width="335" height="98.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="335" id="Cvt-Z5-oyZ"/>
                                     <constraint firstAttribute="height" constant="98.5" id="dID-QT-csu"/>
@@ -673,7 +796,7 @@ each type of doctor.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lL6-Xb-Ky3">
-                                <rect key="frame" x="25.5" y="30" width="324" height="66"/>
+                                <rect key="frame" x="25.5" y="74" width="324" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="G9h-S6-vHE"/>
                                     <constraint firstAttribute="width" constant="324" id="zo6-DN-Eqj"/>
@@ -957,7 +1080,7 @@ CgoKCg
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4i-OB-TKw">
-                                <rect key="frame" x="58" y="30" width="259" height="77"/>
+                                <rect key="frame" x="58" y="74" width="259" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="259" id="MiJ-rA-qR4"/>
                                     <constraint firstAttribute="height" constant="77" id="k6n-96-91Q"/>
@@ -1074,7 +1197,7 @@ Appointment</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSj-Y0-hhh">
-                                <rect key="frame" x="94.5" y="30" width="186" height="66"/>
+                                <rect key="frame" x="94.5" y="74" width="186" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="IX9-Rb-ZCx"/>
                                     <constraint firstAttribute="width" constant="186" id="YD9-B2-Kzy"/>
@@ -1126,7 +1249,7 @@ Appointment</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKc-3J-leJ">
-                                <rect key="frame" x="12.5" y="96" width="350" height="198"/>
+                                <rect key="frame" x="12.5" y="140" width="350" height="198"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="Mbf-NB-B7N"/>
                                     <constraint firstAttribute="height" constant="198" id="lVg-h6-VLh"/>
