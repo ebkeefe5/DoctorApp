@@ -42,11 +42,22 @@ class CircleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        circleButton.clipsToBounds = true;
+        //circleButon.layer.cornerRadius = 25.0;
+        
+        restartButton.clipsToBounds = true;
+        restartButton.layer.cornerRadius = 25.0;
+        
+        restartButton.layer.borderWidth = 2;
+        restartButton.layer.borderColor = UIColor.white.cgColor;
+        
+        circleButton.layer.borderWidth = 2;
+        circleButton.layer.borderColor = UIColor.white.cgColor;
         //homeButton.addTarget(self, action: #selector(homeButtonPressed), for: .touchUpInside);
         self.navigationItem.titleView = homeButton;
         centerX = self.view.bounds.width/2
         centerY = self.view.bounds.height/2
-        circleRadMin = min(centerX, centerY)*1/16
+        circleRadMin = centerX * 1/8;
         
         self.restartGame();
         
@@ -59,13 +70,24 @@ class CircleViewController: UIViewController {
         
     }
     
+    override func viewDidAppear(_ animated: Bool){
+        if let x = UserDefaults.standard.object(forKey: "userMaxScore") as? String{
+            maxScoreLabel.text = "Record: " + x
+            maxScore = Int(x) ?? 0;
+        }
+        
+        
+        print("hi");
+        
+    }
+    
     @IBAction func circleButtonPressed(_ sender: Any) {
         if (!gameRunning){return;}
         
         score = score + 1;
         self.currentScoreLabel.text = "Score: " + String(score)
         circleRadMax = currentRad
-        if (circleRadMax <= 2 * circleRadMin){
+        if (circleRadMax <= 1.5 * circleRadMin){
             self.endGame()
         }
         //get the location of the mouse and test if it's inside the circle
@@ -84,6 +106,8 @@ class CircleViewController: UIViewController {
         circleTimer.invalidate()
         if (score > maxScore){
             maxScore = score
+            //set the defaults
+            UserDefaults.standard.set(String(maxScore), forKey: "userMaxScore");
         }
         score = 0;
         self.maxScoreLabel.text = "Record: " + String(maxScore);
@@ -104,7 +128,7 @@ class CircleViewController: UIViewController {
         self.currentScoreLabel.text = "Score: 0";
      
         shrinking = false;
-        circleRadMax = max(centerX, centerY)*1/2;
+        circleRadMax = centerX*0.85;
         currentRad = circleRadMin;
         self.drawCircle(circleRadius: currentRad);
         circleTimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(CircleViewController.updateCircle), userInfo: nil, repeats: true);
@@ -115,9 +139,9 @@ class CircleViewController: UIViewController {
     @objc func updateCircle()
     {
         if (shrinking){
-            currentRad = currentRad - 2;
+            currentRad = currentRad - 1;
         }else{
-            currentRad = currentRad + 2;
+            currentRad = currentRad + 1;
         }
         if (currentRad >= circleRadMax){
             shrinking = true;
@@ -150,6 +174,20 @@ class CircleViewController: UIViewController {
         
         
     }
+    
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
 
     
 }

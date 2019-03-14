@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		450AD7BE222DD97F0074C713 /* customNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450AD7BD222DD97F0074C713 /* customNav.swift */; };
+		45587A9F2239B6EA00542D14 /* selectGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45587A9E2239B6EA00542D14 /* selectGame.swift */; };
 		457788662232F31F0099524D /* MeditationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457788652232F31F0099524D /* MeditationController.swift */; };
 		457788722232FDAB0099524D /* Present.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 457788712232FDAB0099524D /* Present.mp3 */; };
 		457788742232FDB50099524D /* Aspen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 457788732232FDB50099524D /* Aspen.mp3 */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		450AD7BD222DD97F0074C713 /* customNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customNav.swift; sourceTree = "<group>"; };
+		45587A9E2239B6EA00542D14 /* selectGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectGame.swift; sourceTree = "<group>"; };
 		457788652232F31F0099524D /* MeditationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationController.swift; sourceTree = "<group>"; };
 		457788712232FDAB0099524D /* Present.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Present.mp3; sourceTree = "<group>"; };
 		457788732232FDB50099524D /* Aspen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Aspen.mp3; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				457A6065217ABBFE00F98F83 /* Main.storyboard */,
 				457788652232F31F0099524D /* MeditationController.swift */,
 				45A79658222E584E00D9EDF8 /* dermRoutine.swift */,
+				45587A9E2239B6EA00542D14 /* selectGame.swift */,
 				45A79656222E581D00D9EDF8 /* cleaning.swift */,
 				45A79654222E57B200D9EDF8 /* EyeDoctorGeneral.swift */,
 				45A79652222E566F00D9EDF8 /* RoutineEyeDoctor.swift */,
@@ -223,6 +226,7 @@
 				457A6064217ABBFE00F98F83 /* ViewController.swift in Sources */,
 				45B933542204D4A4007E752E /* NotesViewController.swift in Sources */,
 				457A6062217ABBFE00F98F83 /* AppDelegate.swift in Sources */,
+				45587A9F2239B6EA00542D14 /* selectGame.swift in Sources */,
 				45A79655222E57B200D9EDF8 /* EyeDoctorGeneral.swift in Sources */,
 				45A79653222E566F00D9EDF8 /* RoutineEyeDoctor.swift in Sources */,
 				45A79651222E564E00D9EDF8 /* CavityFilling.swift in Sources */,
