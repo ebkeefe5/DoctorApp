@@ -10,72 +10,72 @@ import UIKit
 
 class WhatToExpect: UIViewController {
 
-    @IBOutlet weak var homeButton: UIButton!
-    
-    @IBOutlet weak var dentistButton: UIButton!
-    
-    @IBOutlet weak var eyeDoctorButton: UIButton!
-    
-    @IBOutlet weak var dermButton: UIButton!
-    
-    @IBOutlet weak var GPButton: UIButton!
-    
-    @IBOutlet weak var sportsDoctorButton: UIButton!
-    
-    @IBOutlet weak var pychologistButton: UIButton!
-    
    
-    var buttonBorderWidth: CGFloat = 2;
+    
+     @IBOutlet weak var button1: UIButton!
+ 
+    @IBOutlet weak var button2: UIButton!
+    
+    @IBOutlet weak var button3: UIButton!
+    
+    @IBOutlet weak var button4: UIButton!
+    
+    
+    @IBOutlet weak var button5: UIButton!
+    
+    @IBOutlet weak var button6: UIButton!
+    
+    
+    @IBOutlet weak var button7: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        button1.clipsToBounds = true;
+        button1.layer.cornerRadius = 25.0;
         
+        button1.layer.borderWidth = 2;
+        button1.layer.borderColor = UIColor.white.cgColor;
+        
+        button2.clipsToBounds = true;
+        button2.layer.cornerRadius = 25.0;
+        
+        button2.layer.borderWidth = 2;
+        button2.layer.borderColor = UIColor.white.cgColor;
+        
+        button3.clipsToBounds = true;
+        button3.layer.cornerRadius = 25.0;
+        button3.layer.borderWidth = 2;
+        button3.layer.borderColor = UIColor.white.cgColor;
+        
+        button4.clipsToBounds = true;
+        button4.layer.cornerRadius = 25.0;
+        button4.layer.borderWidth = 2;
+        button4.layer.borderColor = UIColor.white.cgColor;
+        
+        button5.clipsToBounds = true;
+        button5.layer.cornerRadius = 25.0;
+        button5.layer.borderWidth = 2;
+        button5.layer.borderColor = UIColor.white.cgColor;
+        
+        button6.clipsToBounds = true;
+        button6.layer.cornerRadius = 25.0;
+        button6.layer.borderWidth = 2;
+        button6.layer.borderColor = UIColor.white.cgColor;
+        
+        button7.clipsToBounds = true;
+        button7.layer.cornerRadius = 25.0;
+        button7.layer.borderWidth = 2;
+        button7.layer.borderColor = UIColor.white.cgColor;
         
        
-        self.navigationItem.titleView = homeButton;
         
         
         
         
         
         
-        dentistButton.clipsToBounds = true;
-        dentistButton.layer.cornerRadius = 25.0;
         
-        dentistButton.layer.borderWidth = buttonBorderWidth;
-        dentistButton.layer.borderColor = UIColor.white.cgColor;
-        
-        eyeDoctorButton.clipsToBounds = true;
-        eyeDoctorButton.layer.cornerRadius = 25.0;
-        
-        eyeDoctorButton.layer.borderWidth = buttonBorderWidth;
-        eyeDoctorButton.layer.borderColor = UIColor.white.cgColor;
-        
-        dermButton.clipsToBounds = true;
-        dermButton.layer.cornerRadius = 25.0;
-       
-        dermButton.layer.borderWidth = buttonBorderWidth;
-        dermButton.layer.borderColor = UIColor.white.cgColor;
-        
-        
-        GPButton.clipsToBounds = true;
-        GPButton.layer.cornerRadius = 25.0;
-        
-        GPButton.layer.borderWidth = buttonBorderWidth;
-        GPButton.layer.borderColor = UIColor.white.cgColor;
-        
-        pychologistButton.clipsToBounds = true;
-        pychologistButton.layer.cornerRadius = 25.0;
-        
-        pychologistButton.layer.borderWidth = buttonBorderWidth;
-        pychologistButton.layer.borderColor = UIColor.white.cgColor;
-        
-        sportsDoctorButton.clipsToBounds = true;
-        sportsDoctorButton.layer.cornerRadius = 25.0;
-        
-        sportsDoctorButton.layer.borderWidth = buttonBorderWidth;
-        sportsDoctorButton.layer.borderColor = UIColor.white.cgColor;
         
         
 
@@ -83,9 +83,6 @@ class WhatToExpect: UIViewController {
     }
     
     
-    @IBAction func homePressed(_ sender: Any) {
-        self.navigationController?.popToRootViewController(animated: true);
-    }
     
     
 
