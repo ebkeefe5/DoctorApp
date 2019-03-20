@@ -32,6 +32,7 @@ class WhatToExpect: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = homeButton;
+        
         button1.clipsToBounds = true;
         button1.layer.cornerRadius = 25.0;
         

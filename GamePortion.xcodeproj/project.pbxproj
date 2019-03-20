@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		450AD7BE222DD97F0074C713 /* customNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450AD7BD222DD97F0074C713 /* customNav.swift */; };
+		454A3151223F149800F965C0 /* Present.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 454A3150223F149700F965C0 /* Present.mp3 */; };
+		454A3153223F149C00F965C0 /* Waterfall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 454A3152223F149C00F965C0 /* Waterfall.mp3 */; };
+		454A3155223F14A100F965C0 /* Aspen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 454A3154223F14A100F965C0 /* Aspen.mp3 */; };
+		454A3157223F14B900F965C0 /* Sense.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 454A3156223F14B900F965C0 /* Sense.mp3 */; };
 		45587A9F2239B6EA00542D14 /* selectGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45587A9E2239B6EA00542D14 /* selectGame.swift */; };
-		457788662232F31F0099524D /* MeditationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457788652232F31F0099524D /* MeditationController.swift */; };
-		457788722232FDAB0099524D /* Present.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 457788712232FDAB0099524D /* Present.mp3 */; };
-		457788742232FDB50099524D /* Aspen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 457788732232FDB50099524D /* Aspen.mp3 */; };
-		457788762232FDBE0099524D /* Waterfall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 457788752232FDBE0099524D /* Waterfall.mp3 */; };
-		457788782232FDC50099524D /* Sense.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 457788772232FDC50099524D /* Sense.mp3 */; };
 		457A6062217ABBFE00F98F83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A6061217ABBFE00F98F83 /* AppDelegate.swift */; };
 		457A6064217ABBFE00F98F83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A6063217ABBFE00F98F83 /* ViewController.swift */; };
 		457A6067217ABBFE00F98F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457A6065217ABBFE00F98F83 /* Main.storyboard */; };
@@ -21,6 +20,9 @@
 		457A606C217ABC0100F98F83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457A606A217ABC0100F98F83 /* LaunchScreen.storyboard */; };
 		45805BEB2181192500BDA9FD /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45805BEA2181192500BDA9FD /* CircleViewController.swift */; };
 		45805BED218119B600BDA9FD /* InstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45805BEC218119B600BDA9FD /* InstructionsViewController.swift */; };
+		459346582242E6D7008A74A6 /* MedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459346572242E6D7008A74A6 /* MedCell.swift */; };
+		4593465A2242E6E5008A74A6 /* Med.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459346592242E6E5008A74A6 /* Med.swift */; };
+		4593465C2242E6FB008A74A6 /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4593465B2242E6FB008A74A6 /* Meditation.swift */; };
 		459BBF2022238511007AACD0 /* WhatToExpect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459BBF1F22238511007AACD0 /* WhatToExpect.swift */; };
 		45A4946422246C2500CCF229 /* Dermatologist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4946322246C2500CCF229 /* Dermatologist.swift */; };
 		45A494662224722900CCF229 /* EyeDoctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A494652224722900CCF229 /* EyeDoctor.swift */; };
@@ -38,12 +40,11 @@
 
 /* Begin PBXFileReference section */
 		450AD7BD222DD97F0074C713 /* customNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customNav.swift; sourceTree = "<group>"; };
+		454A3150223F149700F965C0 /* Present.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Present.mp3; sourceTree = "<group>"; };
+		454A3152223F149C00F965C0 /* Waterfall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Waterfall.mp3; sourceTree = "<group>"; };
+		454A3154223F14A100F965C0 /* Aspen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Aspen.mp3; sourceTree = "<group>"; };
+		454A3156223F14B900F965C0 /* Sense.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sense.mp3; sourceTree = "<group>"; };
 		45587A9E2239B6EA00542D14 /* selectGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectGame.swift; sourceTree = "<group>"; };
-		457788652232F31F0099524D /* MeditationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationController.swift; sourceTree = "<group>"; };
-		457788712232FDAB0099524D /* Present.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Present.mp3; sourceTree = "<group>"; };
-		457788732232FDB50099524D /* Aspen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Aspen.mp3; sourceTree = "<group>"; };
-		457788752232FDBE0099524D /* Waterfall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Waterfall.mp3; sourceTree = "<group>"; };
-		457788772232FDC50099524D /* Sense.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sense.mp3; sourceTree = "<group>"; };
 		457A605E217ABBFE00F98F83 /* GamePortion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GamePortion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		457A6061217ABBFE00F98F83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		457A6063217ABBFE00F98F83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +54,9 @@
 		457A606D217ABC0100F98F83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45805BEA2181192500BDA9FD /* CircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
 		45805BEC218119B600BDA9FD /* InstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsViewController.swift; sourceTree = "<group>"; };
+		459346572242E6D7008A74A6 /* MedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedCell.swift; sourceTree = "<group>"; };
+		459346592242E6E5008A74A6 /* Med.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Med.swift; sourceTree = "<group>"; };
+		4593465B2242E6FB008A74A6 /* Meditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
 		459BBF1F22238511007AACD0 /* WhatToExpect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatToExpect.swift; sourceTree = "<group>"; };
 		45A4946322246C2500CCF229 /* Dermatologist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dermatologist.swift; sourceTree = "<group>"; };
 		45A494652224722900CCF229 /* EyeDoctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeDoctor.swift; sourceTree = "<group>"; };
@@ -89,10 +93,10 @@
 		457788682232F87A0099524D /* Meditation */ = {
 			isa = PBXGroup;
 			children = (
-				457788752232FDBE0099524D /* Waterfall.mp3 */,
-				457788732232FDB50099524D /* Aspen.mp3 */,
-				457788712232FDAB0099524D /* Present.mp3 */,
-				457788772232FDC50099524D /* Sense.mp3 */,
+				454A3156223F14B900F965C0 /* Sense.mp3 */,
+				454A3154223F14A100F965C0 /* Aspen.mp3 */,
+				454A3152223F149C00F965C0 /* Waterfall.mp3 */,
+				454A3150223F149700F965C0 /* Present.mp3 */,
 			);
 			path = Meditation;
 			sourceTree = "<group>";
@@ -117,13 +121,13 @@
 			isa = PBXGroup;
 			children = (
 				457A6061217ABBFE00F98F83 /* AppDelegate.swift */,
+				459346562242E6BA008A74A6 /* MedController */,
 				457788682232F87A0099524D /* Meditation */,
 				457788672232F8700099524D /* Guitar */,
 				457A6063217ABBFE00F98F83 /* ViewController.swift */,
 				450AD7BD222DD97F0074C713 /* customNav.swift */,
 				45805BEA2181192500BDA9FD /* CircleViewController.swift */,
 				457A6065217ABBFE00F98F83 /* Main.storyboard */,
-				457788652232F31F0099524D /* MeditationController.swift */,
 				45A79658222E584E00D9EDF8 /* dermRoutine.swift */,
 				45587A9E2239B6EA00542D14 /* selectGame.swift */,
 				45A79656222E581D00D9EDF8 /* cleaning.swift */,
@@ -144,6 +148,16 @@
 				457A606D217ABC0100F98F83 /* Info.plist */,
 			);
 			path = GamePortion;
+			sourceTree = "<group>";
+		};
+		459346562242E6BA008A74A6 /* MedController */ = {
+			isa = PBXGroup;
+			children = (
+				459346572242E6D7008A74A6 /* MedCell.swift */,
+				459346592242E6E5008A74A6 /* Med.swift */,
+				4593465B2242E6FB008A74A6 /* Meditation.swift */,
+			);
+			path = MedController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,11 +219,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				457A606C217ABC0100F98F83 /* LaunchScreen.storyboard in Resources */,
-				457788782232FDC50099524D /* Sense.mp3 in Resources */,
+				454A3157223F14B900F965C0 /* Sense.mp3 in Resources */,
 				457A6069217ABC0100F98F83 /* Assets.xcassets in Resources */,
-				457788722232FDAB0099524D /* Present.mp3 in Resources */,
-				457788762232FDBE0099524D /* Waterfall.mp3 in Resources */,
-				457788742232FDB50099524D /* Aspen.mp3 in Resources */,
+				454A3155223F14A100F965C0 /* Aspen.mp3 in Resources */,
+				454A3151223F149800F965C0 /* Present.mp3 in Resources */,
+				454A3153223F149C00F965C0 /* Waterfall.mp3 in Resources */,
 				457A6067217ABBFE00F98F83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,11 +236,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				45A494662224722900CCF229 /* EyeDoctor.swift in Sources */,
+				4593465C2242E6FB008A74A6 /* Meditation.swift in Sources */,
+				4593465A2242E6E5008A74A6 /* Med.swift in Sources */,
 				45A79649222E525500D9EDF8 /* Pych.swift in Sources */,
 				457A6064217ABBFE00F98F83 /* ViewController.swift in Sources */,
 				45B933542204D4A4007E752E /* NotesViewController.swift in Sources */,
 				457A6062217ABBFE00F98F83 /* AppDelegate.swift in Sources */,
 				45587A9F2239B6EA00542D14 /* selectGame.swift in Sources */,
+				459346582242E6D7008A74A6 /* MedCell.swift in Sources */,
 				45A79655222E57B200D9EDF8 /* EyeDoctorGeneral.swift in Sources */,
 				45A79653222E566F00D9EDF8 /* RoutineEyeDoctor.swift in Sources */,
 				45A79651222E564E00D9EDF8 /* CavityFilling.swift in Sources */,
@@ -237,7 +254,6 @@
 				45A4946422246C2500CCF229 /* Dermatologist.swift in Sources */,
 				45A79659222E584E00D9EDF8 /* dermRoutine.swift in Sources */,
 				45A7964D222E560A00D9EDF8 /* DilatedEyeExam.swift in Sources */,
-				457788662232F31F0099524D /* MeditationController.swift in Sources */,
 				45805BED218119B600BDA9FD /* InstructionsViewController.swift in Sources */,
 				45805BEB2181192500BDA9FD /* CircleViewController.swift in Sources */,
 				459BBF2022238511007AACD0 /* WhatToExpect.swift in Sources */,
