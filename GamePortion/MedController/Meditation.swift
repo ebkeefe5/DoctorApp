@@ -123,6 +123,9 @@ class Meditation: UIViewController, AVAudioPlayerDelegate {
             audioPlayer.play();
             //playPauseButton.setImage(UIImage(named: "whitePause"), for: .normal);
         }
+        let indexPath = IndexPath(row: currentRow, section: 0)
+        self.tableView.selectRow(at: indexPath, animated: false, scrollPosition: UITableViewScrollPosition.middle)
+       
         popRow();
     }
     
@@ -151,6 +154,8 @@ class Meditation: UIViewController, AVAudioPlayerDelegate {
                 audioPlayer.play();
             }
         }
+        let indexPath = IndexPath(row: currentRow, section: 0)
+         self.tableView.selectRow(at: indexPath, animated: false, scrollPosition: UITableViewScrollPosition.middle)
         
     }
     
