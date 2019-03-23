@@ -20,8 +20,10 @@ class Meditation: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var playPauseButton: UIButton!
     
     var meditations : [Med] = []
-    let imageNames : [String] = ["Sense", "Aspen", "Waterfall", "Present"];
-    let songs : [String] = ["Sense", "Aspen", "Waterfall", "Present"];
+    let imageNames : [String] = [ "Sense", "Aspen", "Waterfall", "Present",  "S5", "S6", "S7", "S8", "S9", "S10", "S11", "S12", "S13"];
+    let songs : [String] = ["Water Is Wide", "Lost Then Found", "The Old Church of Kilronan", "Attersee", "When the Stars Come Out", "The Road Home", "Venezia Bells at Dawn", "Winter by the Fire", "Wild Geese Above the Clouds", "Where Has the Love Gone", "Harp Guitar Dreams", "Into the Quiet", "Farewell"];
+    
+     let songs2 : [String] = ["Water Is Wide", "Lost Then Found", "The Old . . .", "Attersee", "When the . . .", "The Road Home", "Venezia Bells . . .", "Winter by . . .", "Wild Geese . . .", "Where Has . . .", "Harp Guitar . . .", "Into the Quiet", "Farewell"];
     
     var currentRow = 0;
     
@@ -59,8 +61,8 @@ class Meditation: UIViewController, AVAudioPlayerDelegate {
     
     
     func popRow(){
-        popImage.image = UIImage(named: songs[currentRow]);
-        popLabel.text = songs[currentRow];
+        popImage.image = UIImage(named: imageNames[currentRow]);
+        popLabel.text = songs2[currentRow];
         popLabel.textColor = UIColor.white;
         
     }
@@ -72,12 +74,32 @@ class Meditation: UIViewController, AVAudioPlayerDelegate {
         let med2 = Med(image: UIImage(named: imageNames[1]) ?? UIImage(), title: songs[1]);
         let med3 = Med(image: UIImage(named: imageNames[2]) ?? UIImage(), title: songs[2]);
         let med4 = Med(image: UIImage(named: imageNames[3]) ?? UIImage(), title: songs[3]);
+        let med5 = Med(image: UIImage(named: imageNames[4]) ?? UIImage(), title: songs[4]);
+        let med6 = Med(image: UIImage(named: imageNames[5]) ?? UIImage(), title: songs[5]);
+        let med7 = Med(image: UIImage(named: imageNames[6]) ?? UIImage(), title: songs[6]);
+        let med8 = Med(image: UIImage(named: imageNames[7]) ?? UIImage(), title: songs[7]);
+        let med9 = Med(image: UIImage(named: imageNames[0]) ?? UIImage(), title: songs[8]);
+        let med10 = Med(image: UIImage(named: imageNames[1]) ?? UIImage(), title: songs[9]);
+        let med11 = Med(image: UIImage(named: imageNames[2]) ?? UIImage(), title: songs[10]);
+        let med12 = Med(image: UIImage(named: imageNames[3]) ?? UIImage(), title: songs[11]);
+        let med13 = Med(image: UIImage(named: imageNames[4]) ?? UIImage(), title: songs[12]);
+        
+        
         
         
         answer.append(med1)
         answer.append(med2)
         answer.append(med3)
         answer.append(med4)
+        answer.append(med5)
+        answer.append(med6)
+        answer.append(med7)
+        answer.append(med8)
+        answer.append(med9)
+        answer.append(med10)
+        answer.append(med11)
+        answer.append(med12)
+        answer.append(med13)
         
         
         

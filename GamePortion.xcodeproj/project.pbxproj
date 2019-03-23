@@ -36,6 +36,19 @@
 		45A79657222E581D00D9EDF8 /* cleaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A79656222E581D00D9EDF8 /* cleaning.swift */; };
 		45A79659222E584E00D9EDF8 /* dermRoutine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A79658222E584E00D9EDF8 /* dermRoutine.swift */; };
 		45B933542204D4A4007E752E /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B933532204D4A4007E752E /* NotesViewController.swift */; };
+		45C23DD322459BB100C77AC7 /* Water Is Wide.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DD222459BB000C77AC7 /* Water Is Wide.mp3 */; };
+		45C23DD522459C7A00C77AC7 /* Lost Then Found.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DD422459C7A00C77AC7 /* Lost Then Found.mp3 */; };
+		45C23DD722459C7F00C77AC7 /* The Old Church of Kilronan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DD622459C7F00C77AC7 /* The Old Church of Kilronan.mp3 */; };
+		45C23DD922459C8300C77AC7 /* Attersee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DD822459C8300C77AC7 /* Attersee.mp3 */; };
+		45C23DDB22459C8600C77AC7 /* When the Stars Come Out.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DDA22459C8600C77AC7 /* When the Stars Come Out.mp3 */; };
+		45C23DDD22459C8A00C77AC7 /* The Road Home.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DDC22459C8A00C77AC7 /* The Road Home.mp3 */; };
+		45C23DDF22459C8E00C77AC7 /* Venezia Bells at Dawn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DDE22459C8E00C77AC7 /* Venezia Bells at Dawn.mp3 */; };
+		45C23DE122459C9300C77AC7 /* Winter by the Fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DE022459C9300C77AC7 /* Winter by the Fire.mp3 */; };
+		45C23DE322459C9700C77AC7 /* Farewell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DE222459C9700C77AC7 /* Farewell.mp3 */; };
+		45C23DE522459C9B00C77AC7 /* Wild Geese Above the Clouds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DE422459C9A00C77AC7 /* Wild Geese Above the Clouds.mp3 */; };
+		45C23DE722459C9F00C77AC7 /* Where Has the Love Gone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DE622459C9F00C77AC7 /* Where Has the Love Gone.mp3 */; };
+		45C23DE922459CA300C77AC7 /* Harp Guitar Dreams.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DE822459CA300C77AC7 /* Harp Guitar Dreams.mp3 */; };
+		45C23DEB22459CA700C77AC7 /* Into the Quiet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DEA22459CA700C77AC7 /* Into the Quiet.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +83,19 @@
 		45A79656222E581D00D9EDF8 /* cleaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cleaning.swift; sourceTree = "<group>"; };
 		45A79658222E584E00D9EDF8 /* dermRoutine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dermRoutine.swift; sourceTree = "<group>"; };
 		45B933532204D4A4007E752E /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		45C23DD222459BB000C77AC7 /* Water Is Wide.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Water Is Wide.mp3"; sourceTree = "<group>"; };
+		45C23DD422459C7A00C77AC7 /* Lost Then Found.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lost Then Found.mp3"; sourceTree = "<group>"; };
+		45C23DD622459C7F00C77AC7 /* The Old Church of Kilronan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Old Church of Kilronan.mp3"; sourceTree = "<group>"; };
+		45C23DD822459C8300C77AC7 /* Attersee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Attersee.mp3; sourceTree = "<group>"; };
+		45C23DDA22459C8600C77AC7 /* When the Stars Come Out.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "When the Stars Come Out.mp3"; sourceTree = "<group>"; };
+		45C23DDC22459C8A00C77AC7 /* The Road Home.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Road Home.mp3"; sourceTree = "<group>"; };
+		45C23DDE22459C8E00C77AC7 /* Venezia Bells at Dawn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Venezia Bells at Dawn.mp3"; sourceTree = "<group>"; };
+		45C23DE022459C9300C77AC7 /* Winter by the Fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Winter by the Fire.mp3"; sourceTree = "<group>"; };
+		45C23DE222459C9700C77AC7 /* Farewell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Farewell.mp3; sourceTree = "<group>"; };
+		45C23DE422459C9A00C77AC7 /* Wild Geese Above the Clouds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Wild Geese Above the Clouds.mp3"; sourceTree = "<group>"; };
+		45C23DE622459C9F00C77AC7 /* Where Has the Love Gone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Where Has the Love Gone.mp3"; sourceTree = "<group>"; };
+		45C23DE822459CA300C77AC7 /* Harp Guitar Dreams.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Harp Guitar Dreams.mp3"; sourceTree = "<group>"; };
+		45C23DEA22459CA700C77AC7 /* Into the Quiet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Into the Quiet.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +119,19 @@
 		457788682232F87A0099524D /* Meditation */ = {
 			isa = PBXGroup;
 			children = (
+				45C23DD222459BB000C77AC7 /* Water Is Wide.mp3 */,
+				45C23DD422459C7A00C77AC7 /* Lost Then Found.mp3 */,
+				45C23DD622459C7F00C77AC7 /* The Old Church of Kilronan.mp3 */,
+				45C23DD822459C8300C77AC7 /* Attersee.mp3 */,
+				45C23DDA22459C8600C77AC7 /* When the Stars Come Out.mp3 */,
+				45C23DDC22459C8A00C77AC7 /* The Road Home.mp3 */,
+				45C23DDE22459C8E00C77AC7 /* Venezia Bells at Dawn.mp3 */,
+				45C23DE022459C9300C77AC7 /* Winter by the Fire.mp3 */,
+				45C23DE422459C9A00C77AC7 /* Wild Geese Above the Clouds.mp3 */,
+				45C23DE622459C9F00C77AC7 /* Where Has the Love Gone.mp3 */,
+				45C23DE822459CA300C77AC7 /* Harp Guitar Dreams.mp3 */,
+				45C23DEA22459CA700C77AC7 /* Into the Quiet.mp3 */,
+				45C23DE222459C9700C77AC7 /* Farewell.mp3 */,
 				454A3156223F14B900F965C0 /* Sense.mp3 */,
 				454A3154223F14A100F965C0 /* Aspen.mp3 */,
 				454A3152223F149C00F965C0 /* Waterfall.mp3 */,
@@ -219,12 +258,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				457A606C217ABC0100F98F83 /* LaunchScreen.storyboard in Resources */,
+				45C23DDB22459C8600C77AC7 /* When the Stars Come Out.mp3 in Resources */,
+				45C23DDF22459C8E00C77AC7 /* Venezia Bells at Dawn.mp3 in Resources */,
+				45C23DD522459C7A00C77AC7 /* Lost Then Found.mp3 in Resources */,
 				454A3157223F14B900F965C0 /* Sense.mp3 in Resources */,
 				457A6069217ABC0100F98F83 /* Assets.xcassets in Resources */,
 				454A3155223F14A100F965C0 /* Aspen.mp3 in Resources */,
+				45C23DD922459C8300C77AC7 /* Attersee.mp3 in Resources */,
 				454A3151223F149800F965C0 /* Present.mp3 in Resources */,
+				45C23DDD22459C8A00C77AC7 /* The Road Home.mp3 in Resources */,
+				45C23DE722459C9F00C77AC7 /* Where Has the Love Gone.mp3 in Resources */,
+				45C23DE122459C9300C77AC7 /* Winter by the Fire.mp3 in Resources */,
+				45C23DD722459C7F00C77AC7 /* The Old Church of Kilronan.mp3 in Resources */,
+				45C23DE322459C9700C77AC7 /* Farewell.mp3 in Resources */,
 				454A3153223F149C00F965C0 /* Waterfall.mp3 in Resources */,
+				45C23DE522459C9B00C77AC7 /* Wild Geese Above the Clouds.mp3 in Resources */,
 				457A6067217ABBFE00F98F83 /* Main.storyboard in Resources */,
+				45C23DE922459CA300C77AC7 /* Harp Guitar Dreams.mp3 in Resources */,
+				45C23DD322459BB100C77AC7 /* Water Is Wide.mp3 in Resources */,
+				45C23DEB22459CA700C77AC7 /* Into the Quiet.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -193,7 +193,10 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJl-M7-P8M">
-                                <rect key="frame" x="77" y="647" width="0.0" height="0.0"/>
+                                <rect key="frame" x="77" y="647" width="120" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Mac-IZ-03C"/>
+                                </constraints>
                                 <attributedString key="attributedText"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -233,6 +236,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.32156862745098036" green="0.51764705882352935" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xJl-M7-P8M" secondAttribute="trailing" constant="20" id="05t-VD-UyI"/>
                             <constraint firstItem="qQ5-uS-InH" firstAttribute="leading" secondItem="NuJ-oi-sjt" secondAttribute="trailing" constant="5" id="54T-gG-Iri"/>
                             <constraint firstItem="WGJ-bT-KRA" firstAttribute="leading" secondItem="7Fr-6b-Ua6" secondAttribute="leading" constant="12" id="7Ui-P5-uGk"/>
                             <constraint firstItem="xJl-M7-P8M" firstAttribute="leading" secondItem="WGJ-bT-KRA" secondAttribute="trailing" constant="15" id="CM0-il-GCq"/>
@@ -259,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kuh-eB-OVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8103" y="-655"/>
+            <point key="canvasLocation" x="-8407" y="-640"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mOb-Fy-np8">
