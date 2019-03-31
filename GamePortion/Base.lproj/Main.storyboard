@@ -233,6 +233,17 @@
                                     <action selector="rewindPressed:" destination="zDu-dn-FKC" eventType="touchUpInside" id="2Bz-Ca-J1o"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2U-wj-5Zd">
+                                <rect key="frame" x="162.5" y="15" width="50" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XpE-Ie-gCy"/>
+                                    <constraint firstAttribute="width" constant="50" id="hbA-xg-yhJ"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="bHouse"/>
+                                <connections>
+                                    <action selector="homeButtonPressed:" destination="zDu-dn-FKC" eventType="touchUpInside" id="9Zv-be-CID"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.32156862745098036" green="0.51764705882352935" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -250,11 +261,13 @@
                             <constraint firstItem="jWX-A6-Tu6" firstAttribute="bottom" secondItem="xJl-M7-P8M" secondAttribute="bottom" constant="20" id="fRg-Dy-MRz"/>
                             <constraint firstItem="hgF-7x-Njf" firstAttribute="leading" secondItem="jWX-A6-Tu6" secondAttribute="leading" id="fg4-Ed-lxR"/>
                             <constraint firstItem="jWX-A6-Tu6" firstAttribute="bottom" secondItem="hgF-7x-Njf" secondAttribute="bottom" constant="54" id="pFf-F5-H1U"/>
+                            <constraint firstItem="X2U-wj-5Zd" firstAttribute="centerX" secondItem="7Fr-6b-Ua6" secondAttribute="centerX" id="qnz-Ih-FaG"/>
                             <constraint firstItem="hgF-7x-Njf" firstAttribute="trailing" secondItem="jWX-A6-Tu6" secondAttribute="trailing" id="tVR-4f-Mw6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jWX-A6-Tu6"/>
                     </view>
                     <connections>
+                        <outlet property="homebutton" destination="X2U-wj-5Zd" id="fgN-hT-5hu"/>
                         <outlet property="playPauseButton" destination="NuJ-oi-sjt" id="QKQ-hE-LcQ"/>
                         <outlet property="popImage" destination="WGJ-bT-KRA" id="cn0-Em-OJ0"/>
                         <outlet property="popLabel" destination="xJl-M7-P8M" id="Fl4-7n-xca"/>
@@ -263,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kuh-eB-OVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8407" y="-640"/>
+            <point key="canvasLocation" x="-9020" y="-758"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mOb-Fy-np8">

@@ -11,9 +11,11 @@ import UIKit
 import AVFoundation
 
 var audioPlayer = AVAudioPlayer()
+var audioPlayerExists = 0;
 
 class Meditation: UIViewController, AVAudioPlayerDelegate {
     
+    @IBOutlet weak var homebutton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var popImage: UIImageView!
     @IBOutlet weak var popLabel: UILabel!
@@ -27,13 +29,35 @@ class Meditation: UIViewController, AVAudioPlayerDelegate {
     
     var currentRow = 0;
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadAudio();
+        if (audioPlayerExists == 0){
+            print("bro");
+            loadAudio();
+        }else{
+            print("yo");
+            if (audioPlayer.isPlaying){
+                
+                playPauseButton.setImage(UIImage(named: "whitePlay"), for: .normal);
+                
+            }else{
+                
+                playPauseButton.setImage(UIImage(named: "whitePause"), for: .normal);
+               
+            }
+        }
         meditations = createArray();
         tableView.delegate = self;
         tableView.dataSource = self;
+        self.navigationItem.titleView = homebutton;
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func homeButtonPressed(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true);
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -42,6 +66,7 @@ class Meditation: UIViewController, AVAudioPlayerDelegate {
             print("the current row is: " + String(currentRow));
         }
         popRow();
+        
     }
     
     
@@ -53,6 +78,7 @@ class Meditation: UIViewController, AVAudioPlayerDelegate {
             audioPlayer.delegate = self;
             
             audioPlayer.prepareToPlay();
+            audioPlayerExists = 1;
         }catch{
             print("problem loading audio");
         }
@@ -78,11 +104,11 @@ class Meditation: UIViewController, AVAudioPlayerDelegate {
         let med6 = Med(image: UIImage(named: imageNames[5]) ?? UIImage(), title: songs[5]);
         let med7 = Med(image: UIImage(named: imageNames[6]) ?? UIImage(), title: songs[6]);
         let med8 = Med(image: UIImage(named: imageNames[7]) ?? UIImage(), title: songs[7]);
-        let med9 = Med(image: UIImage(named: imageNames[0]) ?? UIImage(), title: songs[8]);
-        let med10 = Med(image: UIImage(named: imageNames[1]) ?? UIImage(), title: songs[9]);
-        let med11 = Med(image: UIImage(named: imageNames[2]) ?? UIImage(), title: songs[10]);
-        let med12 = Med(image: UIImage(named: imageNames[3]) ?? UIImage(), title: songs[11]);
-        let med13 = Med(image: UIImage(named: imageNames[4]) ?? UIImage(), title: songs[12]);
+        let med9 = Med(image: UIImage(named: imageNames[8]) ?? UIImage(), title: songs[8]);
+        let med10 = Med(image: UIImage(named: imageNames[9]) ?? UIImage(), title: songs[9]);
+        let med11 = Med(image: UIImage(named: imageNames[10]) ?? UIImage(), title: songs[10]);
+        let med12 = Med(image: UIImage(named: imageNames[11]) ?? UIImage(), title: songs[11]);
+        let med13 = Med(image: UIImage(named: imageNames[12]) ?? UIImage(), title: songs[12]);
         
         
         
