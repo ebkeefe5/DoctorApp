@@ -39,11 +39,11 @@ class Meditation: UIViewController, AVAudioPlayerDelegate {
             print("yo");
             if (audioPlayer.isPlaying){
                 
-                playPauseButton.setImage(UIImage(named: "whitePlay"), for: .normal);
+                playPauseButton.setImage(UIImage(named: "whitePause"), for: .normal);
                 
             }else{
                 
-                playPauseButton.setImage(UIImage(named: "whitePause"), for: .normal);
+                playPauseButton.setImage(UIImage(named: "whitePlay"), for: .normal);
                
             }
         }

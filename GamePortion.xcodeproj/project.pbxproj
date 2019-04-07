@@ -109,13 +109,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		457788672232F8700099524D /* Guitar */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Guitar;
-			sourceTree = "<group>";
-		};
 		457788682232F87A0099524D /* Meditation */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,26 +155,14 @@
 				457A6061217ABBFE00F98F83 /* AppDelegate.swift */,
 				459346562242E6BA008A74A6 /* MedController */,
 				457788682232F87A0099524D /* Meditation */,
-				457788672232F8700099524D /* Guitar */,
 				457A6063217ABBFE00F98F83 /* ViewController.swift */,
 				450AD7BD222DD97F0074C713 /* customNav.swift */,
-				45805BEA2181192500BDA9FD /* CircleViewController.swift */,
 				457A6065217ABBFE00F98F83 /* Main.storyboard */,
-				45A79658222E584E00D9EDF8 /* dermRoutine.swift */,
-				45587A9E2239B6EA00542D14 /* selectGame.swift */,
-				45A79656222E581D00D9EDF8 /* cleaning.swift */,
-				45A79654222E57B200D9EDF8 /* EyeDoctorGeneral.swift */,
-				45A79652222E566F00D9EDF8 /* RoutineEyeDoctor.swift */,
-				45A79650222E564E00D9EDF8 /* CavityFilling.swift */,
-				45A7964E222E561E00D9EDF8 /* Biopsy.swift */,
-				45A7964C222E560A00D9EDF8 /* DilatedEyeExam.swift */,
-				45A79648222E525500D9EDF8 /* Pych.swift */,
-				45A494672224739E00CCF229 /* Dentist.swift */,
-				45A494652224722900CCF229 /* EyeDoctor.swift */,
-				45A4946322246C2500CCF229 /* Dermatologist.swift */,
+				45AF3BB222597FC400B4976D /* Information */,
+				45AF3BB32259808E00B4976D /* Games */,
+				45AF3BB42259813600B4976D /* Doctors */,
 				459BBF1F22238511007AACD0 /* WhatToExpect.swift */,
 				45B933532204D4A4007E752E /* NotesViewController.swift */,
-				45805BEC218119B600BDA9FD /* InstructionsViewController.swift */,
 				457A6068217ABC0100F98F83 /* Assets.xcassets */,
 				457A606A217ABC0100F98F83 /* LaunchScreen.storyboard */,
 				457A606D217ABC0100F98F83 /* Info.plist */,
@@ -197,6 +178,41 @@
 				4593465B2242E6FB008A74A6 /* Meditation.swift */,
 			);
 			path = MedController;
+			sourceTree = "<group>";
+		};
+		45AF3BB222597FC400B4976D /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				45A79658222E584E00D9EDF8 /* dermRoutine.swift */,
+				45A79656222E581D00D9EDF8 /* cleaning.swift */,
+				45A79652222E566F00D9EDF8 /* RoutineEyeDoctor.swift */,
+				45A79650222E564E00D9EDF8 /* CavityFilling.swift */,
+				45A7964C222E560A00D9EDF8 /* DilatedEyeExam.swift */,
+				45A7964E222E561E00D9EDF8 /* Biopsy.swift */,
+				45A79654222E57B200D9EDF8 /* EyeDoctorGeneral.swift */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		45AF3BB32259808E00B4976D /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				45587A9E2239B6EA00542D14 /* selectGame.swift */,
+				45805BEA2181192500BDA9FD /* CircleViewController.swift */,
+				45805BEC218119B600BDA9FD /* InstructionsViewController.swift */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		45AF3BB42259813600B4976D /* Doctors */ = {
+			isa = PBXGroup;
+			children = (
+				45A494652224722900CCF229 /* EyeDoctor.swift */,
+				45A4946322246C2500CCF229 /* Dermatologist.swift */,
+				45A494672224739E00CCF229 /* Dentist.swift */,
+				45A79648222E525500D9EDF8 /* Pych.swift */,
+			);
+			path = Doctors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
