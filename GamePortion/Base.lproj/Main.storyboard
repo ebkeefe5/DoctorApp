@@ -276,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kuh-eB-OVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9020" y="-758"/>
+            <point key="canvasLocation" x="-7356" y="-530"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mOb-Fy-np8">
@@ -814,60 +814,32 @@ each type of doctor.</string>
             </objects>
             <point key="canvasLocation" x="-5586.3999999999996" y="-459.67016491754129"/>
         </scene>
-        <!--View Controller-->
+        <!--GP-->
         <scene sceneID="Y3E-Mr-Gns">
             <objects>
-                <viewController id="hTC-Zl-eI0" sceneMemberID="viewController">
+                <viewController id="hTC-Zl-eI0" customClass="GP" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WJS-zW-Je5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1d-h6-ud2">
-                                <rect key="frame" x="99" y="74" width="177" height="66"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="177" id="540-Y2-UMH"/>
-                                    <constraint firstAttribute="height" constant="66" id="vMk-bJ-odV"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="General">
-                                        <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="48" name="Avenir-Heavy"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJg-5w-fMi">
-                                <rect key="frame" x="56" y="140" width="263" height="66"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="OOT-7X-zOY"/>
-                                    <constraint firstAttribute="width" constant="263" id="dEd-oT-wOk"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Practitioner">
-                                        <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="48" name="Avenir-Heavy"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yug-ST-n77">
                                 <rect key="frame" x="9.5" y="518.5" width="356" height="133.5"/>
                                 <state key="normal" image="blue4"/>
+                                <connections>
+                                    <segue destination="Xx3-gw-xhG" kind="show" id="5Lt-ph-cbh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U69-wt-m2L">
                                 <rect key="frame" x="9.5" y="370" width="356" height="133.5"/>
                                 <state key="normal" image="blue4"/>
+                                <connections>
+                                    <segue destination="4S8-Fe-Tjr" kind="show" id="NqP-Ra-jyO"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71U-Le-AgM">
-                                <rect key="frame" x="125" y="413.5" width="125" height="46.5"/>
+                                <rect key="frame" x="13" y="413.5" width="349" height="46.5"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Flu Shot">
+                                    <fragment content="Follow Ups + Flu Shots">
                                         <attributes>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="34" name="Avenir-Book"/>
@@ -880,6 +852,9 @@ each type of doctor.</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrO-nC-pfN">
                                 <rect key="frame" x="9.5" y="222" width="356" height="133"/>
                                 <state key="normal" image="blue4"/>
+                                <connections>
+                                    <segue destination="rr0-57-XhO" kind="show" id="PLv-MJ-VTU"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHf-jc-M4S">
                                 <rect key="frame" x="24" y="265.5" width="327.5" height="46.5"/>
@@ -907,26 +882,68 @@ each type of doctor.</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7a-b6-BFq">
+                                <rect key="frame" x="152.5" y="74" width="70" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="ScC-Oz-1ix"/>
+                                    <constraint firstAttribute="width" constant="70" id="d8j-AY-j76"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="GP">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="48" name="Avenir-Heavy"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GR4-TW-qEW">
+                                <rect key="frame" x="20" y="130" width="335" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="MJL-wx-Wyd"/>
+                                    <constraint firstAttribute="height" constant="90" id="s3o-20-xM0"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="These answers were provided by an on campus doctor, but are representative of off campus providers">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KX6-cU-3Zd">
+                                <rect key="frame" x="168" y="22" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <action selector="homePressed:" destination="hTC-Zl-eI0" eventType="touchUpInside" id="d5d-m4-t3m"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="f1d-h6-ud2" firstAttribute="centerX" secondItem="WJS-zW-Je5" secondAttribute="centerX" id="4sI-6t-dmV"/>
+                            <constraint firstItem="GR4-TW-qEW" firstAttribute="centerX" secondItem="WJS-zW-Je5" secondAttribute="centerX" id="4Ca-DW-vkf"/>
                             <constraint firstItem="qrO-nC-pfN" firstAttribute="width" secondItem="yug-ST-n77" secondAttribute="width" id="7zh-cP-sdj"/>
                             <constraint firstItem="71U-Le-AgM" firstAttribute="centerX" secondItem="WJS-zW-Je5" secondAttribute="centerX" id="9LL-kU-EoG"/>
-                            <constraint firstItem="rJg-5w-fMi" firstAttribute="top" secondItem="f1d-h6-ud2" secondAttribute="bottom" id="AKf-61-SdG"/>
                             <constraint firstItem="FHf-jc-M4S" firstAttribute="centerX" secondItem="WJS-zW-Je5" secondAttribute="centerX" id="DZr-TW-Hdq"/>
+                            <constraint firstItem="GR4-TW-qEW" firstAttribute="top" secondItem="f7a-b6-BFq" secondAttribute="bottom" constant="-10" id="FIW-aB-1QD"/>
                             <constraint firstItem="qrO-nC-pfN" firstAttribute="height" secondItem="yug-ST-n77" secondAttribute="height" id="GFU-s5-kQB"/>
                             <constraint firstItem="FHf-jc-M4S" firstAttribute="centerY" secondItem="qrO-nC-pfN" secondAttribute="centerY" id="Lhj-be-RrC"/>
                             <constraint firstItem="yug-ST-n77" firstAttribute="centerX" secondItem="WJS-zW-Je5" secondAttribute="centerX" id="MuI-wT-jqx"/>
                             <constraint firstItem="71U-Le-AgM" firstAttribute="centerY" secondItem="U69-wt-m2L" secondAttribute="centerY" id="Ng9-oa-Gbd"/>
-                            <constraint firstItem="rJg-5w-fMi" firstAttribute="centerX" secondItem="WJS-zW-Je5" secondAttribute="centerX" id="S2E-Vg-XVM"/>
+                            <constraint firstItem="f7a-b6-BFq" firstAttribute="top" secondItem="Ggh-WJ-YpQ" secondAttribute="top" constant="10" id="SjB-fp-CIK"/>
+                            <constraint firstItem="f7a-b6-BFq" firstAttribute="centerX" secondItem="WJS-zW-Je5" secondAttribute="centerX" id="ZcU-5D-jzy"/>
                             <constraint firstItem="yug-ST-n77" firstAttribute="width" secondItem="WJS-zW-Je5" secondAttribute="width" multiplier="0.95" id="aZV-RV-glE"/>
                             <constraint firstItem="AcE-SW-6TO" firstAttribute="centerX" secondItem="WJS-zW-Je5" secondAttribute="centerX" id="cdO-OV-pbJ"/>
                             <constraint firstItem="yug-ST-n77" firstAttribute="top" secondItem="U69-wt-m2L" secondAttribute="bottom" constant="15" id="dFu-wS-tsk"/>
                             <constraint firstItem="U69-wt-m2L" firstAttribute="top" secondItem="qrO-nC-pfN" secondAttribute="bottom" constant="15" id="e9R-ia-bfS"/>
                             <constraint firstItem="yug-ST-n77" firstAttribute="height" secondItem="WJS-zW-Je5" secondAttribute="height" multiplier="0.2" id="fi4-3L-lLA"/>
                             <constraint firstItem="AcE-SW-6TO" firstAttribute="centerY" secondItem="yug-ST-n77" secondAttribute="centerY" id="hA7-FU-YJc"/>
-                            <constraint firstItem="f1d-h6-ud2" firstAttribute="top" secondItem="Ggh-WJ-YpQ" secondAttribute="top" constant="10" id="jim-cW-bys"/>
                             <constraint firstItem="Ggh-WJ-YpQ" firstAttribute="bottom" secondItem="yug-ST-n77" secondAttribute="bottom" constant="15" id="k6P-4J-tdM"/>
                             <constraint firstItem="U69-wt-m2L" firstAttribute="width" secondItem="yug-ST-n77" secondAttribute="width" id="sM7-0l-aff"/>
                             <constraint firstItem="U69-wt-m2L" firstAttribute="centerX" secondItem="WJS-zW-Je5" secondAttribute="centerX" id="wW1-tn-P1H"/>
@@ -935,27 +952,853 @@ each type of doctor.</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ggh-WJ-YpQ"/>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="qrO-nC-pfN" id="vtr-cg-PcD"/>
+                        <outlet property="button2" destination="U69-wt-m2L" id="1RK-aL-iAK"/>
+                        <outlet property="button3" destination="yug-ST-n77" id="rUv-2H-CX2"/>
+                        <outlet property="homeButton" destination="KX6-cU-3Zd" id="yj2-sh-CyW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vCf-a0-TnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-11151.200000000001" y="300"/>
         </scene>
-        <!--View Controller-->
+        <!--Gb-->
+        <scene sceneID="1od-bB-by3">
+            <objects>
+                <viewController id="4S8-Fe-Tjr" customClass="Gb" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xwX-1W-hfb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCb-J7-hy3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.54901960780000003" green="0.72156862749999995" blue="0.85098039219999999" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Follows Ups + Flu Shots">
+                                        <attributes>
+                                            <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="24" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="828-OD-q63">
+                                <rect key="frame" x="9.5" y="125.5" width="356" height="540"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">At a follow up appointment we will ask how the condition has changed since the previous visit. If a treatment was prescribed, be prepared to discuss the results. Did the treatment help, how much, did you have any side effects, and are you still having symptoms? Those type of questions. If lab tests were ordered, we will explain the results. 
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" minimumLineHeight="11.75" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">At a flu shot appointment you will be asked to complete a brief Yes/No questionnaire pertaining to past and current medical conditions and any previous reactions to vaccines, particularly the flu vaccine
+Following this, the upper arm is used to inject the vaccine in the deltoid muscle
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" minimumLineHeight="11.75" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sx-xl-vaE">
+                                <rect key="frame" x="161" y="22" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <action selector="homePressed:" destination="4S8-Fe-Tjr" eventType="touchUpInside" id="aSm-wJ-hCr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="828-OD-q63" firstAttribute="height" secondItem="xwX-1W-hfb" secondAttribute="height" multiplier="0.81" id="4t3-eR-YbC"/>
+                            <constraint firstItem="nCb-J7-hy3" firstAttribute="width" secondItem="xwX-1W-hfb" secondAttribute="width" id="F26-uh-6FI"/>
+                            <constraint firstItem="828-OD-q63" firstAttribute="top" secondItem="nCb-J7-hy3" secondAttribute="bottom" constant="8" id="Hf5-S2-6r2"/>
+                            <constraint firstItem="nCb-J7-hy3" firstAttribute="centerX" secondItem="xwX-1W-hfb" secondAttribute="centerX" id="I7i-cm-AaC"/>
+                            <constraint firstItem="nCb-J7-hy3" firstAttribute="height" secondItem="xwX-1W-hfb" secondAttribute="height" multiplier="0.08" id="UIH-Mp-sYk"/>
+                            <constraint firstItem="nCb-J7-hy3" firstAttribute="top" secondItem="ozt-sN-xZm" secondAttribute="top" id="hSo-1r-G5m"/>
+                            <constraint firstItem="828-OD-q63" firstAttribute="width" secondItem="xwX-1W-hfb" secondAttribute="width" multiplier="0.95" id="qEO-Wy-HCz"/>
+                            <constraint firstItem="828-OD-q63" firstAttribute="centerX" secondItem="xwX-1W-hfb" secondAttribute="centerX" id="vEO-hN-bvw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ozt-sN-xZm"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="6sx-xl-vaE" id="de9-uW-zXX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5F1-RM-yll" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-12558" y="353"/>
+        </scene>
+        <!--Gc-->
+        <scene sceneID="fRC-4E-glv">
+            <objects>
+                <viewController id="Xx3-gw-xhG" customClass="Gc" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wb7-h3-GKU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqi-vr-SHw">
+                                <rect key="frame" x="0.0" y="64" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.54901960780000003" green="0.72156862749999995" blue="0.85098039219999999" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="STD Screenings">
+                                        <attributes>
+                                            <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="24" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ug-OM-oKa">
+                                <rect key="frame" x="9.5" y="125.5" width="356" height="540"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">A Sexual health questionnaire is provided at check in. This assists the provider is determining what infections the student may be at risk for and what tests are appropriate. 
+It offers the student an opportunity to reflect on their sexual health prior to being seen by the provider. 
+Once in the room, the medical assistant will go through a standard STI questionnaire that is part of our Medicat software. This further assists the provider is determining which tests are most appropriate. 
+Your health record is confidential.
+We use urine to test for chlamydia and gonorrhea
+A vaginal swab can also be used to test for chlamydia and gonorrhea. This is a good option when the required one hour since urinating cannot be met. 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" minimumLineHeight="11.75" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">If indicated, HIV and syphilis are blood tests. 
+
+If clinically indicated, Herpes Simplex Virus is a blood test.
+
+We do NOT routinely screen for herpes. It is not recommended as a screening test in asymptomatic individuals by US Preventive Services Task Force, The American Academy of Family Physicians, The American College of Obstetrics and Gynecology and the Centers for Disease Control. (The USPSTF website contains their final recommendation statement) 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmQ-K5-nEU">
+                                <rect key="frame" x="168" y="22" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <action selector="homePressed:" destination="Xx3-gw-xhG" eventType="touchUpInside" id="FW1-hg-vHK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xqi-vr-SHw" firstAttribute="width" secondItem="Wb7-h3-GKU" secondAttribute="width" id="58m-3N-4NR"/>
+                            <constraint firstItem="5ug-OM-oKa" firstAttribute="centerX" secondItem="Wb7-h3-GKU" secondAttribute="centerX" id="AkB-ZV-jF1"/>
+                            <constraint firstItem="Xqi-vr-SHw" firstAttribute="height" secondItem="Wb7-h3-GKU" secondAttribute="height" multiplier="0.08" id="ELL-je-m3m"/>
+                            <constraint firstItem="5ug-OM-oKa" firstAttribute="width" secondItem="Wb7-h3-GKU" secondAttribute="width" multiplier="0.95" id="I8i-Wa-ebx"/>
+                            <constraint firstItem="Xqi-vr-SHw" firstAttribute="top" secondItem="4EO-R5-ogl" secondAttribute="top" id="Ztu-BC-bcq"/>
+                            <constraint firstItem="5ug-OM-oKa" firstAttribute="top" secondItem="Xqi-vr-SHw" secondAttribute="bottom" constant="8" id="dOg-IE-hIa"/>
+                            <constraint firstItem="5ug-OM-oKa" firstAttribute="height" secondItem="Wb7-h3-GKU" secondAttribute="height" multiplier="0.81" id="ebU-Tw-iBm"/>
+                            <constraint firstItem="Xqi-vr-SHw" firstAttribute="centerX" secondItem="Wb7-h3-GKU" secondAttribute="centerX" id="gjP-ze-w3q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4EO-R5-ogl"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="FmQ-K5-nEU" id="RPk-Vp-ceQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ub-Yz-eB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11903" y="352"/>
+        </scene>
+        <!--Ga-->
+        <scene sceneID="wVU-Bz-KIP">
+            <objects>
+                <viewController id="rr0-57-XhO" customClass="Ga" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U1B-EW-bqj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q15-ij-5VK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.54901960780000003" green="0.72156862749999995" blue="0.85098039219999999" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Initial Appointment">
+                                        <attributes>
+                                            <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="24" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cbi-8o-gPG">
+                                <rect key="frame" x="9.5" y="125.5" width="356" height="540"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">If it is the first appointment of the school year, there is paperwork to complete including a medical history. 
+Usually the patient will be weighed as they are brought to the exam room. 
+Once in the room the medical assistant will use automated equipment to measure your blood pressure, pulse and temperature. This may vary depending on what the student is being seen for. It does help to have some data points over time to which we can compare at future visits.
+At this point the medical assistant will ask you what brings you in today.  If your concern is ever too personal and you wish to discuss it only once, you may ask to wait and talk directly to the provider. 
+A patient will be asked about their medical history: previous conditions for which they have seen by a medical or mental health provider
+They will be asked about any medications they are taking and the doses.
+The patient will then be asked about their current concern; the symptoms, when and how it began, what they have tried so far to help, if it has ever happened before.
+They may be asked about family history as well as social history if it pertains to the presenting problem, for example: travel, diet, sleep, exercise, substance use
+A patient can prepare for the visit by knowing the names of all medications they currently are taking, even if they are over the counter as well as medications they took in the past for a medical condition. 
+It is helpful to bring the medications to the visit.
+It is helpful if they have the dates of surgeries
+It is helpful if they have a copy of immunizations. 
+Bring your insurance card to the visit. We need it in the event we order any lab or imaging tests or refer you to a specialist.
+
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" minimumLineHeight="11.75" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="11" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" minimumLineHeight="11.75" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXS-9h-0wf">
+                                <rect key="frame" x="162" y="22" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <action selector="homePressed:" destination="rr0-57-XhO" eventType="touchUpInside" id="E7Y-cI-dVh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Q15-ij-5VK" firstAttribute="centerX" secondItem="U1B-EW-bqj" secondAttribute="centerX" id="4O6-rQ-KCr"/>
+                            <constraint firstItem="Cbi-8o-gPG" firstAttribute="top" secondItem="Q15-ij-5VK" secondAttribute="bottom" constant="8" id="IXl-9Z-puj"/>
+                            <constraint firstItem="Q15-ij-5VK" firstAttribute="height" secondItem="U1B-EW-bqj" secondAttribute="height" multiplier="0.08" id="NO3-dE-Kfd"/>
+                            <constraint firstItem="Cbi-8o-gPG" firstAttribute="height" secondItem="U1B-EW-bqj" secondAttribute="height" multiplier="0.81" id="PZw-N3-wEB"/>
+                            <constraint firstItem="Q15-ij-5VK" firstAttribute="width" secondItem="U1B-EW-bqj" secondAttribute="width" id="UQq-kX-rMt"/>
+                            <constraint firstItem="Q15-ij-5VK" firstAttribute="top" secondItem="x8g-3w-XwA" secondAttribute="top" id="buH-pq-reM"/>
+                            <constraint firstItem="Cbi-8o-gPG" firstAttribute="width" secondItem="U1B-EW-bqj" secondAttribute="width" multiplier="0.95" id="wIH-9B-LvM"/>
+                            <constraint firstItem="Cbi-8o-gPG" firstAttribute="centerX" secondItem="U1B-EW-bqj" secondAttribute="centerX" id="y0I-Qo-q2r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="x8g-3w-XwA"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="gXS-9h-0wf" id="NG7-yd-rhs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LmV-bg-pQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13222" y="352"/>
+        </scene>
+        <!--Coa-->
+        <scene sceneID="wyh-fT-KsE">
+            <objects>
+                <viewController id="JHm-Az-TYf" customClass="Coa" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dp5-48-Mwy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOA-hN-YMd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.54901960780000003" green="0.72156862749999995" blue="0.85098039219999999" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Initial Appointment">
+                                        <attributes>
+                                            <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="24" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kcT-g3-tCr">
+                                <rect key="frame" x="9.5" y="125.5" width="356" height="540"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">When a student first makes a counseling appointment, there are three forms to complete:
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">•	Patient Information (including demographics, optional identity questions, reason for visit, and brief mental health history)
+•	Informed Consent including limits of confidentiality, fees for missed appts, etc.
+•	Privacy Policy 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" firstLineHeadIndent="18" headIndent="36" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">At the first appointment students and the counselor will explore the reasons for visit, identify any needed supports in the short term, and develop treatment goals for follow-up.  
+It always helpful for students to give some thoughts as to what they would like to be different in their lives as a result of accessing mental health support.  </string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="11" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Bn-Jk-XWe">
+                                <rect key="frame" x="155" y="22" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <action selector="homePressed:" destination="JHm-Az-TYf" eventType="touchUpInside" id="yV7-qX-ZHT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KOA-hN-YMd" firstAttribute="top" secondItem="s8J-lv-Fef" secondAttribute="top" id="4EL-mk-ZB8"/>
+                            <constraint firstItem="KOA-hN-YMd" firstAttribute="height" secondItem="Dp5-48-Mwy" secondAttribute="height" multiplier="0.08" id="Bsk-6f-RKP"/>
+                            <constraint firstItem="KOA-hN-YMd" firstAttribute="width" secondItem="Dp5-48-Mwy" secondAttribute="width" id="CVT-v8-uWj"/>
+                            <constraint firstItem="kcT-g3-tCr" firstAttribute="height" secondItem="Dp5-48-Mwy" secondAttribute="height" multiplier="0.81" id="ESY-17-OEd"/>
+                            <constraint firstItem="kcT-g3-tCr" firstAttribute="width" secondItem="Dp5-48-Mwy" secondAttribute="width" multiplier="0.95" id="JIL-8k-tvP"/>
+                            <constraint firstItem="kcT-g3-tCr" firstAttribute="top" secondItem="KOA-hN-YMd" secondAttribute="bottom" constant="8" id="Nnb-kc-aWF"/>
+                            <constraint firstItem="kcT-g3-tCr" firstAttribute="centerX" secondItem="Dp5-48-Mwy" secondAttribute="centerX" id="RDx-go-lDF"/>
+                            <constraint firstItem="KOA-hN-YMd" firstAttribute="centerX" secondItem="Dp5-48-Mwy" secondAttribute="centerX" id="Tw6-yA-fZY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="s8J-lv-Fef"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="7Bn-Jk-XWe" id="HMJ-bM-npG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdw-c4-nyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11714" y="1154"/>
+        </scene>
+        <!--Cob-->
+        <scene sceneID="aEG-sW-nay">
+            <objects>
+                <viewController id="2HR-Ga-nZ9" customClass="Cob" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xjO-Jj-ZcH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2o7-Tc-Ili">
+                                <rect key="frame" x="0.0" y="64" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.54901960780000003" green="0.72156862749999995" blue="0.85098039219999999" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Follow Up">
+                                        <attributes>
+                                            <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="24" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0jo-Es-2BW">
+                                <rect key="frame" x="-0.5" y="125.5" width="376" height="667.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">The content of follow-up sessions is decided by the client and as a function of the treatment goals identified in the intake session. 
+We understand this is a dynamic and fluid process, so goals often change over the course of treatment. It’s important to remember that therapy can be hard work and there are often no quick fixes.  
+Lasting change comes as a result of reflection, identification of thoughts and behavior patterns that are no longer working for the student, and a firm resolution to working through hard stuff.  
+However, the providers are all very invested in supporting student to make lasting and meaningful changes.  </string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="11" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zr1-cn-f8g">
+                                <rect key="frame" x="163" y="22" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <action selector="homePressed:" destination="2HR-Ga-nZ9" eventType="touchUpInside" id="8Es-OX-IM5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2o7-Tc-Ili" firstAttribute="centerX" secondItem="xjO-Jj-ZcH" secondAttribute="centerX" id="2cr-Ps-X8U"/>
+                            <constraint firstItem="2o7-Tc-Ili" firstAttribute="width" secondItem="xjO-Jj-ZcH" secondAttribute="width" id="2zl-Zu-HL6"/>
+                            <constraint firstItem="0jo-Es-2BW" firstAttribute="height" secondItem="xjO-Jj-ZcH" secondAttribute="height" constant="0.81000000000000005" id="4z5-A2-CfQ"/>
+                            <constraint firstItem="0jo-Es-2BW" firstAttribute="centerX" secondItem="xjO-Jj-ZcH" secondAttribute="centerX" id="GJk-6j-anG"/>
+                            <constraint firstItem="2o7-Tc-Ili" firstAttribute="top" secondItem="dyo-VC-rMP" secondAttribute="top" id="GoU-0c-vW1"/>
+                            <constraint firstItem="0jo-Es-2BW" firstAttribute="width" secondItem="xjO-Jj-ZcH" secondAttribute="width" constant="0.94999999999999996" id="jMJ-EZ-LNF"/>
+                            <constraint firstItem="0jo-Es-2BW" firstAttribute="top" secondItem="2o7-Tc-Ili" secondAttribute="bottom" constant="8" id="oFk-4e-2IU"/>
+                            <constraint firstItem="2o7-Tc-Ili" firstAttribute="height" secondItem="xjO-Jj-ZcH" secondAttribute="height" multiplier="0.08" id="xtN-hh-1wq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dyo-VC-rMP"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="Zr1-cn-f8g" id="pEi-Qd-Ikd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RU7-3Y-hYZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11044" y="1164"/>
+        </scene>
+        <!--Coc-->
+        <scene sceneID="e77-HK-OwC">
+            <objects>
+                <viewController id="l6H-qo-aBn" customClass="Coc" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PUv-xU-pt8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n3C-bA-m1w">
+                                <rect key="frame" x="9.5" y="125.5" width="356" height="540"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Information is kept private and confidential as required by Oregon Law.  
+Legally mandated exceptions to this can be found in our </string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Confidential">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <url key="NSLink" string="http://willamette.edu/offices/counseling/confidentiality/index.html"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" and ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Privacy">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <url key="NSLink" string="http://willamette.edu/offices/counseling/medical-records/index.html"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> resources.  
+Also, a student’s health and counseling records are </string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="not">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> a part of any other academic record at Willamette.  
+They are protected exactly as if you were seeing an off campus provider.  
+Full time clinicians are scheduled to see 5-6 students/day in 50 minute appointments.  
+We also rotate three 20 minute walk in appointments among the staff every week, meaning they may also see shorter appointments on any given day.  </string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="11" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfF-Vn-nc7">
+                                <rect key="frame" x="0.0" y="64" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.54901960780000003" green="0.72156862749999995" blue="0.85098039219999999" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="General Information">
+                                        <attributes>
+                                            <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="24" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90F-Ul-8yp">
+                                <rect key="frame" x="162" y="22" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <action selector="homePressed:" destination="l6H-qo-aBn" eventType="touchUpInside" id="4XR-5a-YvE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QfF-Vn-nc7" firstAttribute="centerX" secondItem="PUv-xU-pt8" secondAttribute="centerX" id="N2w-uc-bDD"/>
+                            <constraint firstItem="n3C-bA-m1w" firstAttribute="width" secondItem="PUv-xU-pt8" secondAttribute="width" multiplier="0.95" id="Qab-D8-Sj2"/>
+                            <constraint firstItem="QfF-Vn-nc7" firstAttribute="width" secondItem="PUv-xU-pt8" secondAttribute="width" id="Uvk-7M-Epo"/>
+                            <constraint firstItem="QfF-Vn-nc7" firstAttribute="height" secondItem="PUv-xU-pt8" secondAttribute="height" multiplier="0.08" id="lzd-Py-uml"/>
+                            <constraint firstItem="QfF-Vn-nc7" firstAttribute="top" secondItem="RtX-gN-yBa" secondAttribute="top" id="pZf-xz-cYZ"/>
+                            <constraint firstItem="n3C-bA-m1w" firstAttribute="centerX" secondItem="PUv-xU-pt8" secondAttribute="centerX" id="tVx-i3-g66"/>
+                            <constraint firstItem="n3C-bA-m1w" firstAttribute="top" secondItem="QfF-Vn-nc7" secondAttribute="bottom" constant="8" id="tYF-cU-5dO"/>
+                            <constraint firstItem="n3C-bA-m1w" firstAttribute="height" secondItem="PUv-xU-pt8" secondAttribute="height" multiplier="0.81" id="zAm-dN-cqn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RtX-gN-yBa"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="90F-Ul-8yp" id="eXe-NI-xgU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bdn-Nd-c9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10426" y="1164"/>
+        </scene>
+        <!--Ca-->
+        <scene sceneID="hmh-YC-GDb">
+            <objects>
+                <viewController id="YLe-bS-9IG" customClass="Ca" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P7b-M9-JdS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWg-wd-gGc">
+                                <rect key="frame" x="0.0" y="64" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.54901960780000003" green="0.72156862749999995" blue="0.85098039219999999" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="General">
+                                        <attributes>
+                                            <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="24" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ELW-r1-V8U">
+                                <rect key="frame" x="9.5" y="125.5" width="356" height="540"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">A colonoscopy is a routine procedure which is used to screen for colon cancer. 
+Each person is recommended to screen for colon cancer by the age of 45. 
+In addition, colonoscopies are used to diagnose and monitor the colon health of people with gastrointestinal problems such as crohn’s disease.  
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mvm-Km-5NQ">
+                                <rect key="frame" x="161" y="22" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <action selector="homePressed:" destination="YLe-bS-9IG" eventType="touchUpInside" id="byE-gv-kmW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZWg-wd-gGc" firstAttribute="top" secondItem="CZu-25-mQo" secondAttribute="top" id="0zX-Jb-ub0"/>
+                            <constraint firstItem="ELW-r1-V8U" firstAttribute="top" secondItem="ZWg-wd-gGc" secondAttribute="bottom" constant="8" id="2g0-pw-19M"/>
+                            <constraint firstItem="ZWg-wd-gGc" firstAttribute="centerX" secondItem="P7b-M9-JdS" secondAttribute="centerX" id="39i-0H-ob8"/>
+                            <constraint firstItem="ELW-r1-V8U" firstAttribute="height" secondItem="P7b-M9-JdS" secondAttribute="height" multiplier="0.81" id="PWP-HO-nSN"/>
+                            <constraint firstItem="ELW-r1-V8U" firstAttribute="centerX" secondItem="P7b-M9-JdS" secondAttribute="centerX" id="Phl-Ko-3SR"/>
+                            <constraint firstItem="ZWg-wd-gGc" firstAttribute="width" secondItem="P7b-M9-JdS" secondAttribute="width" id="VbF-N0-x7A"/>
+                            <constraint firstItem="ELW-r1-V8U" firstAttribute="width" secondItem="P7b-M9-JdS" secondAttribute="width" multiplier="0.95" id="dCA-TC-og5"/>
+                            <constraint firstItem="ZWg-wd-gGc" firstAttribute="height" secondItem="P7b-M9-JdS" secondAttribute="height" multiplier="0.08" id="v2s-cR-aTk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CZu-25-mQo"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="Mvm-Km-5NQ" id="vq7-cl-bE5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gdm-1r-cps" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9601" y="1028"/>
+        </scene>
+        <!--Cb-->
+        <scene sceneID="yLS-pL-Kl5">
+            <objects>
+                <viewController id="QAM-bE-IoV" customClass="Cb" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H08-0J-Ozv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytu-2s-Ojf">
+                                <rect key="frame" x="0.0" y="64" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.54901960780000003" green="0.72156862749999995" blue="0.85098039219999999" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Preperation">
+                                        <attributes>
+                                            <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="24" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hqc-Qo-mUC">
+                                <rect key="frame" x="9.5" y="125.5" width="356" height="540"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">The preparation involves drinking laxative prep liquid, refraining from eating for 24 hours, and many trips to the bathroom. 
+Based off forums, it is recommended that you have plenty of soft toilet paper, Vaseline, anti-inflammatory cream such as cortisone cream, and easy access to a nice bathroom all available. 
+In addition based off forums, it is recommended to have someone you trust by your side, entertainment such as movies and TV, and plenty of liquids such as warm chicken broth and Gatorade.
+After reading about many people's accounts, I would summarize the preperation as not fun but definitely doable with access to above mentioned amenities.  
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILy-6D-kxe">
+                                <rect key="frame" x="168" y="22" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <action selector="homePressed:" destination="QAM-bE-IoV" eventType="touchUpInside" id="6Vw-Q8-8kF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hqc-Qo-mUC" firstAttribute="centerX" secondItem="H08-0J-Ozv" secondAttribute="centerX" id="8U7-Nr-oM1"/>
+                            <constraint firstItem="ytu-2s-Ojf" firstAttribute="centerX" secondItem="H08-0J-Ozv" secondAttribute="centerX" id="8iO-Qw-5ph"/>
+                            <constraint firstItem="ytu-2s-Ojf" firstAttribute="width" secondItem="H08-0J-Ozv" secondAttribute="width" id="DHz-iZ-140"/>
+                            <constraint firstItem="Hqc-Qo-mUC" firstAttribute="width" secondItem="H08-0J-Ozv" secondAttribute="width" multiplier="0.95" id="DtV-k0-wkr"/>
+                            <constraint firstItem="Hqc-Qo-mUC" firstAttribute="height" secondItem="H08-0J-Ozv" secondAttribute="height" multiplier="0.81" id="DyK-Ba-cEE"/>
+                            <constraint firstItem="ytu-2s-Ojf" firstAttribute="top" secondItem="C0s-9c-ZfO" secondAttribute="top" id="aVr-Cs-Yob"/>
+                            <constraint firstItem="ytu-2s-Ojf" firstAttribute="height" secondItem="H08-0J-Ozv" secondAttribute="height" multiplier="0.08" id="hYC-1b-Tpb"/>
+                            <constraint firstItem="Hqc-Qo-mUC" firstAttribute="top" secondItem="ytu-2s-Ojf" secondAttribute="bottom" constant="8" id="iez-0Y-24w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="C0s-9c-ZfO"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="ILy-6D-kxe" id="9R7-Et-jE5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Et-dk-qsg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8983" y="1028"/>
+        </scene>
+        <!--Cc-->
+        <scene sceneID="916-DK-7zu">
+            <objects>
+                <viewController id="46L-gS-Fdd" customClass="Cc" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bdY-ea-1if">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eub-B3-7fC">
+                                <rect key="frame" x="0.0" y="64" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.54901960780000003" green="0.72156862749999995" blue="0.85098039219999999" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Procedure">
+                                        <attributes>
+                                            <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="24" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bO7-OI-fcO">
+                                <rect key="frame" x="-0.5" y="125.5" width="376" height="667.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">In the United States it is standard practice to have an anesthesiologist at this procedure. 
+Based off forums, it is recommended to double check with the doctor that an anesthesiologist will be there. 
+At this point, the most difficult part (the prep) is over and you be sedated for the entire 30-60-minute procedure.
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkl-0i-4O9">
+                                <rect key="frame" x="160" y="22" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <action selector="homePressed:" destination="46L-gS-Fdd" eventType="touchUpInside" id="tuh-xh-gno"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bO7-OI-fcO" firstAttribute="top" secondItem="eub-B3-7fC" secondAttribute="bottom" constant="8" id="3n8-Xb-n2a"/>
+                            <constraint firstItem="bO7-OI-fcO" firstAttribute="height" secondItem="bdY-ea-1if" secondAttribute="height" constant="0.81000000000000005" id="BSf-1o-6PX"/>
+                            <constraint firstItem="eub-B3-7fC" firstAttribute="centerX" secondItem="bdY-ea-1if" secondAttribute="centerX" id="DCi-xS-rgG"/>
+                            <constraint firstItem="bO7-OI-fcO" firstAttribute="centerX" secondItem="bdY-ea-1if" secondAttribute="centerX" id="JEf-Nb-kkV"/>
+                            <constraint firstItem="eub-B3-7fC" firstAttribute="width" secondItem="bdY-ea-1if" secondAttribute="width" id="LfH-uN-d47"/>
+                            <constraint firstItem="eub-B3-7fC" firstAttribute="height" secondItem="bdY-ea-1if" secondAttribute="height" multiplier="0.08" id="Lgg-xj-tVi"/>
+                            <constraint firstItem="eub-B3-7fC" firstAttribute="top" secondItem="yV1-tS-uPI" secondAttribute="top" id="Lgs-CU-nBs"/>
+                            <constraint firstItem="yV1-tS-uPI" firstAttribute="trailing" secondItem="eub-B3-7fC" secondAttribute="trailing" id="PLb-KX-wjF"/>
+                            <constraint firstItem="bO7-OI-fcO" firstAttribute="width" secondItem="bdY-ea-1if" secondAttribute="width" constant="0.94999999999999996" id="XkT-gJ-3to"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yV1-tS-uPI"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="gkl-0i-4O9" id="XOM-9E-bdE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fkg-5i-L0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8349" y="999"/>
+        </scene>
+        <!--Conselor-->
         <scene sceneID="jKa-56-LWx">
             <objects>
-                <viewController id="URe-Va-k3J" sceneMemberID="viewController">
+                <viewController id="URe-Va-k3J" customClass="Conselor" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rI5-6x-l2x">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9A-cc-3r7">
-                                <rect key="frame" x="87.5" y="74" width="200" height="66"/>
+                                <rect key="frame" x="72.5" y="74" width="230" height="66"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="8IM-ix-PA1"/>
+                                    <constraint firstAttribute="width" constant="230" id="8IM-ix-PA1"/>
                                     <constraint firstAttribute="height" constant="66" id="qlP-5e-i4C"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Conselor">
+                                    <fragment content="Counselor">
                                         <attributes>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="48" name="Avenir-Heavy"/>
@@ -968,6 +1811,9 @@ each type of doctor.</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUs-2J-OmK">
                                 <rect key="frame" x="9.5" y="518.5" width="356" height="133.5"/>
                                 <state key="normal" image="blue4"/>
+                                <connections>
+                                    <segue destination="l6H-qo-aBn" kind="show" id="YqH-j0-Niy"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iew-zk-fsy">
                                 <rect key="frame" x="35" y="562" width="305" height="46.5"/>
@@ -985,10 +1831,16 @@ each type of doctor.</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2g3-cF-KSO">
                                 <rect key="frame" x="9.5" y="370" width="356" height="133.5"/>
                                 <state key="normal" image="blue4"/>
+                                <connections>
+                                    <segue destination="2HR-Ga-nZ9" kind="show" id="liq-2G-Ket"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5NT-uS-YEw">
                                 <rect key="frame" x="9.5" y="222" width="356" height="133"/>
                                 <state key="normal" image="blue4"/>
+                                <connections>
+                                    <segue destination="JHm-Az-TYf" kind="show" id="dTL-aQ-7Pd"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyk-J3-b8e">
                                 <rect key="frame" x="41.5" y="265.5" width="292.5" height="46.5"/>
@@ -1016,6 +1868,31 @@ each type of doctor.</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIh-nz-kpa">
+                                <rect key="frame" x="20" y="130" width="335" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="0BY-oS-gzB"/>
+                                    <constraint firstAttribute="height" constant="90" id="dhC-F0-PAj"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="These answers were provided by an on campus doctor, but are representative of off campus providers">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwn-Pj-Vzw">
+                                <rect key="frame" x="168" y="22" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <action selector="homePressed:" destination="URe-Va-k3J" eventType="touchUpInside" id="ktT-1Y-geK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1031,26 +1908,34 @@ each type of doctor.</string>
                             <constraint firstItem="2g3-cF-KSO" firstAttribute="height" secondItem="CUs-2J-OmK" secondAttribute="height" id="dl7-a4-Qkc"/>
                             <constraint firstItem="b9A-cc-3r7" firstAttribute="top" secondItem="BLp-vb-0Mc" secondAttribute="top" constant="10" id="gDg-Od-rOx"/>
                             <constraint firstItem="5NT-uS-YEw" firstAttribute="centerX" secondItem="rI5-6x-l2x" secondAttribute="centerX" id="gLK-ms-ECZ"/>
+                            <constraint firstItem="EIh-nz-kpa" firstAttribute="centerX" secondItem="rI5-6x-l2x" secondAttribute="centerX" id="hpz-g4-wZQ"/>
                             <constraint firstItem="Iew-zk-fsy" firstAttribute="centerX" secondItem="rI5-6x-l2x" secondAttribute="centerX" id="mmo-Sr-n0a"/>
                             <constraint firstItem="b9A-cc-3r7" firstAttribute="centerX" secondItem="rI5-6x-l2x" secondAttribute="centerX" id="nJt-JN-jRT"/>
                             <constraint firstItem="5NT-uS-YEw" firstAttribute="height" secondItem="CUs-2J-OmK" secondAttribute="height" id="oPN-yM-Uo9"/>
                             <constraint firstItem="CUs-2J-OmK" firstAttribute="top" secondItem="2g3-cF-KSO" secondAttribute="bottom" constant="15" id="ogL-FR-Zik"/>
                             <constraint firstItem="Iew-zk-fsy" firstAttribute="centerY" secondItem="CUs-2J-OmK" secondAttribute="centerY" id="sRX-Ap-LV0"/>
+                            <constraint firstItem="EIh-nz-kpa" firstAttribute="top" secondItem="b9A-cc-3r7" secondAttribute="bottom" constant="-10" id="vJN-yo-2Rg"/>
                             <constraint firstItem="BLp-vb-0Mc" firstAttribute="bottom" secondItem="CUs-2J-OmK" secondAttribute="bottom" constant="15" id="w0s-wE-Pqn"/>
                             <constraint firstItem="Qyk-J3-b8e" firstAttribute="centerX" secondItem="rI5-6x-l2x" secondAttribute="centerX" id="woE-m2-tOx"/>
                             <constraint firstItem="2g3-cF-KSO" firstAttribute="top" secondItem="5NT-uS-YEw" secondAttribute="bottom" constant="15" id="zu0-Xk-LJG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BLp-vb-0Mc"/>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="5NT-uS-YEw" id="3Ro-Oj-xeO"/>
+                        <outlet property="button2" destination="2g3-cF-KSO" id="vDw-ix-PYV"/>
+                        <outlet property="button3" destination="CUs-2J-OmK" id="1Xc-If-ZhQ"/>
+                        <outlet property="homeButton" destination="fwn-Pj-Vzw" id="v34-Uc-K8A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsn-Zf-3rU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-10204" y="300"/>
         </scene>
-        <!--View Controller-->
+        <!--Sports Medicine-->
         <scene sceneID="HfN-eB-Ndn">
             <objects>
-                <viewController id="tNX-pw-pDv" sceneMemberID="viewController">
+                <viewController id="tNX-pw-pDv" customClass="SportsMedicine" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P6F-BG-1jQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1089,6 +1974,14 @@ each type of doctor.</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mku-7y-NPb">
+                                <rect key="frame" x="168" y="22" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <action selector="homePressed:" destination="tNX-pw-pDv" eventType="touchUpInside" id="oSn-eQ-o0n"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1099,15 +1992,18 @@ each type of doctor.</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pac-8d-Ugz"/>
                     </view>
+                    <connections>
+                        <outlet property="homeButton" destination="mku-7y-NPb" id="JZQ-iV-5Cg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jEB-MV-bnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9287.2000000000007" y="300"/>
+            <point key="canvasLocation" x="-9039" y="-613"/>
         </scene>
-        <!--View Controller-->
+        <!--Colonoscopy-->
         <scene sceneID="KoQ-Vj-rZc">
             <objects>
-                <viewController id="rcG-nk-irc" sceneMemberID="viewController">
+                <viewController id="rcG-nk-irc" customClass="Colonoscopy" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TMw-aE-yxr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1132,6 +2028,9 @@ each type of doctor.</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ont-pp-ZSX">
                                 <rect key="frame" x="9.5" y="518.5" width="356" height="133.5"/>
                                 <state key="normal" title="Button" image="blue4"/>
+                                <connections>
+                                    <segue destination="46L-gS-Fdd" kind="show" id="YPJ-vk-fQF"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALB-N4-Vud">
                                 <rect key="frame" x="110" y="562" width="155" height="46.5"/>
@@ -1149,6 +2048,9 @@ each type of doctor.</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJU-xE-KqG">
                                 <rect key="frame" x="9.5" y="370" width="356" height="133.5"/>
                                 <state key="normal" title="Button" image="blue4"/>
+                                <connections>
+                                    <segue destination="QAM-bE-IoV" kind="show" id="B3C-9w-I9A"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u57-Ml-OnK">
                                 <rect key="frame" x="99.5" y="413.5" width="176.5" height="46.5"/>
@@ -1166,6 +2068,9 @@ each type of doctor.</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIi-ao-kyq">
                                 <rect key="frame" x="9.5" y="222" width="356" height="133"/>
                                 <state key="normal" title="Button" image="blue4"/>
+                                <connections>
+                                    <segue destination="YLe-bS-9IG" kind="show" id="1xQ-IA-wVw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVw-js-mpA">
                                 <rect key="frame" x="127.5" y="265.5" width="120.5" height="46.5"/>
@@ -1180,6 +2085,14 @@ each type of doctor.</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2VK-rd-qgF">
+                                <rect key="frame" x="168" y="22" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <action selector="homePressed:" destination="rcG-nk-irc" eventType="touchUpInside" id="mYn-u2-0b6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1206,10 +2119,16 @@ each type of doctor.</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Plc-j6-J4b"/>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="ZIi-ao-kyq" id="oX7-Yo-fqK"/>
+                        <outlet property="button2" destination="fJU-xE-KqG" id="XFT-ae-5se"/>
+                        <outlet property="button3" destination="ont-pp-ZSX" id="u4g-1y-ejO"/>
+                        <outlet property="homeButton" destination="2VK-rd-qgF" id="DCS-sL-xZs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqf-fl-wdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8322" y="300"/>
+            <point key="canvasLocation" x="-8457" y="313"/>
         </scene>
         <!--Dermatologist-->
         <scene sceneID="UNj-W1-9oF">
@@ -1272,16 +2191,16 @@ each type of doctor.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Chj-ag-LxM">
-                                <rect key="frame" x="20" y="140" width="335" height="98.5"/>
+                                <rect key="frame" x="20" y="140" width="335" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="335" id="Cvt-Z5-oyZ"/>
-                                    <constraint firstAttribute="height" constant="98.5" id="dID-QT-csu"/>
+                                    <constraint firstAttribute="height" constant="90" id="dID-QT-csu"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="A typical dermatologist sees 20-60 patients a day, and each appointment is routine.">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="24" name="Avenir-Book"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
                                             <font key="NSOriginalFont" size="24" name="Avenir-Book"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -1426,7 +2345,7 @@ Doctor will make a recommendation based off exam, and under certain circumstance
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chR-DE-ktL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7113" y="1247"/>
+            <point key="canvasLocation" x="-6924" y="1040"/>
         </scene>
         <!--Biopsy-->
         <scene sceneID="fjo-RX-zvL">
@@ -1488,7 +2407,7 @@ CgoKCg
                                 <attributedString key="attributedText">
                                     <fragment content="Biopsy">
                                         <attributes>
-                                            <color key="NSColor" white="0.34589301215277779" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="NSColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <font key="NSFont" size="24" name="Avenir-Book"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -1524,7 +2443,7 @@ CgoKCg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vzN-al-6iN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7839.1999999999998" y="1247.2263868065968"/>
+            <point key="canvasLocation" x="-7652" y="1028"/>
         </scene>
         <!--Eye Doctor-->
         <scene sceneID="1TS-5Z-3zM">
@@ -1743,17 +2662,17 @@ Appointment</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKc-3J-leJ">
-                                <rect key="frame" x="12.5" y="140" width="350" height="198"/>
+                                <rect key="frame" x="12.5" y="140" width="350" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="Mbf-NB-B7N"/>
-                                    <constraint firstAttribute="height" constant="198" id="lVg-h6-VLh"/>
+                                    <constraint firstAttribute="height" constant="140" id="lVg-h6-VLh"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Every appointment is routine, including cavity fillings, crowns, and root canals. Ellis sees 6-12 patients on the doctors side, which include cavity fillings, crowns, or root canals. </string>
+                                        <string key="content">Every appointment is routine, including cavity fillings, crowns, and root canals. A typical dentist sees 6-12 patients on the doctors side, which include cavity fillings, crowns, or root canals. </string>
                                         <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="24" name="Avenir-Book"/>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
@@ -1957,7 +2876,7 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vUM-ml-DLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6302" y="1247"/>
+            <point key="canvasLocation" x="-6188" y="1077"/>
         </scene>
         <!--Select Game-->
         <scene sceneID="3vt-wh-j1x">
@@ -2191,11 +3110,11 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">During a reactivity test, your eye doctor watches your eye movements as you follow a moving object, such as a pen or small light, with your eyes. He or she looks for muscle weakness, poor control or poor coordination.
+                                        <string key="content">During a reactivity test, your eye doctor watches your eye movements as you follow a moving object, such as a pen or small light, with your eyes. He or she looks for muscle weakness, poor control or poor coordination.
 During a vision test, the doctor asks you to identify different letters of the alphabet printed on a chart (Snellen chart) or a screen positioned some distance away. The lines of type get smaller as you move down the chart. Each eye is tested separately. Your near vision also may be tested, using a card with letters similar to the distant eye chart. The card is held at reading distance.
 During a refractive assessment, light waves are bent as they pass through your cornea and lens. If light rays don't focus perfectly on the back of your eye, you have a refractive error. Having a refractive error may mean you need some form of correction, such as glasses, contact lenses or refractive surgery, to see as clearly as possible.
 Assessment of your refractive error helps your doctor determine a lens prescription that will give you the sharpest, most comfortable vision. The assessment may also determine that you don't need corrective lenses.
-For information additional information, simply search eye exam on mayo clinic. </mutableString>
+For information additional information, simply search eye exam on mayo clinic. </string>
                                         <attributes>
                                             <color key="NSColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="18" name="Avenir-Book"/>
@@ -2261,7 +3180,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tuM-15-C9A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5564" y="1247"/>
+            <point key="canvasLocation" x="-5530" y="1102"/>
         </scene>
         <!--Dilated Eye Exam-->
         <scene sceneID="iB9-WJ-6R4">
@@ -2394,7 +3313,7 @@ Cg
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLb-aB-4a6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4783" y="1246"/>
+            <point key="canvasLocation" x="-4860" y="1101"/>
         </scene>
         <!--Cleaning-->
         <scene sceneID="SlO-NT-Sif">
@@ -2584,7 +3503,7 @@ After checking everything, the dentist will explain everything they found. If an
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N9H-Kb-kQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3935" y="1247"/>
+            <point key="canvasLocation" x="-3983" y="1101"/>
         </scene>
         <!--Cavity Filling-->
         <scene sceneID="GIK-3T-SUe">
@@ -2767,7 +3686,7 @@ After the tooth is filled, you and the dentist will communicate to ensure the bi
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="19U-cO-zoH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3143" y="1245"/>
+            <point key="canvasLocation" x="-3314" y="1101"/>
         </scene>
         <!--Custom Nav-->
         <scene sceneID="POk-Zy-k1C">

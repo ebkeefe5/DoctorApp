@@ -49,6 +49,19 @@
 		45C23DE722459C9F00C77AC7 /* Where Has the Love Gone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DE622459C9F00C77AC7 /* Where Has the Love Gone.mp3 */; };
 		45C23DE922459CA300C77AC7 /* Harp Guitar Dreams.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DE822459CA300C77AC7 /* Harp Guitar Dreams.mp3 */; };
 		45C23DEB22459CA700C77AC7 /* Into the Quiet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DEA22459CA700C77AC7 /* Into the Quiet.mp3 */; };
+		45C2C6E4225B0C8F00F620C6 /* Ca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2C6E3225B0C8F00F620C6 /* Ca.swift */; };
+		45C2C6E6225B0CCF00F620C6 /* Cb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2C6E5225B0CCF00F620C6 /* Cb.swift */; };
+		45C2C6EA225B11CC00F620C6 /* Cc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2C6E9225B11CC00F620C6 /* Cc.swift */; };
+		45C2C6EC225B12BB00F620C6 /* Ga.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2C6EB225B12BB00F620C6 /* Ga.swift */; };
+		45C2C6EE225B12C800F620C6 /* Gb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2C6ED225B12C800F620C6 /* Gb.swift */; };
+		45C2C6F0225B12D500F620C6 /* Gc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2C6EF225B12D500F620C6 /* Gc.swift */; };
+		45C2C6F2225B12E400F620C6 /* Coa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2C6F1225B12E400F620C6 /* Coa.swift */; };
+		45C2C6F4225B12F000F620C6 /* Cob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2C6F3225B12F000F620C6 /* Cob.swift */; };
+		45C2C6F6225B130300F620C6 /* Coc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2C6F5225B130300F620C6 /* Coc.swift */; };
+		45C2C6F8225B174300F620C6 /* Conselor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2C6F7225B174300F620C6 /* Conselor.swift */; };
+		45C2C6FA225B175200F620C6 /* SportsMedicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2C6F9225B175200F620C6 /* SportsMedicine.swift */; };
+		45C2C6FC225B177D00F620C6 /* GP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2C6FB225B177D00F620C6 /* GP.swift */; };
+		45C2C6FE225B17E300F620C6 /* Colonoscopy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2C6FD225B17E300F620C6 /* Colonoscopy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +109,19 @@
 		45C23DE622459C9F00C77AC7 /* Where Has the Love Gone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Where Has the Love Gone.mp3"; sourceTree = "<group>"; };
 		45C23DE822459CA300C77AC7 /* Harp Guitar Dreams.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Harp Guitar Dreams.mp3"; sourceTree = "<group>"; };
 		45C23DEA22459CA700C77AC7 /* Into the Quiet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Into the Quiet.mp3"; sourceTree = "<group>"; };
+		45C2C6E3225B0C8F00F620C6 /* Ca.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ca.swift; sourceTree = "<group>"; };
+		45C2C6E5225B0CCF00F620C6 /* Cb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cb.swift; sourceTree = "<group>"; };
+		45C2C6E9225B11CC00F620C6 /* Cc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Cc.swift; path = ../Cc.swift; sourceTree = "<group>"; };
+		45C2C6EB225B12BB00F620C6 /* Ga.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ga.swift; sourceTree = "<group>"; };
+		45C2C6ED225B12C800F620C6 /* Gb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gb.swift; sourceTree = "<group>"; };
+		45C2C6EF225B12D500F620C6 /* Gc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gc.swift; sourceTree = "<group>"; };
+		45C2C6F1225B12E400F620C6 /* Coa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coa.swift; sourceTree = "<group>"; };
+		45C2C6F3225B12F000F620C6 /* Cob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cob.swift; sourceTree = "<group>"; };
+		45C2C6F5225B130300F620C6 /* Coc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coc.swift; sourceTree = "<group>"; };
+		45C2C6F7225B174300F620C6 /* Conselor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conselor.swift; sourceTree = "<group>"; };
+		45C2C6F9225B175200F620C6 /* SportsMedicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsMedicine.swift; sourceTree = "<group>"; };
+		45C2C6FB225B177D00F620C6 /* GP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP.swift; sourceTree = "<group>"; };
+		45C2C6FD225B17E300F620C6 /* Colonoscopy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colonoscopy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +216,15 @@
 				45A7964C222E560A00D9EDF8 /* DilatedEyeExam.swift */,
 				45A7964E222E561E00D9EDF8 /* Biopsy.swift */,
 				45A79654222E57B200D9EDF8 /* EyeDoctorGeneral.swift */,
+				45C2C6E3225B0C8F00F620C6 /* Ca.swift */,
+				45C2C6E5225B0CCF00F620C6 /* Cb.swift */,
+				45C2C6F1225B12E400F620C6 /* Coa.swift */,
+				45C2C6F3225B12F000F620C6 /* Cob.swift */,
+				45C2C6E9225B11CC00F620C6 /* Cc.swift */,
+				45C2C6F5225B130300F620C6 /* Coc.swift */,
+				45C2C6EB225B12BB00F620C6 /* Ga.swift */,
+				45C2C6ED225B12C800F620C6 /* Gb.swift */,
+				45C2C6EF225B12D500F620C6 /* Gc.swift */,
 			);
 			path = Information;
 			sourceTree = "<group>";
@@ -211,6 +246,10 @@
 				45A4946322246C2500CCF229 /* Dermatologist.swift */,
 				45A494672224739E00CCF229 /* Dentist.swift */,
 				45A79648222E525500D9EDF8 /* Pych.swift */,
+				45C2C6F7225B174300F620C6 /* Conselor.swift */,
+				45C2C6F9225B175200F620C6 /* SportsMedicine.swift */,
+				45C2C6FB225B177D00F620C6 /* GP.swift */,
+				45C2C6FD225B17E300F620C6 /* Colonoscopy.swift */,
 			);
 			path = Doctors;
 			sourceTree = "<group>";
@@ -305,24 +344,37 @@
 			files = (
 				45A494662224722900CCF229 /* EyeDoctor.swift in Sources */,
 				4593465C2242E6FB008A74A6 /* Meditation.swift in Sources */,
+				45C2C6FC225B177D00F620C6 /* GP.swift in Sources */,
 				4593465A2242E6E5008A74A6 /* Med.swift in Sources */,
 				45A79649222E525500D9EDF8 /* Pych.swift in Sources */,
 				457A6064217ABBFE00F98F83 /* ViewController.swift in Sources */,
 				45B933542204D4A4007E752E /* NotesViewController.swift in Sources */,
 				457A6062217ABBFE00F98F83 /* AppDelegate.swift in Sources */,
 				45587A9F2239B6EA00542D14 /* selectGame.swift in Sources */,
+				45C2C6E6225B0CCF00F620C6 /* Cb.swift in Sources */,
 				459346582242E6D7008A74A6 /* MedCell.swift in Sources */,
+				45C2C6E4225B0C8F00F620C6 /* Ca.swift in Sources */,
 				45A79655222E57B200D9EDF8 /* EyeDoctorGeneral.swift in Sources */,
 				45A79653222E566F00D9EDF8 /* RoutineEyeDoctor.swift in Sources */,
 				45A79651222E564E00D9EDF8 /* CavityFilling.swift in Sources */,
+				45C2C6F8225B174300F620C6 /* Conselor.swift in Sources */,
 				45A7964F222E561E00D9EDF8 /* Biopsy.swift in Sources */,
+				45C2C6EC225B12BB00F620C6 /* Ga.swift in Sources */,
+				45C2C6FA225B175200F620C6 /* SportsMedicine.swift in Sources */,
+				45C2C6F4225B12F000F620C6 /* Cob.swift in Sources */,
 				450AD7BE222DD97F0074C713 /* customNav.swift in Sources */,
+				45C2C6FE225B17E300F620C6 /* Colonoscopy.swift in Sources */,
 				45A79657222E581D00D9EDF8 /* cleaning.swift in Sources */,
 				45A494682224739E00CCF229 /* Dentist.swift in Sources */,
+				45C2C6EA225B11CC00F620C6 /* Cc.swift in Sources */,
+				45C2C6EE225B12C800F620C6 /* Gb.swift in Sources */,
 				45A4946422246C2500CCF229 /* Dermatologist.swift in Sources */,
 				45A79659222E584E00D9EDF8 /* dermRoutine.swift in Sources */,
 				45A7964D222E560A00D9EDF8 /* DilatedEyeExam.swift in Sources */,
+				45C2C6F2225B12E400F620C6 /* Coa.swift in Sources */,
 				45805BED218119B600BDA9FD /* InstructionsViewController.swift in Sources */,
+				45C2C6F6225B130300F620C6 /* Coc.swift in Sources */,
+				45C2C6F0225B12D500F620C6 /* Gc.swift in Sources */,
 				45805BEB2181192500BDA9FD /* CircleViewController.swift in Sources */,
 				459BBF2022238511007AACD0 /* WhatToExpect.swift in Sources */,
 			);
