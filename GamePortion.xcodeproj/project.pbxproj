@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		450AD7BE222DD97F0074C713 /* customNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450AD7BD222DD97F0074C713 /* customNav.swift */; };
+		452068FC225EA38D00A16610 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452068FB225EA38D00A16610 /* About.swift */; };
+		452068FE225EA43200A16610 /* Ab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452068FD225EA43200A16610 /* Ab.swift */; };
+		45206900225EA4A400A16610 /* AbCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452068FF225EA4A400A16610 /* AbCell.swift */; };
 		454A3151223F149800F965C0 /* Present.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 454A3150223F149700F965C0 /* Present.mp3 */; };
 		454A3153223F149C00F965C0 /* Waterfall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 454A3152223F149C00F965C0 /* Waterfall.mp3 */; };
 		454A3155223F14A100F965C0 /* Aspen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 454A3154223F14A100F965C0 /* Aspen.mp3 */; };
@@ -66,6 +69,9 @@
 
 /* Begin PBXFileReference section */
 		450AD7BD222DD97F0074C713 /* customNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customNav.swift; sourceTree = "<group>"; };
+		452068FB225EA38D00A16610 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		452068FD225EA43200A16610 /* Ab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ab.swift; sourceTree = "<group>"; };
+		452068FF225EA4A400A16610 /* AbCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbCell.swift; sourceTree = "<group>"; };
 		454A3150223F149700F965C0 /* Present.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Present.mp3; sourceTree = "<group>"; };
 		454A3152223F149C00F965C0 /* Waterfall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Waterfall.mp3; sourceTree = "<group>"; };
 		454A3154223F14A100F965C0 /* Aspen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Aspen.mp3; sourceTree = "<group>"; };
@@ -135,6 +141,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45526F6A225D7524008B8975 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				452068FB225EA38D00A16610 /* About.swift */,
+				452068FD225EA43200A16610 /* Ab.swift */,
+				452068FF225EA4A400A16610 /* AbCell.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		457788682232F87A0099524D /* Meditation */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				457A6061217ABBFE00F98F83 /* AppDelegate.swift */,
+				45526F6A225D7524008B8975 /* New Group */,
 				459346562242E6BA008A74A6 /* MedController */,
 				457788682232F87A0099524D /* Meditation */,
 				457A6063217ABBFE00F98F83 /* ViewController.swift */,
@@ -351,12 +368,14 @@
 				45B933542204D4A4007E752E /* NotesViewController.swift in Sources */,
 				457A6062217ABBFE00F98F83 /* AppDelegate.swift in Sources */,
 				45587A9F2239B6EA00542D14 /* selectGame.swift in Sources */,
+				452068FE225EA43200A16610 /* Ab.swift in Sources */,
 				45C2C6E6225B0CCF00F620C6 /* Cb.swift in Sources */,
 				459346582242E6D7008A74A6 /* MedCell.swift in Sources */,
 				45C2C6E4225B0C8F00F620C6 /* Ca.swift in Sources */,
 				45A79655222E57B200D9EDF8 /* EyeDoctorGeneral.swift in Sources */,
 				45A79653222E566F00D9EDF8 /* RoutineEyeDoctor.swift in Sources */,
 				45A79651222E564E00D9EDF8 /* CavityFilling.swift in Sources */,
+				45206900225EA4A400A16610 /* AbCell.swift in Sources */,
 				45C2C6F8225B174300F620C6 /* Conselor.swift in Sources */,
 				45A7964F222E561E00D9EDF8 /* Biopsy.swift in Sources */,
 				45C2C6EC225B12BB00F620C6 /* Ga.swift in Sources */,
@@ -367,6 +386,7 @@
 				45A79657222E581D00D9EDF8 /* cleaning.swift in Sources */,
 				45A494682224739E00CCF229 /* Dentist.swift in Sources */,
 				45C2C6EA225B11CC00F620C6 /* Cc.swift in Sources */,
+				452068FC225EA38D00A16610 /* About.swift in Sources */,
 				45C2C6EE225B12C800F620C6 /* Gb.swift in Sources */,
 				45A4946422246C2500CCF229 /* Dermatologist.swift in Sources */,
 				45A79659222E584E00D9EDF8 /* dermRoutine.swift in Sources */,
