@@ -11,6 +11,7 @@ import UIKit
 class About: UIViewController {
     
     
+    @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
     let imageNames : [String] = ["Keefe", "Ellis", "Don", "Susan", "Doan"];
@@ -20,6 +21,7 @@ class About: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.titleView = homeButton;
         abouts = createArray();
         tableView.delegate = self;
         tableView.dataSource = self;
@@ -52,6 +54,11 @@ class About: UIViewController {
         return answer;
         
         
+    }
+    
+    
+    @IBAction func homePressed(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true);
     }
     
 }

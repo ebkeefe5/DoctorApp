@@ -15,7 +15,9 @@ var audioPlayerExists = 0;
 
 class Meditation: UIViewController, AVAudioPlayerDelegate {
     
-    @IBOutlet weak var homebutton: UIButton!
+    
+    @IBOutlet weak var homeButton: UIButton!
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var popImage: UIImageView!
     @IBOutlet weak var popLabel: UILabel!
@@ -50,15 +52,12 @@ class Meditation: UIViewController, AVAudioPlayerDelegate {
         meditations = createArray();
         tableView.delegate = self;
         tableView.dataSource = self;
-        self.navigationItem.titleView = homebutton;
+        self.navigationItem.titleView = homeButton;
         // Do any additional setup after loading the view.
     }
     
     
-    @IBAction func homeButtonPressed(_ sender: Any) {
-        self.navigationController?.popToRootViewController(animated: true);
-        
-    }
+   
     
     override func viewDidAppear(_ animated: Bool) {
         if let x = UserDefaults.standard.object(forKey: "selectedRow") as? Int{
@@ -70,6 +69,9 @@ class Meditation: UIViewController, AVAudioPlayerDelegate {
     }
     
     
+    @IBAction func homePressed(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
     
     func loadAudio(){
         do{

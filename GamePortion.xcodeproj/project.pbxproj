@@ -26,6 +26,8 @@
 		459346582242E6D7008A74A6 /* MedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459346572242E6D7008A74A6 /* MedCell.swift */; };
 		4593465A2242E6E5008A74A6 /* Med.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459346592242E6E5008A74A6 /* Med.swift */; };
 		4593465C2242E6FB008A74A6 /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4593465B2242E6FB008A74A6 /* Meditation.swift */; };
+		459622E6225FDAE4009C0B1F /* MoreInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459622E5225FDAE4009C0B1F /* MoreInformation.swift */; };
+		4596230A225FF0A1009C0B1F /* notesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45962309225FF0A1009C0B1F /* notesController.swift */; };
 		459BBF2022238511007AACD0 /* WhatToExpect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459BBF1F22238511007AACD0 /* WhatToExpect.swift */; };
 		45A4946422246C2500CCF229 /* Dermatologist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4946322246C2500CCF229 /* Dermatologist.swift */; };
 		45A494662224722900CCF229 /* EyeDoctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A494652224722900CCF229 /* EyeDoctor.swift */; };
@@ -38,7 +40,6 @@
 		45A79655222E57B200D9EDF8 /* EyeDoctorGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A79654222E57B200D9EDF8 /* EyeDoctorGeneral.swift */; };
 		45A79657222E581D00D9EDF8 /* cleaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A79656222E581D00D9EDF8 /* cleaning.swift */; };
 		45A79659222E584E00D9EDF8 /* dermRoutine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A79658222E584E00D9EDF8 /* dermRoutine.swift */; };
-		45B933542204D4A4007E752E /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B933532204D4A4007E752E /* NotesViewController.swift */; };
 		45C23DD322459BB100C77AC7 /* Water Is Wide.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DD222459BB000C77AC7 /* Water Is Wide.mp3 */; };
 		45C23DD522459C7A00C77AC7 /* Lost Then Found.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DD422459C7A00C77AC7 /* Lost Then Found.mp3 */; };
 		45C23DD722459C7F00C77AC7 /* The Old Church of Kilronan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DD622459C7F00C77AC7 /* The Old Church of Kilronan.mp3 */; };
@@ -89,6 +90,8 @@
 		459346572242E6D7008A74A6 /* MedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedCell.swift; sourceTree = "<group>"; };
 		459346592242E6E5008A74A6 /* Med.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Med.swift; sourceTree = "<group>"; };
 		4593465B2242E6FB008A74A6 /* Meditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
+		459622E5225FDAE4009C0B1F /* MoreInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInformation.swift; sourceTree = "<group>"; };
+		45962309225FF0A1009C0B1F /* notesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notesController.swift; sourceTree = "<group>"; };
 		459BBF1F22238511007AACD0 /* WhatToExpect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatToExpect.swift; sourceTree = "<group>"; };
 		45A4946322246C2500CCF229 /* Dermatologist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dermatologist.swift; sourceTree = "<group>"; };
 		45A494652224722900CCF229 /* EyeDoctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeDoctor.swift; sourceTree = "<group>"; };
@@ -101,7 +104,6 @@
 		45A79654222E57B200D9EDF8 /* EyeDoctorGeneral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeDoctorGeneral.swift; sourceTree = "<group>"; };
 		45A79656222E581D00D9EDF8 /* cleaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cleaning.swift; sourceTree = "<group>"; };
 		45A79658222E584E00D9EDF8 /* dermRoutine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dermRoutine.swift; sourceTree = "<group>"; };
-		45B933532204D4A4007E752E /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		45C23DD222459BB000C77AC7 /* Water Is Wide.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Water Is Wide.mp3"; sourceTree = "<group>"; };
 		45C23DD422459C7A00C77AC7 /* Lost Then Found.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lost Then Found.mp3"; sourceTree = "<group>"; };
 		45C23DD622459C7F00C77AC7 /* The Old Church of Kilronan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Old Church of Kilronan.mp3"; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				452068FB225EA38D00A16610 /* About.swift */,
 				452068FD225EA43200A16610 /* Ab.swift */,
 				452068FF225EA4A400A16610 /* AbCell.swift */,
+				459622E5225FDAE4009C0B1F /* MoreInformation.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -205,7 +208,7 @@
 				45AF3BB32259808E00B4976D /* Games */,
 				45AF3BB42259813600B4976D /* Doctors */,
 				459BBF1F22238511007AACD0 /* WhatToExpect.swift */,
-				45B933532204D4A4007E752E /* NotesViewController.swift */,
+				45962309225FF0A1009C0B1F /* notesController.swift */,
 				457A6068217ABC0100F98F83 /* Assets.xcassets */,
 				457A606A217ABC0100F98F83 /* LaunchScreen.storyboard */,
 				457A606D217ABC0100F98F83 /* Info.plist */,
@@ -365,10 +368,10 @@
 				4593465A2242E6E5008A74A6 /* Med.swift in Sources */,
 				45A79649222E525500D9EDF8 /* Pych.swift in Sources */,
 				457A6064217ABBFE00F98F83 /* ViewController.swift in Sources */,
-				45B933542204D4A4007E752E /* NotesViewController.swift in Sources */,
 				457A6062217ABBFE00F98F83 /* AppDelegate.swift in Sources */,
 				45587A9F2239B6EA00542D14 /* selectGame.swift in Sources */,
 				452068FE225EA43200A16610 /* Ab.swift in Sources */,
+				4596230A225FF0A1009C0B1F /* notesController.swift in Sources */,
 				45C2C6E6225B0CCF00F620C6 /* Cb.swift in Sources */,
 				459346582242E6D7008A74A6 /* MedCell.swift in Sources */,
 				45C2C6E4225B0C8F00F620C6 /* Ca.swift in Sources */,
@@ -397,6 +400,7 @@
 				45C2C6F0225B12D500F620C6 /* Gc.swift in Sources */,
 				45805BEB2181192500BDA9FD /* CircleViewController.swift in Sources */,
 				459BBF2022238511007AACD0 /* WhatToExpect.swift in Sources */,
+				459622E6225FDAE4009C0B1F /* MoreInformation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

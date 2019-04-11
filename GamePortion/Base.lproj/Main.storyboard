@@ -233,15 +233,12 @@
                                     <action selector="rewindPressed:" destination="zDu-dn-FKC" eventType="touchUpInside" id="2Bz-Ca-J1o"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2U-wj-5Zd">
-                                <rect key="frame" x="162.5" y="15" width="50" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="XpE-Ie-gCy"/>
-                                    <constraint firstAttribute="width" constant="50" id="hbA-xg-yhJ"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="bHouse"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCe-Gm-XMX">
+                                <rect key="frame" x="168" y="8" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
                                 <connections>
-                                    <action selector="homeButtonPressed:" destination="zDu-dn-FKC" eventType="touchUpInside" id="9Zv-be-CID"/>
+                                    <action selector="homePressed:" destination="zDu-dn-FKC" eventType="touchUpInside" id="hNu-N7-5jb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -261,13 +258,12 @@
                             <constraint firstItem="jWX-A6-Tu6" firstAttribute="bottom" secondItem="xJl-M7-P8M" secondAttribute="bottom" constant="20" id="fRg-Dy-MRz"/>
                             <constraint firstItem="hgF-7x-Njf" firstAttribute="leading" secondItem="jWX-A6-Tu6" secondAttribute="leading" id="fg4-Ed-lxR"/>
                             <constraint firstItem="jWX-A6-Tu6" firstAttribute="bottom" secondItem="hgF-7x-Njf" secondAttribute="bottom" constant="54" id="pFf-F5-H1U"/>
-                            <constraint firstItem="X2U-wj-5Zd" firstAttribute="centerX" secondItem="7Fr-6b-Ua6" secondAttribute="centerX" id="qnz-Ih-FaG"/>
                             <constraint firstItem="hgF-7x-Njf" firstAttribute="trailing" secondItem="jWX-A6-Tu6" secondAttribute="trailing" id="tVR-4f-Mw6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jWX-A6-Tu6"/>
                     </view>
                     <connections>
-                        <outlet property="homebutton" destination="X2U-wj-5Zd" id="fgN-hT-5hu"/>
+                        <outlet property="homeButton" destination="bCe-Gm-XMX" id="onH-x4-QNX"/>
                         <outlet property="playPauseButton" destination="NuJ-oi-sjt" id="QKQ-hE-LcQ"/>
                         <outlet property="popImage" destination="WGJ-bT-KRA" id="cn0-Em-OJ0"/>
                         <outlet property="popLabel" destination="xJl-M7-P8M" id="Fl4-7n-xca"/>
@@ -278,10 +274,10 @@
             </objects>
             <point key="canvasLocation" x="-7785" y="-478"/>
         </scene>
-        <!--View Controller-->
+        <!--More Information-->
         <scene sceneID="t2e-d2-9F7">
             <objects>
-                <viewController id="oJy-AT-IUm" sceneMemberID="viewController">
+                <viewController id="oJy-AT-IUm" customClass="MoreInformation" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pit-iv-fk3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -305,9 +301,9 @@
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <mutableString key="content">I designed this app to improve the quality of a patient's trip to the doctor's office.
+                                        <string key="content">I designed this app to improve the quality of a patient's trip to the doctor's office.
 
-The information in the 'What to Expect' section is based off the doctors listed in the About section. Each of these doctors either works full time or is in the last of residency.
+The information in the 'What to Expect' section is based off the doctors listed in the About section. Each of these doctors either works full time or is in the last year of residency.
 
 It is also based off several other sources, including Mayo Clinic.
 
@@ -317,13 +313,29 @@ Creative consultants include:
 Maxwell Mckee: Willamette University
 Marco Gonzolez: Willamette University
 Rachel Harville: Willamette University
-John Enriquez: OSU
-Nikki: Willamette University
-</mutableString>
+Nikki Seini: Willamette University
+</string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="18" name=".AppleSystemUIFont"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="John Enriquez: OSU">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -339,6 +351,14 @@ Cg
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAS-fs-oD1">
+                                <rect key="frame" x="168" y="22" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <action selector="homePressed:" destination="oJy-AT-IUm" eventType="touchUpInside" id="K7Q-44-64e"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -353,6 +373,9 @@ Cg
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Koz-uT-MWD"/>
                     </view>
+                    <connections>
+                        <outlet property="homeButton" destination="KAS-fs-oD1" id="gGy-to-VY2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yaB-sH-OWJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -366,6 +389,14 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96p-in-Nhy">
+                                <rect key="frame" x="158" y="22" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <action selector="homePressed:" destination="j5q-An-vQL" eventType="touchUpInside" id="RDu-zu-f9v"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cyp-2N-Gjx">
                                 <rect key="frame" x="260.5" y="153" width="65" height="15"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -512,6 +543,7 @@ Click more info for more information. </string>
                         <viewLayoutGuide key="safeArea" id="mO2-Tj-kxH"/>
                     </view>
                     <connections>
+                        <outlet property="homeButton" destination="96p-in-Nhy" id="PNZ-Jc-ro7"/>
                         <outlet property="tableView" destination="MH0-jL-Bd6" id="z2p-aC-Z8b"/>
                     </connections>
                 </viewController>
@@ -556,7 +588,7 @@ Click more info for more information. </string>
                                 <color key="backgroundColor" red="0.53725490196078429" green="0.6705882352941176" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="blue3"/>
                                 <connections>
-                                    <segue destination="HRU-gv-ssd" kind="show" id="cf2-Ei-IHT"/>
+                                    <segue destination="nUP-yo-O4K" kind="show" id="Ftq-zm-JOP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLx-g9-p75">
@@ -768,7 +800,7 @@ create this app </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GWi-Bz-fwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6388" y="-970.16491754122944"/>
+            <point key="canvasLocation" x="-6521" y="-1079"/>
         </scene>
         <!--What To Expect-->
         <scene sceneID="jct-oC-mTp">
@@ -1504,30 +1536,10 @@ Cg
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">When a student first makes a counseling appointment, there are three forms to complete:
-</string>
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name="Avenir-Book"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">•	Patient Information (including demographics, optional identity questions, reason for visit, and brief mental health history)
-•	Informed Consent including limits of confidentiality, fees for missed appts, etc.
-•	Privacy Policy 
-</string>
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name="Avenir-Book"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="8" firstLineHeadIndent="18" headIndent="36" tailIndent="468" lineHeightMultiple="1.0791666666666666" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">At the first appointment students and the counselor will explore the reasons for visit, identify any needed supports in the short term, and develop treatment goals for follow-up.  
+1) Patient Information (including demographics, optional identity questions, reason for visit, and brief mental health history)
+2) Informed Consent including limits of confidentiality, fees for missed appts, etc.
+3) Privacy Policy 
+At the first appointment students and the counselor will explore the reasons for visit, identify any needed supports in the short term, and develop treatment goals for follow-up.  
 It always helpful for students to give some thoughts as to what they would like to be different in their lives as a result of accessing mental health support.  </string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -2957,56 +2969,6 @@ Appointment</string>
             </objects>
             <point key="canvasLocation" x="-4817" y="260"/>
         </scene>
-        <!--Notes View Controller-->
-        <scene sceneID="2Bn-F7-xVz">
-            <objects>
-                <viewController id="HRU-gv-ssd" customClass="NotesViewController" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nbd-Kz-tIj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ql-yH-zUF">
-                                <rect key="frame" x="0.0" y="58" width="375" height="556"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <attributedString key="attributedText">
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name="Avenir-Book"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <connections>
-                                    <outlet property="delegate" destination="HRU-gv-ssd" id="m2i-ti-FsI"/>
-                                </connections>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrf-0s-tSY">
-                                <rect key="frame" x="168.5" y="20" width="38" height="30"/>
-                                <state key="normal" image="bHouse"/>
-                                <connections>
-                                    <action selector="donePressed:" destination="HRU-gv-ssd" eventType="touchUpInside" id="5Ug-6W-IyW"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <constraints>
-                            <constraint firstItem="Jrf-0s-tSY" firstAttribute="centerX" secondItem="nbd-Kz-tIj" secondAttribute="centerX" id="ubG-RH-KSa"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Iwn-hd-IuE"/>
-                    </view>
-                    <connections>
-                        <outlet property="homeButton" destination="Jrf-0s-tSY" id="Nnt-D8-WaM"/>
-                        <outlet property="textView" destination="6ql-yH-zUF" id="Vsj-9M-7wa"/>
-                        <outlet property="theView" destination="nbd-Kz-tIj" id="us0-Dr-afH"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wrt-17-IQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3092" y="-602.24887556221893"/>
-        </scene>
         <!--Eye Doctor General-->
         <scene sceneID="9zz-FT-uhI">
             <objects>
@@ -3223,6 +3185,60 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vFC-49-XW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-5719.1999999999998" y="-1475.7121439280361"/>
+        </scene>
+        <!--Notes Controller-->
+        <scene sceneID="Xq8-ZQ-7rz">
+            <objects>
+                <viewController id="nUP-yo-O4K" customClass="notesController" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sG7-lz-tVN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fIF-FX-ltv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Write down your questions and answers here.
+
+For example, what were the results of my blood test?
+
+normal on all liver levels :)</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBu-Y7-bOS">
+                                <rect key="frame" x="176" y="22" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bHouse"/>
+                                <connections>
+                                    <action selector="homePressed:" destination="nUP-yo-O4K" eventType="touchUpInside" id="mZs-Vo-HVJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fIF-FX-ltv" secondAttribute="bottom" id="12C-Aa-T70"/>
+                            <constraint firstItem="fIF-FX-ltv" firstAttribute="top" secondItem="rdG-BE-j2W" secondAttribute="top" id="KkE-He-bkG"/>
+                            <constraint firstItem="fIF-FX-ltv" firstAttribute="leading" secondItem="sG7-lz-tVN" secondAttribute="leading" id="jv6-yM-pBy"/>
+                            <constraint firstAttribute="trailing" secondItem="fIF-FX-ltv" secondAttribute="trailing" id="rok-kD-KjJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rdG-BE-j2W"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeButton" destination="GBu-Y7-bOS" id="CM4-bi-q1K"/>
+                        <outlet property="textView" destination="fIF-FX-ltv" id="rxz-AM-bBT"/>
+                        <outlet property="textViewBC" destination="12C-Aa-T70" id="0oD-LG-7Qa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ukR-ih-R8O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4726" y="-1055"/>
         </scene>
         <!--Instructions View Controller-->
         <scene sceneID="bP4-4P-lyb">
