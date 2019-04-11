@@ -288,7 +288,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6b-Hh-3b0">
                                 <rect key="frame" x="0.0" y="64" width="375" height="54.5"/>
-                                <color key="backgroundColor" red="0.54901960780000003" green="0.72156862749999995" blue="0.85098039219999999" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.32156862745098036" green="0.51764705882352935" blue="0.74117647058823533" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment content="More Information">
                                         <attributes>
@@ -305,9 +305,21 @@
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">The information in this app is like a dog. 
+                                        <mutableString key="content">I designed this app to improve the quality of a patient's trip to the doctor's office.
 
-I like dogs.</string>
+The information in the 'What to Expect' section is based off the doctors listed in the About section. Each of these doctors either works full time or is in the last of residency.
+
+It is also based off several other sources, including Mayo Clinic.
+
+The music in the relax section belongs to my guitar instructor John Doan's album, 'Into the Quiet', and may not be redistributed outside of this app.
+
+Creative consultants include: 
+Maxwell Mckee: Willamette University
+Marco Gonzolez: Willamette University
+Rachel Harville: Willamette University
+John Enriquez: OSU
+Nikki: Willamette University
+</mutableString>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="18" name=".AppleSystemUIFont"/>
@@ -317,27 +329,6 @@ I like dogs.</string>
                                     <fragment>
                                         <string key="content" base64-UTF8="YES">
 Cg
-</string>
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name=".AppleSystemUIFont"/>
-                                            <font key="NSOriginalFont" size="18" name="TimesNewRomanPSMT"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="18" name=".AppleSystemUIFont"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-CgoKA
 </string>
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
