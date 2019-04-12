@@ -40,6 +40,7 @@
 		45A79655222E57B200D9EDF8 /* EyeDoctorGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A79654222E57B200D9EDF8 /* EyeDoctorGeneral.swift */; };
 		45A79657222E581D00D9EDF8 /* cleaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A79656222E581D00D9EDF8 /* cleaning.swift */; };
 		45A79659222E584E00D9EDF8 /* dermRoutine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A79658222E584E00D9EDF8 /* dermRoutine.swift */; };
+		45BAD35122612B730089AB7F /* DogSuduku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BAD35022612B730089AB7F /* DogSuduku.swift */; };
 		45C23DD322459BB100C77AC7 /* Water Is Wide.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DD222459BB000C77AC7 /* Water Is Wide.mp3 */; };
 		45C23DD522459C7A00C77AC7 /* Lost Then Found.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DD422459C7A00C77AC7 /* Lost Then Found.mp3 */; };
 		45C23DD722459C7F00C77AC7 /* The Old Church of Kilronan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45C23DD622459C7F00C77AC7 /* The Old Church of Kilronan.mp3 */; };
@@ -104,6 +105,7 @@
 		45A79654222E57B200D9EDF8 /* EyeDoctorGeneral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeDoctorGeneral.swift; sourceTree = "<group>"; };
 		45A79656222E581D00D9EDF8 /* cleaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cleaning.swift; sourceTree = "<group>"; };
 		45A79658222E584E00D9EDF8 /* dermRoutine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dermRoutine.swift; sourceTree = "<group>"; };
+		45BAD35022612B730089AB7F /* DogSuduku.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogSuduku.swift; sourceTree = "<group>"; };
 		45C23DD222459BB000C77AC7 /* Water Is Wide.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Water Is Wide.mp3"; sourceTree = "<group>"; };
 		45C23DD422459C7A00C77AC7 /* Lost Then Found.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lost Then Found.mp3"; sourceTree = "<group>"; };
 		45C23DD622459C7F00C77AC7 /* The Old Church of Kilronan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Old Church of Kilronan.mp3"; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 		45AF3BB32259808E00B4976D /* Games */ = {
 			isa = PBXGroup;
 			children = (
+				45BAD35022612B730089AB7F /* DogSuduku.swift */,
 				45587A9E2239B6EA00542D14 /* selectGame.swift */,
 				45805BEA2181192500BDA9FD /* CircleViewController.swift */,
 				45805BEC218119B600BDA9FD /* InstructionsViewController.swift */,
@@ -367,6 +370,7 @@
 				45C2C6FC225B177D00F620C6 /* GP.swift in Sources */,
 				4593465A2242E6E5008A74A6 /* Med.swift in Sources */,
 				45A79649222E525500D9EDF8 /* Pych.swift in Sources */,
+				45BAD35122612B730089AB7F /* DogSuduku.swift in Sources */,
 				457A6064217ABBFE00F98F83 /* ViewController.swift in Sources */,
 				457A6062217ABBFE00F98F83 /* AppDelegate.swift in Sources */,
 				45587A9F2239B6EA00542D14 /* selectGame.swift in Sources */,
