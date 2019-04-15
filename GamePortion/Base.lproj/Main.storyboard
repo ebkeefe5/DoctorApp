@@ -3311,13 +3311,6 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                                     <constraint firstAttribute="height" constant="2" id="xcW-qO-AVh"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Co3-bm-32I">
-                                <rect key="frame" x="16.5" y="166" width="55" height="55"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="55" id="1UI-wv-f8o"/>
-                                    <constraint firstAttribute="height" constant="55" id="zuT-HN-w54"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Dg-iT-cRR">
                                 <rect key="frame" x="168" y="18" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3326,13 +3319,6 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                                     <action selector="homePressed:" destination="fba-ff-rMb" eventType="touchUpInside" id="KQg-dm-3uc"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog11" translatesAutoresizingMaskIntoConstraints="NO" id="Acg-Gz-E6W">
-                                <rect key="frame" x="74.5" y="166" width="55" height="55"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="55" id="3T2-Vw-5dp"/>
-                                    <constraint firstAttribute="height" constant="55" id="vvJ-Wj-nSf"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.396078431372549" green="0.56862745098039214" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -3341,13 +3327,11 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                             <constraint firstItem="VXC-Qd-bNM" firstAttribute="leading" secondItem="VMz-hQ-yeG" secondAttribute="trailing" constant="56" id="C1L-LN-XwI"/>
                             <constraint firstItem="ZHj-xk-UFJ" firstAttribute="leading" secondItem="HDP-0O-wKc" secondAttribute="trailing" constant="57" id="E1b-GH-Ni4"/>
                             <constraint firstItem="wuZ-QY-CO5" firstAttribute="centerX" secondItem="RqJ-cI-g42" secondAttribute="centerX" id="Gv4-sy-apA"/>
-                            <constraint firstItem="Acg-Gz-E6W" firstAttribute="leading" secondItem="VMz-hQ-yeG" secondAttribute="trailing" constant="1" id="KnG-vc-31u"/>
                             <constraint firstItem="ZHj-xk-UFJ" firstAttribute="centerY" secondItem="HDP-0O-wKc" secondAttribute="centerY" id="LPG-1k-STz"/>
                             <constraint firstItem="7hM-Gr-JYj" firstAttribute="top" secondItem="V9f-Z2-6dE" secondAttribute="bottom" constant="57" id="Lxt-UR-y7k"/>
                             <constraint firstItem="VXC-Qd-bNM" firstAttribute="centerY" secondItem="HDP-0O-wKc" secondAttribute="centerY" id="NC7-bb-UEP"/>
                             <constraint firstItem="djc-IZ-g0D" firstAttribute="top" secondItem="RqJ-cI-g42" secondAttribute="topMargin" constant="99" id="NfO-qv-3d8"/>
                             <constraint firstItem="HDP-0O-wKc" firstAttribute="centerX" secondItem="RqJ-cI-g42" secondAttribute="centerX" id="R4S-ze-baU"/>
-                            <constraint firstItem="Acg-Gz-E6W" firstAttribute="top" secondItem="djc-IZ-g0D" secondAttribute="bottom" constant="1" id="RwJ-vo-guN"/>
                             <constraint firstItem="vhA-Vd-DBX" firstAttribute="top" secondItem="V9f-Z2-6dE" secondAttribute="bottom" constant="113" id="SYP-SI-W3e"/>
                             <constraint firstItem="HDP-0O-wKc" firstAttribute="leading" secondItem="VXC-Qd-bNM" secondAttribute="trailing" constant="56" id="ZDJ-GJ-4v2"/>
                             <constraint firstItem="p4Q-8c-ZjC" firstAttribute="leading" secondItem="ZHj-xk-UFJ" secondAttribute="trailing" constant="56" id="ZNO-MG-7St"/>
@@ -3357,7 +3341,6 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                             <constraint firstItem="vhA-Vd-DBX" firstAttribute="centerX" secondItem="RqJ-cI-g42" secondAttribute="centerX" id="gA8-hI-zeG"/>
                             <constraint firstItem="VXC-Qd-bNM" firstAttribute="centerY" secondItem="VMz-hQ-yeG" secondAttribute="centerY" id="gr3-52-Syf"/>
                             <constraint firstItem="VMz-hQ-yeG" firstAttribute="leading" secondItem="UYc-XO-g6h" secondAttribute="trailing" constant="57" id="kEu-l4-eJV"/>
-                            <constraint firstItem="Co3-bm-32I" firstAttribute="leading" secondItem="UYc-XO-g6h" secondAttribute="trailing" constant="1" id="ptc-PL-VRc"/>
                             <constraint firstItem="HDP-0O-wKc" firstAttribute="top" secondItem="RqJ-cI-g42" secondAttribute="topMargin" constant="100" id="rdr-NU-C9a"/>
                             <constraint firstItem="p4Q-8c-ZjC" firstAttribute="centerY" secondItem="ZHj-xk-UFJ" secondAttribute="centerY" id="tj0-tk-We3"/>
                             <constraint firstItem="V9f-Z2-6dE" firstAttribute="top" secondItem="djc-IZ-g0D" secondAttribute="bottom" constant="113" id="uCC-Ss-ReX"/>
@@ -3366,14 +3349,12 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                             <constraint firstItem="eIh-ip-xuB" firstAttribute="leading" secondItem="p4Q-8c-ZjC" secondAttribute="trailing" constant="56" id="uqX-ms-DaB"/>
                             <constraint firstItem="eIh-ip-xuB" firstAttribute="centerY" secondItem="p4Q-8c-ZjC" secondAttribute="centerY" id="v6u-U1-FPI"/>
                             <constraint firstItem="wuZ-QY-CO5" firstAttribute="top" secondItem="vhA-Vd-DBX" secondAttribute="bottom" constant="113" id="vJV-NE-k7Q"/>
-                            <constraint firstItem="Co3-bm-32I" firstAttribute="top" secondItem="djc-IZ-g0D" secondAttribute="bottom" constant="1" id="xz3-Na-Ndh"/>
                             <constraint firstItem="Izy-ax-o5j" firstAttribute="centerX" secondItem="vhA-Vd-DBX" secondAttribute="centerX" id="z4f-4S-4cd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CgF-r4-TY8"/>
                     </view>
                     <connections>
                         <outlet property="homeButton" destination="2Dg-iT-cRR" id="hZA-1I-m0L"/>
-                        <outlet property="s11" destination="Co3-bm-32I" id="jMf-x2-RgM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NLr-hv-eqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4190,7 +4171,6 @@ After the tooth is filled, you and the dentist will communicate to ensure the bi
         <image name="blue4" width="2100" height="1500"/>
         <image name="blue5" width="2100" height="1500"/>
         <image name="blue6" width="2100" height="1500"/>
-        <image name="dog11" width="50" height="50"/>
         <image name="dog5" width="50" height="50"/>
         <image name="firstAid" width="55" height="55"/>
         <image name="game" width="50" height="50"/>
