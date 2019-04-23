@@ -40,7 +40,7 @@ class DogSuduku: UIViewController {
     }
     
     func setInitialImages(){
-        var name:String = "";
+        //var name:String = "";
         
         //name = getName(code: gameBoard[0][0]);
         

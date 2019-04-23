@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cVW-ED-9Kz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cVW-ED-9Kz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -54,7 +54,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0f-lv-BuZ">
-                                <rect key="frame" x="168.5" y="72" width="38" height="38"/>
+                                <rect key="frame" x="179.5" y="72" width="16" height="38"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
                                     <action selector="homePressed:" destination="UDm-ub-GoO" eventType="touchUpInside" id="ymu-Nc-bev"/>
@@ -132,11 +132,11 @@
         <scene sceneID="w6S-9q-6Ba">
             <objects>
                 <viewController id="zDu-dn-FKC" customClass="Meditation" customModule="GamePortion" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7Fr-6b-Ua6">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="7Fr-6b-Ua6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="54" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hgF-7x-Njf">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="54" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hgF-7x-Njf">
                                 <rect key="frame" x="0.0" y="64" width="375" height="549"/>
                                 <color key="backgroundColor" red="0.46666666666666667" green="0.61960784313725492" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -200,7 +200,7 @@
                                 <attributedString key="attributedText"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQ5-uS-InH">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQ5-uS-InH">
                                 <rect key="frame" x="328" y="620" width="35" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="3aH-le-LuK"/>
@@ -211,7 +211,7 @@
                                     <action selector="fastForwardPressed:" destination="zDu-dn-FKC" eventType="touchUpInside" id="KD5-Kd-4Hp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuJ-oi-sjt">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuJ-oi-sjt">
                                 <rect key="frame" x="263" y="608" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="AHe-8C-JYs"/>
@@ -222,7 +222,7 @@
                                     <action selector="playPausePressed:" destination="zDu-dn-FKC" eventType="touchUpInside" id="rYl-2T-kIK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofD-YI-xVM">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofD-YI-xVM">
                                 <rect key="frame" x="223" y="620" width="35" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="3cL-T7-dpa"/>
@@ -2403,7 +2403,7 @@ At this point, the most difficult part (the prep) is over and you be sedated for
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fox-TH-46g">
-                                <rect key="frame" x="168.5" y="0.0" width="38" height="38"/>
+                                <rect key="frame" x="179.5" y="0.0" width="16" height="22"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
                                     <action selector="homePressed:" destination="hx0-8h-1sO" eventType="touchUpInside" id="Is4-pI-udx"/>
@@ -2574,7 +2574,7 @@ Doctor will make a recommendation based off exam, and under certain circumstance
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OE-20-tOB">
-                                <rect key="frame" x="168.5" y="20" width="38" height="30"/>
+                                <rect key="frame" x="179.5" y="20" width="16" height="30"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
                                     <action selector="homePressed:" destination="vir-J4-XXX" eventType="touchUpInside" id="wq6-JX-rwE"/>
@@ -2672,7 +2672,7 @@ CgoKCg
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZI-8r-aqL">
-                                <rect key="frame" x="168.5" y="20" width="38" height="30"/>
+                                <rect key="frame" x="179.5" y="20" width="16" height="30"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
                                     <action selector="homePressed:" destination="Teh-By-vvS" eventType="touchUpInside" id="ZNJ-h3-Tgq"/>
@@ -2782,7 +2782,7 @@ Eye Exam</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuO-MW-qb2">
-                                <rect key="frame" x="168.5" y="0.0" width="38" height="30"/>
+                                <rect key="frame" x="179.5" y="0.0" width="16" height="30"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
                                     <action selector="homePressed:" destination="mwd-GH-0Ls" eventType="touchUpInside" id="aV3-Xt-2mm"/>
@@ -2911,7 +2911,7 @@ Appointment</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvQ-Ub-RBY">
-                                <rect key="frame" x="168.5" y="0.0" width="38" height="38"/>
+                                <rect key="frame" x="179.5" y="0.0" width="16" height="22"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
                                     <action selector="homePressed:" destination="u4T-0K-f5B" eventType="touchUpInside" id="2Jy-BR-wvW"/>
@@ -3055,7 +3055,7 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFq-IT-gey">
-                                <rect key="frame" x="168.5" y="20" width="38" height="30"/>
+                                <rect key="frame" x="179.5" y="20" width="16" height="30"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
                                     <action selector="homePressed:" destination="uFx-5V-K5r" eventType="touchUpInside" id="Nfj-Vw-ov7"/>
@@ -3471,7 +3471,7 @@ If you have a health condition such as diabetes you may qualify for a reduced fa
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxu-0l-9f1">
-                                <rect key="frame" x="168.5" y="18" width="38" height="38"/>
+                                <rect key="frame" x="179.5" y="18" width="16" height="38"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
                                     <action selector="homePressed:" destination="pgp-Sf-RpN" eventType="touchUpInside" id="Jqu-Ek-ZMy"/>
@@ -3601,7 +3601,7 @@ Cg
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6E-sv-vkW">
-                                <rect key="frame" x="168.5" y="20" width="38" height="30"/>
+                                <rect key="frame" x="179.5" y="20" width="16" height="30"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
                                     <action selector="homePressed:" destination="EfD-Op-Sbn" eventType="touchUpInside" id="icA-u7-Dqw"/>
@@ -3734,7 +3734,7 @@ Cg
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXQ-bx-mut">
-                                <rect key="frame" x="168.5" y="20" width="38" height="30"/>
+                                <rect key="frame" x="179.5" y="20" width="16" height="30"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
                                     <action selector="homePressed:" destination="wIf-vV-deE" eventType="touchUpInside" id="R9W-vc-EVt"/>
@@ -3924,7 +3924,7 @@ After checking everything, the dentist will explain everything they found. If an
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blz-E7-E7A">
-                                <rect key="frame" x="168.5" y="20" width="38" height="30"/>
+                                <rect key="frame" x="179.5" y="20" width="16" height="30"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
                                     <action selector="homePressed:" destination="IhZ-o9-D0x" eventType="touchUpInside" id="5Y0-bm-YV0"/>
@@ -4107,7 +4107,7 @@ After the tooth is filled, you and the dentist will communicate to ensure the bi
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpD-eq-XWP">
-                                <rect key="frame" x="168.5" y="20" width="38" height="30"/>
+                                <rect key="frame" x="179.5" y="20" width="16" height="30"/>
                                 <state key="normal" image="bHouse"/>
                                 <connections>
                                     <action selector="homePressed:" destination="Pb8-YG-weI" eventType="touchUpInside" id="SoT-AZ-uNS"/>
