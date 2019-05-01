@@ -11,6 +11,7 @@ import Foundation
 
 class CircleViewController: UIViewController {
 
+    @IBOutlet weak var bonusLabel: UILabel!
     @IBOutlet weak var homeButton: UIButton!
     //is the game running
     var gameRunning = true;
@@ -25,6 +26,7 @@ class CircleViewController: UIViewController {
     var circleRadMax:CGFloat = 0;
     var currentRad:CGFloat = 0;
     var score:Int = 0;
+    var streakScore:Int = 0;
     
     var circleTimer: Timer!
     
@@ -40,8 +42,20 @@ class CircleViewController: UIViewController {
     
     @IBOutlet weak var restartButton: UIButton!
     
+    var circleColor = UIColor.white.cgColor;
+    var count = 0;
+    
+    var labels = ["Perfect! +2", "Awesome! +2", "Nice job! +2", "Wow! +2", "Super! +2"];
+    
+    var streak = ["STREAK!! +", "HUGE BONUS +", "LET'S GOOO +", "WOOOOH +", "OH YEAAAH +"];
+    
+   
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+         bonusLabel.text = "";
+        bonusLabel.textColor = UIColor.white;
         circleButton.clipsToBounds = true;
         //circleButon.layer.cornerRadius = 25.0;
         
@@ -81,10 +95,39 @@ class CircleViewController: UIViewController {
         
     }
     
-    @IBAction func circleButtonPressed(_ sender: Any) {
-        if (!gameRunning){return;}
+    func perfectHit(){
+        streakScore = streakScore + 1;
+        circleColor =  UIColor(red: 189/255, green: 236/255, blue: 182/255, alpha: 1.0).cgColor;
+        count = 0;
+       
+        let textIndex = Int.random(in: 0 ... 4);
+        if (streakScore == 1){
+            bonusLabel.text = labels[textIndex];
+            score = score + 2;
+        }else{
+            score = score + 2*streakScore;
+            let x : Int = (2*streakScore);
+            let xNSNumber = x as NSNumber
+            let xString : String = xNSNumber.stringValue
+            let addText = streak[textIndex] + xString;
+            bonusLabel.text = addText;
+            
+        }
         
-        score = score + 1;
+    }
+    
+    @IBAction func circleButtonPressed(_ sender: Any) {
+        
+        if (!gameRunning){return;}
+        if (currentRad + 5 >= circleRadMax){
+            perfectHit();
+        }else{
+            streakScore = 0;
+            circleColor = UIColor.white.cgColor;
+            score = score + 1;
+        }
+        // }
+        
         self.currentScoreLabel.text = "Score: " + String(score)
         circleRadMax = currentRad
         if (circleRadMax <= 1.5 * circleRadMin){
@@ -133,11 +176,17 @@ class CircleViewController: UIViewController {
         self.drawCircle(circleRadius: currentRad);
         circleTimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(CircleViewController.updateCircle), userInfo: nil, repeats: true);
         gameRunning = true;
+        circleColor = UIColor.white.cgColor;
         
     }
     
     @objc func updateCircle()
     {
+        count = count + 1;
+        if (count >= 80){
+            bonusLabel.text = "";
+        }
+        
         if (shrinking){
             currentRad = currentRad - 1;
         }else{
@@ -162,7 +211,7 @@ class CircleViewController: UIViewController {
         
         
         //change the fill color
-        shapeLayer.fillColor = UIColor.white.cgColor;
+        shapeLayer.fillColor = circleColor;
             
             //
         //you can change the stroke color

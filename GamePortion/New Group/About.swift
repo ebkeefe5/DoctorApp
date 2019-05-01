@@ -14,9 +14,9 @@ class About: UIViewController {
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
-    let imageNames : [String] = ["Keefe", "Ellis", "Don", "Susan", "Doan"];
-    let descriptions1: [String] = ["Meagan Keefe", "Ellis Swharts", "Don Thomson", "Susan Robins", "General Practitioner", "John Doan"];
-    let descriptions2: [String] = ["Dermatologist", "Dentist", "Counselor", "General Practitioner", "Guitarist"];
+    let imageNames : [String] = ["Keefe", "Ellis", "Don", "Susan", "Doan", "Reese"];
+    let descriptions1: [String] = ["Meagan Keefe", "Ellis Swharts", "Don Thomson", "Susan Robins", "John Doan", "Teddie Reese"];
+    let descriptions2: [String] = ["Dermatologist", "Dentist", "Counselor", "General Practitioner", "Guitarist", "Athletics Trainer"];
     var abouts : [Ab] = []
 
     override func viewDidLoad() {
@@ -35,6 +35,7 @@ class About: UIViewController {
         let Ab3 = Ab(image: UIImage(named: imageNames[2]) ?? UIImage(), name: descriptions1[2], des: descriptions2[2]);
         let Ab4 = Ab(image: UIImage(named: imageNames[3]) ?? UIImage(), name: descriptions1[3], des: descriptions2[3]);
         let Ab5 = Ab(image: UIImage(named: imageNames[4]) ?? UIImage(), name: descriptions1[4], des: descriptions2[4]);
+        let Ab6 = Ab(image: UIImage(named: imageNames[5]) ?? UIImage(), name: descriptions1[5], des: descriptions2[5]);
         
         
         
@@ -44,6 +45,7 @@ class About: UIViewController {
         answer.append(Ab3)
         answer.append(Ab4)
         answer.append(Ab5)
+        answer.append(Ab6);
        
         
         

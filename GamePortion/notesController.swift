@@ -26,9 +26,7 @@ class notesController: UIViewController, UITextViewDelegate {
             self,
             selector: #selector(self.keyBoardWillHide(notification:)),
             name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        
-        
-        
+       
     }
     
     @objc func keyBoardWillShow(notification: Notification){
