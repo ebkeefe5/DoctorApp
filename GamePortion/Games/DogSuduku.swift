@@ -75,10 +75,18 @@ class DogSuduku: UIViewController {
     @IBOutlet weak var trash: UIButton!
     
     @IBOutlet weak var homeButton: UIButton!
+    var increasing: Bool = true;
+    var alphaOver:CGFloat = 0.3;
+    var timerRunning: Bool = false;
     
     var dogType = 3; //0 means nothing, 1-6 dogs, 7 trash
     
-    var gameBoard: [[Int]] = [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0] ];// = [[0, -1, -4, 0, 0, -3], [0, -6, 0, -1, 0, 0], [0, 0, 0, 0, -3, -6], [-6, -3, 0, 0, 0, 0], [0, 0, -3, 0, -4, 0], [-4, 0, 0, -3, -5, 0]]
+    var gameBoard: [[Int]] = [[-3, -6, 0, 0, 0, 0],
+                              [0, -4, -1, 0, 0, -6],
+                              [-2, 0, 0, -4, 0, 0],
+                              [0, 0, -4, 0, 0, -3],
+                              [-1, 0, 0, -3, -4, 0],
+                              [0, 0, 0, 0, -1, -5] ];
     
     var permBoard: [[Int]] = [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0] ];
     
@@ -86,12 +94,16 @@ class DogSuduku: UIViewController {
     
     let tempImageNames: [String] = ["dog7", "dog8", "dog9", "dog10", "dog11", "dog12"]
     
+    var dogTimer: Timer!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = homeButton;
-        startNewGame();
+        gameOverImage.image = UIImage(named: "Cross");
+        gameOverImage.alpha = 0.0;
+        //startNewGame();
         
         
         b1.clipsToBounds = true;
@@ -113,6 +125,36 @@ class DogSuduku: UIViewController {
         
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool){
+        if let theBoard = UserDefaults.standard.object(forKey: "theBoard") as? [[Int]]{
+            print("hi");
+            gameBoard = theBoard;
+        }
+        if let thePermBoard = UserDefaults.standard.object(forKey: "thePermBoard") as? [[Int]]{
+            print("hi");
+            permBoard = thePermBoard;
+        }
+        clearBoard();
+        setInitialImages();
+        gameOverImage.alpha = 0.0;
+        
+        
+        print("hi");
+        
+    }
+    
+    func startNewGame(){
+        getNewBoard();
+        permBoard = gameBoard;
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
+        UserDefaults.standard.set(permBoard, forKey: "thePermBoard");
+        print("hello what???");
+        
+        clearBoard();
+        setInitialImages();
+         gameOverImage.alpha = 0.0;
     }
     
     func checkBoard() -> Bool {
@@ -206,12 +248,7 @@ class DogSuduku: UIViewController {
         
     }
     
-    func startNewGame(){
-        getNewBoard();
-        permBoard = gameBoard;
-        clearBoard();
-        setInitialImages();
-    }
+   
     
     func getNewBoard(){
         let boardGenerator = gameBoards();
@@ -709,6 +746,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s00.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -722,6 +760,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s01.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
         
     }
     
@@ -736,6 +775,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s02.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -749,6 +789,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s03.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -762,6 +803,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s04.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -775,6 +817,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s05.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -788,6 +831,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s10.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
         
     }
     
@@ -802,6 +846,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s11.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
         
     }
     
@@ -817,6 +862,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s12.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
         
     }
     
@@ -831,6 +877,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s13.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
         
     }
     
@@ -845,6 +892,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s14.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
         
     }
     
@@ -859,6 +907,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s15.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
         
     }
     
@@ -873,6 +922,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s20.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -886,6 +936,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s21.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -899,6 +950,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s22.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -912,6 +964,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s23.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -925,6 +978,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s24.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -938,6 +992,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s25.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -951,6 +1006,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s30.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -964,7 +1020,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s31.setBackgroundImage(UIImage(named: name), for: .normal);
         }
-        
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -978,6 +1034,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s32.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -991,6 +1048,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s33.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -1004,6 +1062,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s34.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     @IBAction func s35(_ sender: Any) {
@@ -1016,6 +1075,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s35.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -1029,6 +1089,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s40.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -1042,6 +1103,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s41.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     @IBAction func s42(_ sender: Any) {
@@ -1054,6 +1116,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s42.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -1067,6 +1130,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s43.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -1080,6 +1144,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s44.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -1093,6 +1158,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s45.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -1106,6 +1172,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s50.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -1119,6 +1186,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s51.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     @IBAction func s52(_ sender: Any) {
@@ -1131,6 +1199,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s52.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -1144,6 +1213,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s53.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -1158,6 +1228,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s54.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     
@@ -1171,6 +1242,7 @@ class DogSuduku: UIViewController {
             let name: String = getName(code: dogType);
             s55.setBackgroundImage(UIImage(named: name), for: .normal);
         }
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
     }
     
     func resetColors(){
@@ -1266,6 +1338,7 @@ class DogSuduku: UIViewController {
     
     @IBAction func newGame(_ sender: Any) {
         startNewGame();
+        gameOverImage.alpha = 0.0;
     }
     
     
@@ -1273,20 +1346,53 @@ class DogSuduku: UIViewController {
         gameBoard = permBoard;
         clearBoard();
         setInitialImages();
+        UserDefaults.standard.set(gameBoard, forKey: "theBoard");
+        gameOverImage.alpha = 0.0;
+        //dogTimer.invalidate();
     
+    }
+    
+    @objc func flashGameOver(){
+        if (increasing){
+            
+            alphaOver = alphaOver + 0.01;
+            if (alphaOver >= 1.0){
+                increasing = false;
+            }
+        }else{
+            alphaOver = alphaOver - 0.01;
+            if (alphaOver <= 0.0){
+                increasing = true;
+                dogTimer.invalidate();
+                timerRunning = false;
+                alphaOver = 0.0;
+            }
+        }
+        gameOverImage.alpha = alphaOver;
     }
     
     
     @IBAction func checkTheSolution(_ sender: Any) {
         
         if (checkBoard()){
+            gameOverImage.image = UIImage(named: "Tick");
             print("GOOD JOB");
         }else{
+            gameOverImage.image = UIImage(named: "Cross");
             print("YOU MESSED UP");
         }
+        print("hi, im here");
+        if (!timerRunning){
+            dogTimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(DogSuduku.flashGameOver), userInfo: nil, repeats: true);
+            timerRunning = true;
+        }
+        alphaOver = 0.3;
+        
     }
     
     
+    
+    //gameOverImage
     
     
    
