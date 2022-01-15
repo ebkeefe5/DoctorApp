@@ -1,5 +1,5 @@
 # DoctorApp
-This is an iphone app I created for my senior thesis. It was availible to download on the app store for one year from 2019-2020. 
+This is an iphone app I created for my senior thesis. It was available to download on the app store for one year from 2019-2020. 
 It is designed to help patients relax at the doctor's office and offers the following features:
 * two fun games to stay distracted
   * dog suduku which was played on a 6 by 6 board and using 6 unique thumbnails of different types of dogs instead of 6 numbers
