@@ -69,19 +69,7 @@ class WhatToExpect: UIViewController {
         button7.layer.cornerRadius = 25.0;
         button7.layer.borderWidth = 2;
         button7.layer.borderColor = UIColor.white.cgColor;
-        
        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-        // Do any additional setup after loading the view.
     }
     
     

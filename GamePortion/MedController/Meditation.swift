@@ -53,11 +53,8 @@ class Meditation: UIViewController, AVAudioPlayerDelegate {
         tableView.delegate = self;
         tableView.dataSource = self;
         self.navigationItem.titleView = homeButton;
-        // Do any additional setup after loading the view.
     }
-    
-    
-   
+
     
     override func viewDidAppear(_ animated: Bool) {
         if let x = UserDefaults.standard.object(forKey: "selectedRow") as? Int{
@@ -112,9 +109,6 @@ class Meditation: UIViewController, AVAudioPlayerDelegate {
         let med12 = Med(image: UIImage(named: imageNames[11]) ?? UIImage(), title: songs[11]);
         let med13 = Med(image: UIImage(named: imageNames[12]) ?? UIImage(), title: songs[12]);
         
-        
-        
-        
         answer.append(med1)
         answer.append(med2)
         answer.append(med3)
@@ -129,13 +123,8 @@ class Meditation: UIViewController, AVAudioPlayerDelegate {
         answer.append(med12)
         answer.append(med13)
         
-        
-        
-        
         return answer;
-        
-        
-    }
+     }
     
     @IBAction func playPausePressed(_ sender: Any) {
         print("play pause pressed");
@@ -148,16 +137,6 @@ class Meditation: UIViewController, AVAudioPlayerDelegate {
             playPauseButton.setImage(UIImage(named: "whitePause"), for: .normal);
             print("play");
         }
-        
-        
-        
-        //if (audioPlayer.isPlaying){
-            //audioPlayer.pause();
-            //print("pause");
-        //}else{
-            
-        //}
-        
     }
     
     @IBAction func fastForwardPressed(_ sender: Any) {
@@ -169,9 +148,7 @@ class Meditation: UIViewController, AVAudioPlayerDelegate {
         }
         loadAudio();
         if (wasPlaying){
-           
             audioPlayer.play();
-            //playPauseButton.setImage(UIImage(named: "whitePause"), for: .normal);
         }
         let indexPath = IndexPath(row: currentRow, section: 0)
         self.tableView.selectRow(at: indexPath, animated: false, scrollPosition: UITableViewScrollPosition.middle)

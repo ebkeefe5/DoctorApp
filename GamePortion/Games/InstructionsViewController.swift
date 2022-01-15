@@ -25,9 +25,6 @@ class InstructionsViewController: UIViewController {
         button1.layer.borderColor = UIColor.white.cgColor;
         
         self.navigationItem.titleView = homeButton;
-       
-        
-        // Do any additional setup after loading the view.
     }
     
     

@@ -13,10 +13,9 @@ class CircleViewController: UIViewController {
 
     @IBOutlet weak var bonusLabel: UILabel!
     @IBOutlet weak var homeButton: UIButton!
-    //is the game running
+    
     var gameRunning = true;
     
-    //max Score so far
     var maxScore:Int = 0;
     
     var centerX: CGFloat = 0.0;
@@ -30,11 +29,9 @@ class CircleViewController: UIViewController {
     
     var circleTimer: Timer!
     
-    //variables for labels
     @IBOutlet weak var maxScoreLabel: UILabel!
     @IBOutlet weak var currentScoreLabel: UILabel!
     
-    //variable for the circle
     @IBOutlet var circlePath: UIBezierPath!
     var shapeLayer = CAShapeLayer();
     
@@ -54,11 +51,10 @@ class CircleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         bonusLabel.text = "";
+        bonusLabel.text = "";
         bonusLabel.textColor = UIColor.white;
         circleButton.clipsToBounds = true;
-        //circleButon.layer.cornerRadius = 25.0;
-        
+                
         restartButton.clipsToBounds = true;
         restartButton.layer.cornerRadius = 25.0;
         
@@ -73,15 +69,7 @@ class CircleViewController: UIViewController {
         centerY = self.view.bounds.height/2
         circleRadMin = centerX * 1/8;
         
-        self.restartGame();
-        
-        //circleRadMax = max(centerX, centerY)*3/4
-        //currentRad = circleRadMin
-        
-        //circleTimer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(CircleViewController.updateCircle), userInfo: nil, repeats: true)
-        //circleTimer.invalidate()
-        //self.drawCircle(circleRadius: currentRad)
-        
+        self.restartGame();    
     }
     
     override func viewDidAppear(_ animated: Bool){
@@ -89,10 +77,6 @@ class CircleViewController: UIViewController {
             maxScoreLabel.text = "Record: " + x
             maxScore = Int(x) ?? 0;
         }
-        
-        
-        print("hi");
-        
     }
     
     func perfectHit(){
@@ -126,17 +110,12 @@ class CircleViewController: UIViewController {
             circleColor = UIColor.white.cgColor;
             score = score + 1;
         }
-        // }
         
         self.currentScoreLabel.text = "Score: " + String(score)
         circleRadMax = currentRad
         if (circleRadMax <= 1.5 * circleRadMin){
             self.endGame()
         }
-        //get the location of the mouse and test if it's inside the circle
-        
-        
-        
     }
     
     @IBAction func homePressed(_ sender: Any) {
@@ -205,23 +184,9 @@ class CircleViewController: UIViewController {
     func drawCircle(circleRadius: CGFloat){
         
         circlePath = UIBezierPath(arcCenter: CGPoint(x: centerX,y: centerY), radius: circleRadius, startAngle: CGFloat(0), endAngle:CGFloat(Double.pi * 2), clockwise: true);
-        
         shapeLayer.path = circlePath.cgPath;
-        
-        
-        
-        //change the fill color
         shapeLayer.fillColor = circleColor;
-            
-            //
-        //you can change the stroke color
-        //shapeLayer.strokeColor = UIColor.black.cgColor
-        //you can change the line width
-        //shapeLayer.lineWidth = 2.0
-        
         view.layer.addSublayer(shapeLayer)
-        
-        
     }
     
     

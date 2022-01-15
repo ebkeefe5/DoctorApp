@@ -22,7 +22,6 @@ class Instructions2: UIViewController {
         
         button1.layer.borderWidth = 2;
         button1.layer.borderColor = UIColor.white.cgColor;
-        // Do any additional setup after loading the view.
     }
     
     

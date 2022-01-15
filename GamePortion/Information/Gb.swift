@@ -13,8 +13,7 @@ class Gb: UIViewController {
     @IBOutlet weak var homeButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-         self.navigationItem.titleView = homeButton;
+        self.navigationItem.titleView = homeButton;
     }
     
     @IBAction func homePressed(_ sender: Any) {

@@ -71,7 +71,6 @@ class notesController: UIViewController, UITextViewDelegate {
     }
     
     @objc func tapDone(){
-        //textView.frame.size = CGSize(width: textView.frame.size.width, height: CGFloat(height1))
         textView.resignFirstResponder();
         
     }

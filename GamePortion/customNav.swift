@@ -14,20 +14,6 @@ class customNav: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        //let image1 = UIColor.yellow.image()
-        //UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default);
-        // Sets shadow (line below the bar) to a blank image
-        //UINavigationBar.appearance().shadowImage = redImage
-        //navigationController?.navigationBar.barTintColor = UIColor.green
-        // Sets the translucent background color
-        //UINavigationBar.appearance().backgroundColor = .clear
-        
-        // Set translucent. (Default value is already true, so this can be removed if desired.)
-        //UINavigationBar.appearance().isTranslucent = true
-        //UINavigationBar.appearance().backgroundColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 0.1)
-        // Do any additional setup after loading the view.
     }
     
    

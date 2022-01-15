@@ -33,8 +33,7 @@ class selectGame: UIViewController {
         
         
         button2.layer.borderWidth = 2;
-        button2.layer.borderColor = UIColor.white.cgColor;
-        // Do any additional setup after loading the view.
+        button2.layer.borderColor = UIColor.white.cgColor;.
     }
     
 

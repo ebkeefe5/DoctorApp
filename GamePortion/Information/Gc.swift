@@ -14,7 +14,6 @@ class Gc: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = homeButton;
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func homePressed(_ sender: Any) {

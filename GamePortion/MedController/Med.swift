@@ -16,9 +16,5 @@ class Med{
     init (image: UIImage, title:String){
         self.image = image;
         self.title = title;
-    }
-    
-    
-    
-    
+    }  
 }
